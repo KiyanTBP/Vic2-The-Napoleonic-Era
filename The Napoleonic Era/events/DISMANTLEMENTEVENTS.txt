@@ -1,0 +1,21 @@
+# Dismantlement Event
+country_event = {
+	id = 50503
+	title = "EVENTNAME50503" 
+	desc = "EVENTDESC50503"
+	fire_only_once = yes
+	picture = "DISMANTLEMENT"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA50503"
+		prestige = -500
+		any_owned = {
+			limit = {
+				is_overseas = yes
+				is_core = THIS
+			}
+			remove_core = THIS
+		}
+	}
+}

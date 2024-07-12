@@ -1,0 +1,108 @@
+political_decisions = {
+	# Accept the Belgians
+	NFR_accept_the_belgians = {
+		picture = BELGIUM
+		potential = {
+			tag = NFR
+			BEL_387 = { owned_by = THIS }
+			BEL_394 = { owned_by = THIS }
+			OR = {
+				NOT = { has_country_flag = NFR_accepted_belgians }
+				NOT = { has_country_flag = NFR_rejected_belgians }
+			}
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			citizenship_policy = full_citizenship
+		}
+		effect = {
+			add_country_flag = NFR_accepted_belgians
+			prestige = -10
+			badboy = -5
+			BEL_387 = { add_core = THIS }
+			BEL_394 = { add_core = THIS }
+			add_accepted_culture = flemish
+			any_pop = {
+				limit = {
+					culture = flemish
+					culture = wallonian
+				}
+				militancy = -3
+			}
+		}
+	}
+	# Revoke Belgian Rights
+	NFR_revoke_belgian_rights = {
+		picture = BELGIUM
+		potential = {
+			tag = NFR
+			BEL_387 = { owned_by = THIS }
+			BEL_394 = { owned_by = THIS }
+			OR = {
+				NOT = { has_country_flag = NFR_accepted_belgians }
+				NOT = { has_country_flag = NFR_rejected_belgians }
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					year = 1880
+					has_recently_lost_war = yes
+				}
+				AND = {
+					war = no
+					state_n_government = 1
+					citizenship_policy = residency
+				}
+			}
+		}
+		effect = {
+			add_country_flag = NFR_rejected_belgians
+			badboy = 5
+			remove_accepted_culture = wallonian
+			BEL_387 = {
+				add_province_modifier = {
+					name = NFR_belgian_assimilation
+					duration = -1
+				}
+			}
+			BEL_394 = {
+				add_province_modifier = {
+					name = NFR_belgian_assimilation
+					duration = -1
+				}
+			}
+			any_pop = {
+				limit = {
+					culture = flemish
+					culture = wallonian
+				}
+				militancy = 3
+			}
+		}
+	}
+	# Take over Algeria
+	NFR_take_over_algeria = {
+		picture = COLONIZEALGERIANDESERT
+		potential = {
+			tag = NFR
+			ALG = { civilized = no }
+			exists = ALG
+			NOT = { has_country_flag = NFR_wargoal_algeria }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 20
+			war = ALG
+			add_casus_belli = {
+				target = ALG
+				type = establish_protectorate_casus_belli
+				months = 12
+			}
+		}
+	}
+}

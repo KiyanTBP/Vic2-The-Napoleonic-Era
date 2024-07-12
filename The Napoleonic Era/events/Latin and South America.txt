@@ -1,0 +1,269 @@
+# Treaty of Sao Paulo
+country_event = {
+	id = 100001
+	title = "EVENTNAME100001" 
+	desc = "EVENTDESC100001"
+	fire_only_once = yes
+	picture = "TREATYURUGUAYWAR"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100001"
+		prestige = 10
+		URU_2344 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		UPP = {
+			treasury = -1000
+		}
+		EOB = {
+			treasury = 1000
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100001"
+		prestige = 20
+		badboy = 2.5
+		URU_2344 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		2339 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		2340 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		2341 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		2554 = {
+			secede_province = EOB
+		}
+		UPP = {
+			treasury = -5000
+		}
+		EOB = {
+			treasury = 5000
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100001"
+		prestige = 30
+		badboy = 5
+		URU_2344 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		2339 = {
+			secede_province = EOB
+			remove_core = UPP
+			add_core = EOB
+		}
+		2340 = {
+			secede_province = EOB
+			remove_core = UPP
+			add_core = EOB
+		}
+		2341 = {
+			secede_province = EOB
+			remove_core = UPP
+			add_core = EOB
+		}
+		ARG_2357 = {
+			secede_province = EOB
+		}
+		2359 = {
+			secede_province = EOB
+		}
+		2360 = {
+			secede_province = EOB
+		}
+		UPP = {
+			treasury = -10000
+		}
+		EOB = {
+			treasury = 10000
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Treaty of Santiago
+country_event = {
+	id = 100002
+	title = "EVENTNAME100002" 
+	desc = "EVENTDESC100002"
+	fire_only_once = yes
+	picture = "TREATYURUGUAYWAR"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100002"
+		prestige = 10
+		URU_2344 = {
+			remove_core = EOB
+			add_core = UPP
+		}
+		EOB = {
+			treasury = -1000
+		}
+		UPP = {
+			treasury = 1000
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100002"
+		prestige = 20
+		badboy = 2.5
+		URU_2344 = {
+			remove_core = EOB
+			add_core = UPP
+		}
+		BRZ_2467 = {
+			add_core = UPP
+			secede_province = UPP
+		}
+		2342 = {
+			remove_core = EOB
+			add_core = UPP
+			secede_province = UPP
+		}
+		2343 = {
+			remove_core = EOB
+			add_core = UPP
+			secede_province = UPP
+		}
+		EOB = {
+			treasury = -5000
+		}
+		UPP = {
+			treasury = 5000
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100002"
+		prestige = 30
+		badboy = 5
+		URU_2344 = {
+			remove_core = EOB
+		}
+		BRZ_2467 = {
+			add_core = UPP
+			secede_province = UPP
+		}
+		2342 = {
+			remove_core = EOB
+			add_core = UPP
+			secede_province = UPP
+		}
+		2343 = {
+			remove_core = EOB
+			add_core = UPP
+			secede_province = UPP
+		}
+		BRZ_2462 = {
+			add_core = UPP
+			secede_province = UPP
+		}
+		2420 = {
+			remove_core = EOB
+			add_core = UPP
+			secede_province = UPP
+		}
+		EOB = {
+			treasury = -10000
+		}
+		UPP = {
+			treasury = 10000
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Brazil demands Uruguay!
+country_event = {
+	id = 100003
+	title = "EVENTNAME100003"
+	desc = "EVENTDESC100003"
+	fire_only_once = yes
+	picture = "TREATYURUGUAYWAR"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100003"
+		URU_2344 = {
+			secede_province = EOB
+			remove_core = UPP
+		}
+		clr_country_flag = LATINAMERICA_uruguay_war
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100003"
+		EOB = { country_event = 100004 }
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+# La Plata refuses to give up Uruguay!
+country_event = {
+	id = 100004
+	title = "EVENTNAME100004"
+	desc = "EVENTDESC100004"
+	fire_only_once = yes
+	picture = "TREATYURUGUAYWAR"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100004"
+		URU_2344 = {
+			remove_core = EOB
+		}
+		clr_country_flag = LATINAMERICA_uruguay_war
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100004"
+		war = {
+			target = UPP
+			attacker_goal = { casus_belli = event_based_war }
+			defender_goal = { casus_belli = event_based_war }
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+}

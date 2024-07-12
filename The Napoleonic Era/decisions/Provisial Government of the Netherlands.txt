@@ -1,0 +1,31 @@
+political_decisions = {
+	# Incorperate Java
+	PGN_incorperate_java = {
+		picture = indonesia_java
+		potential = {
+			tag = PGN
+			exists = JAV
+		}
+		allow = {
+			state_n_government = 1
+			JAV = {
+				OR = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 0.5
+			inherit = JAV
+			any_pop = {
+				limit = {
+					culture = javan
+				}
+				militancy = 0.5
+				consciousness = 0.5
+			}
+		}
+	}
+}

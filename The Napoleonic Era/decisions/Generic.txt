@@ -1,0 +1,15 @@
+political_decisions = {
+	# Leadership Boost
+	GENERIC_leadership_boost = {
+		potential = {
+			NOT = { has_country_flag = LEADERSHIP_BOOST_TAKEN }
+		}
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			set_country_flag = LEADERSHIP_BOOST_TAKEN
+			leadership = 40
+		}
+	}
+}

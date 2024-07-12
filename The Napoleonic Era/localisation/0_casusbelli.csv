@@ -1,0 +1,13 @@
+key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portugese;Russian;Finnish;
+acquire_capital;Acquire Capital;x;
+acquire_capital_desc;Take the Capital of our Rival;x;
+acquire_capital_setup;Take the Capital of our Rival to humiliate them;x;
+acquire_capital_short;Acquire Capital;x;
+NORMAL_WAR_CONQUER_CAPITAL_NAME;$FIRST$ Capital Conquest of $SECOND$ $STATE$;x;
+AGRESSION_WAR_CONQUER_CAPITAL_NAME;$FIRST$ Capital Conquest of $SECOND$ $STATE$;x;
+event_based_war;Enforce a Treaty;x;
+event_based_war_desc;We are planning to enforce a Treaty;x;
+event_based_war_setup;We are planning to enforce a Treaty on our Enemies to humiliate them;x;
+event_based_war_short;Enforce a Treaty;x;
+NORMAL_WAR_EVENT_NAME;Enforcing the Treaty of $CAPITAL$;x;
+AGRESSION_WAR_EVENT_NAME;Enforcing the Treaty of $CAPITAL$;x;

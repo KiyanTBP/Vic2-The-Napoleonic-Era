@@ -1,0 +1,32 @@
+political_decisions = {
+	# Restore Ottoman Rule over Greece
+	OTO_restore_ottoman_rule_over_greece = {
+		picture = athensgreece
+		potential = {
+			tag = OTO
+			NOT = { has_country_flag = OTO_restored_ottoman_greece }
+		}
+		allow = {
+			state_n_government = 1
+			GRT = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 40
+			badboy = 5
+			any_pop = {
+				limit = { culture = greek }
+				militancy = 3.5
+				consciousness = 3.5
+			}
+			GRT = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+	}
+}

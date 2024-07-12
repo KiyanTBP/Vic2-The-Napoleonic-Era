@@ -1,0 +1,98 @@
+political_decisions = {
+	# Realize the Antillean Confederation
+	CARRIBEAN_realize_antillean_confederation = {
+		picture = carribean
+		potential = {
+			THIS = {
+				OR = {
+					primary_culture = afro_antillean
+					primary_culture = afro_caribeno
+					primary_culture = caribeno
+				}
+			}
+			NOT = { exists = TAC }
+		}
+		allow = {
+			state_n_government = 1
+			HTW = {
+				OR = {
+					all_core = { owned_by = THIS }
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+			CBW = {
+				OR = {
+					all_core = { owned_by = THIS }
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = TAC
+			add_accepted_culture = afro_antillean
+			add_accepted_culture = afro_caribeno
+			add_accepted_culture = caribeno
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = afro_antillean
+						primary_culture = afro_caribeno
+						primary_culture = caribeno
+					}
+				}
+				country_event = { id = 11101 days = 0 }
+			}
+			HTW = { all_core = { add_core = TAC } }
+			CBW = { all_core = { add_core = TAC } }
+			2217 = { add_core = TAC }
+			2218 = { add_core = TAC }
+			2219 = { add_core = TAC }
+			2220 = { add_core = TAC }
+			ENG_2224 = { add_core = TAC }
+			ENG_2228 = { add_core = TAC }
+		}
+	}
+	# Claim Colombia
+	TAC_claim_colombia = {
+		picture = colombiareal
+		potential = {
+			tag = TAC
+			NOT = { has_country_flag = TAC_claimed_colombia }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			GCO = { is_greater_power = no }
+		}
+		effect = {
+			set_country_flag = TAC_claimed_colombia
+			prestige = 10
+			badboy = 5
+			add_accepted_culture = north_andean
+			CLM = {
+				all_core = {
+					add_core = TAC
+				}
+			}
+		}
+	}
+	# Integrate Puerto Rico
+	HTW_integrate_puerto_rico = {
+		picture = puerto_rico
+		potential = {
+			tag = HTW
+			owns = 2222
+			NOT = { has_country_flag = HTW_integrated_puerto_rico }
+		}
+		allow = {
+			ideological_thought = 1
+		}
+		effect = {
+			set_country_flag = HTW_integrated_puerto_rico
+			prestige = 15
+			2222 = { add_core = HTW }
+		}
+	}
+}

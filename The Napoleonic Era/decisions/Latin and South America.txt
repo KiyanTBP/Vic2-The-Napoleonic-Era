@@ -1,0 +1,192 @@
+political_decisions = {
+	### Latin America: USCA
+	# Claim Panama
+	USCA_claim_panama = {
+		picture = panama
+		potential = {
+			tag = TUC
+			NOT = { has_country_flag = USCA_claimed_panama }
+		}
+		allow = {
+			year = 1850
+			ideological_thought = 1
+		}
+		effect = {
+			prestige = 15
+			CLM_1723 = {
+				add_core = TUC
+				owner = {
+					relation = {
+						who = TUC
+						value = -50
+					}
+				}
+			}
+		}
+	}
+	### South America: Colonizing the Amazon
+	# The Peru-Bolivian Expedition
+	PBC_amazon_expedition = {
+		picture = amazon
+		potential = {
+			OR = {
+				tag = PBC
+				tag = BOL
+			}
+			NOT = {
+				owns = 2317
+				owns = 2320
+			}
+		}
+		allow = {
+			invention = prophylaxis_against_malaria
+		}
+		effect = {
+			prestige = 5
+			2317 = { secede_province = THIS }
+			2320 = { secede_province = THIS }
+		}
+	}
+	EOB_minor_amazon_expedition = {
+		picture = amazon
+		potential = {
+			tag = EOB
+			NOT = {
+				has_country_flag = EOB_minor_expedition_done
+			}
+		}
+		allow = {
+			invention = prophylaxis_against_malaria
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_country_flag = EOB_minor_expedition_done
+			prestige = 10
+			2417 = { secede_province = THIS }
+			2418 = { secede_province = THIS }
+			2550 = { secede_province = THIS }
+			2411 = { secede_province = THIS }
+			2413 = { secede_province = THIS }
+			2600 = { secede_province = THIS }
+		}
+	}
+	EOB_amazonas_expedition = {
+		picture = amazon
+		potential = {
+			tag = EOB
+			has_country_flag = EOB_minor_expedition_done
+			NOT = {
+				OR = {
+					has_country_flag = EOB_amazonas_expedition_done
+				}
+			}
+		}
+		allow = {
+			year = 1880
+			invention = prophylaxis_against_malaria
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_country_flag = EOB_amazonas_expedition_done
+			prestige = 10
+			2402 = { secede_province = THIS }
+			2401 = { secede_province = THIS }
+			2404 = { secede_province = THIS }
+			2405 = { secede_province = THIS }
+			2407 = { secede_province = THIS }
+			2403 = { secede_province = THIS }
+			2532 = { secede_province = THIS }
+		}
+	}
+	GCT_amazon_expedition = {
+		picture = amazon
+		potential = {
+			tag = GCT
+			NOT = {
+				has_country_flag = GCT_amazon_expedition_done
+			}
+		}
+		allow = {
+			invention = prophylaxis_against_malaria
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_country_flag = GCT_amazon_expedition_done
+			prestige = 5
+			2261 = { secede_province = THIS }
+			2278 = { secede_province = THIS }
+		}
+	}
+	### South America: War of the Swamps
+	# Demand Uruguay
+	EOB_demand_uruguay = {
+		picture = uruguay
+		potential = {
+			tag = EOB
+			URU_2344 = { owned_by = UPP }
+			NOT = {
+				has_country_flag = EOB_demanded_uruguay
+				URU_2344 = { owned_by = THIS }
+			}
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = EOB_demanded_uruguay
+			set_country_flag = LATINAMERICA_uruguay_war
+			UPP = { country_event = 100003 }
+		}
+	}
+	### South America: War of the Swamps Treaties
+	# Brazilian Victory: Sao Paulo Treaty
+	EOB_sao_paulo_treaty = {
+		picture = wartreaty
+		potential = {
+			tag = EOB
+			has_country_flag = LATINAMERICA_uruguay_war
+			NOT = {
+				OR = {
+					has_country_flag = EOB_sao_paulo_treaty_event
+					UPP = { has_country_flag = UPP_santiago_treaty_event }
+				}
+			}
+		}
+		allow = {
+			UPP = { has_country_modifier = TREATY_event_war_accepted }
+		}
+		effect = {
+			set_country_flag = EOB_sao_paulo_treaty_event
+			UPP = { remove_country_modifier = TREATY_event_war_accepted }
+			country_event = {
+				id = 100001
+				days = 0
+			}
+		}
+	}
+	# Platine Victory: Santiago Treaty
+	UPP_santiago_treaty = {
+		picture = wartreaty
+		potential = {
+			tag = UPP
+			has_country_flag = LATINAMERICA_uruguay_war
+			NOT = {
+				OR = {
+					has_country_flag = UPP_santiago_treaty_event
+					EOB = { has_country_flag =  EOB_sao_paulo_treaty_event }
+				}
+			}
+		}
+		allow = {
+			EOB = { has_country_modifier = TREATY_event_war_accepted }
+		}
+		effect = {
+			set_country_flag = UPP_santiago_treaty_event
+			EOB = { remove_country_modifier = TREATY_event_war_accepted }
+			country_event = {
+				id = 100002
+				days = 0
+			}
+		}
+	}
+}

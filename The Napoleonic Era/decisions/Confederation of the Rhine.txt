@@ -1,0 +1,93 @@
+political_decisions = {
+	### NON-CONFEDERATION OF THE RHINE DECISIONS ###
+	# Join the Confederation
+	COR_join_the_confederation = {
+		picture = confederation_of_the_rhine
+		potential = {
+			NOT = { exists = COR }
+			THIS = {
+				NOT = { tag = AUE }
+				NOT = {
+					is_greater_power = yes
+				}
+				OR = {
+					primary_culture = south_german
+					primary_culture = north_german
+				}
+			}
+			NOT = { THIS = { has_country_modifier = COR_member } }
+		}
+		allow = {
+			NOT = { badboy = 0.5 }
+			plurality = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = COR_member
+				duration = -1
+			}
+		}
+	}
+	# Leave the Confederation
+	COR_leave_the_confederation = {
+		picture = confederation_of_the_rhine
+		potential = {
+			NOT = { exists = COR }
+			THIS = {
+				NOT = {
+					is_greater_power = yes
+				}
+				OR = {
+					primary_culture = south_german
+					primary_culture = north_german
+				}
+			}
+			THIS = { has_country_modifier = COR_member }
+		}
+		allow = {
+			war_exhaustion = 50
+		}
+		effect = {
+			add_country_flag = COR_former_member
+			remove_country_modifier = COR_member
+		}
+	}
+	# Unite the Confederation!
+	unite_the_confederation_of_the_rhine = {
+		picture = confederation_of_the_rhine
+		potential = {
+			NOT = { exists = COR }
+			THIS = { has_country_modifier = COR_member }
+		}
+		allow = {
+			prestige = 20
+			OR = {
+				AND = {
+					is_secondary_power = yes
+					year = 1860
+				}
+				AND = {
+					is_greater_power = yes
+					year = 1845
+				}
+			}
+			nationalism_n_imperialism = 1
+			average_militancy = 3
+		}
+		effect = {
+			prestige = 50
+			war_exhaustion = -50
+			change_tag = COR
+			any_country = {
+				limit = {
+					OR = {
+						has_country_modifier = COR_member
+						has_country_flag = COR_former_member
+					}
+				}
+				add_core = COR
+				country_event = { id = 11101 days = 0 }
+			}
+		}
+	}
+}

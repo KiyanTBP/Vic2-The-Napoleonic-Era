@@ -1,0 +1,126 @@
+political_decisions = {
+	# Integrate American Canada
+	TUT_integrate_american_canada = {
+		picture = AMERICAN_CANADA
+		potential = {
+			tag = TUT
+			exists = ACD
+			NOT = { has_country_flag = TUT_integrated_american_canada }
+		}
+		allow = {
+			rank = 4
+			state_n_government = 1
+			ACD = {
+				OR = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+		}
+		effect = {
+			add_country_flag = TUT_integrated_american_canada
+			prestige = 10
+			badboy = 1
+			inherit = ACD
+			add_accepted_culture = americanadian
+			ACD = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			UKG = {
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+		}
+	}
+	# Integrate Texas
+	TUT_integrate_texas = {
+		picture = TEXAS
+		potential = {
+			tag = TUT
+			exists = TXR
+			NOT = { has_country_flag = TUT_integrated_texas }
+		}
+		allow = {
+			war = no
+			TXR = {
+				OR = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+		}
+		effect = {
+			set_country_flag = TUT_integrated_texas
+			prestige = 15
+			inherit = TXR
+			add_accepted_culture = texan
+			TXR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MXE = {
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+		}
+	}
+	# Manifest Destiny
+	TUT_manifest_destiny = {
+		picture = manifest_destiny
+		potential = {
+			tag = TUT
+			NOT = { has_country_flag = TUT_manifested_some_destiny }
+			NOT = {
+				OR = {
+					TXR = {
+						all_core = {
+							owned_by = MXE
+						}
+					}
+					year = 1860
+				}
+			}
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = TUT_manifested_some_destiny
+			prestige = 30
+			USA_106 = { add_core = TUT }
+			MEX_103 = { add_core = TUT }
+			MEX_100 = { add_core = TUT }
+			MEX_94 = { add_core = TUT }
+			MEX_85 = { add_core = TUT }
+		}
+	}
+	### THIS IS FOR AMERICAN CANADA
+	# Convert the People's
+	ACD_convert_the_people = {
+		picture = AMERICAN_CANADA
+		potential = {
+			tag = ACD
+			NOT = { has_country_flag = ACD_conversion_started }
+		}
+		allow = {
+			year = 1850
+			war = no
+		}
+		effect = {
+			set_country_flag = ACD_conversion_started
+			any_owned = {
+				add_province_modifier = {
+					name = ACD_conversion
+					duration = 3650
+				}
+			}
+		}
+	}
+}

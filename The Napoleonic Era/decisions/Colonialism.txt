@@ -1,0 +1,23 @@
+political_decisions = {
+	# Take the Syrian Desert
+	COLON_take_syrian_desert = {
+		picture = COLONIZESYRIANDESERT
+		potential = {
+			tag = OTO
+			NOT = {
+				owns = 910
+				owns = 906
+				owns = 907
+			}
+		}
+		allow = {
+			invention = mission_to_civilize
+		}
+		effect = {
+			prestige = 10
+			910 = { secede_province = THIS }
+			906 = { secede_province = THIS }
+			907 = { secede_province = THIS }
+		}
+	}
+}
