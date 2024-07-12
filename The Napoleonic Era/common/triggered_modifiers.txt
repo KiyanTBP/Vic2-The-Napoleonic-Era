@@ -1,0 +1,27 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+# Colonial Nation
+ANY_colonial_nation = {
+	trigger = {
+		colonial_nation = yes
+	}
+	administrative_effienciency_modifier = -0.05
+	suppression_points_modifier = 0.05
+	prestige = 0.025
+	icon = 8
+}
+
+# Slight Geneva Convention Buff
+not_signed_the_geneva_convention = {
+	trigger = {
+		has_global_flag = geneva_convention_held
+		NOT = { has_country_flag = signed_the_geneva_convention }
+	}
+	research_points_modifier = -0.10
+	pop_militancy_modifier = 0.5
+	pop_consciousness_modifier = 0.25
+	icon = 6
+}
