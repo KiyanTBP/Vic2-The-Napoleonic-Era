@@ -1,0 +1,5 @@
+owner = PGN
+controller = PGN
+trade_goods = timber
+life_rating = 30
+colonial = 2

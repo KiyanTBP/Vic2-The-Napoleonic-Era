@@ -27,12 +27,14 @@ AHT = "countries/NapoleonAnhalt.txt"
 KOG = "countries/Kingdom of Germany.txt"
 KOP = "countries/Kingdom of Prussia.txt"
 MML = "countries/Memel.txt"
+RHE = "countries/Rheinland.txt"
 
 # POLSKA!!!
 DOW = "countries/Duchy of Warsaw.txt"
 
 # Rule Britannia
 UKG = "countries/The United Kingdom.txt"
+WLE = "countries/Wales.txt"
 
 # Osterreich
 AUE = "countries/Austrian Empire.txt"
@@ -94,6 +96,9 @@ UPP = "countries/The United Provinces of La Plata.txt"
 # uhh umm east asia
 PGN = "countries/Provisial Government of the Netherlands.txt"
 QNG = "countries/Qing Empire.txt"
+
+# The Great Power Formables
+TCE = "countries/The Carolingian Empire.txt"
 
 ### Vannila ###
 

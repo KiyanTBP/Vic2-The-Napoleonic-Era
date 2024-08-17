@@ -1,0 +1,6 @@
+owner = BVR
+controller = BVR
+add_core = BVR
+add_core = KOG
+trade_goods = grain
+life_rating = 40

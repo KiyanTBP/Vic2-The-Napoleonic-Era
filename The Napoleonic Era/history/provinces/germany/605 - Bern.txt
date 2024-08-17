@@ -1,0 +1,6 @@
+owner = SWC
+controller = SWC
+add_core = SWC
+trade_goods = iron
+life_rating = 40
+fort = 1

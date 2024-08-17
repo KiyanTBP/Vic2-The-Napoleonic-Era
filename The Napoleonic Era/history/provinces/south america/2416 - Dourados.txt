@@ -1,0 +1,4 @@
+owner = EOB
+controller = EOB
+add_core = EOBtrade_goods = fruit
+life_rating = 25

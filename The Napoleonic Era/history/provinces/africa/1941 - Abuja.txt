@@ -1,0 +1,5 @@
+owner = SKC
+controller = SKC
+add_core = SKC
+trade_goods = cotton
+life_rating = 35

@@ -1,0 +1,6 @@
+owner = NFR
+controller = NFR
+add_core = NFR
+trade_goods = fish
+life_rating = 35
+naval_base = 1

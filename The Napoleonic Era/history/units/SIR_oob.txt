@@ -1,0 +1,44 @@
+# leaders
+leader = {
+	name = "Ferdinand of Spain"
+	date = 1836.1.1
+	type = land
+	personality = vicious
+	background = bootlicker
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Spanish Armada"
+	location = 487
+	regiment = {
+		name= "Infantry of Spain 1."
+		type = infantry
+		home = 487
+	}
+
+	regiment = {
+		name= "Infantry of Spain 2."
+		type = infantry
+		home = 487
+	}
+
+	regiment = {
+		name= "Infantry of Spain 3."
+		type = infantry
+		home = 488
+	}
+
+	regiment = {
+		name= "Infantry of Spain 4."
+		type = infantry
+		home = 489
+	}
+
+	regiment = {
+		name= "Infantry of Spain 5."
+		type = infantry
+		home = 490
+	}
+}

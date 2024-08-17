@@ -1,0 +1,100 @@
+# sphere
+ACD = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+TUC = {
+	value = 125
+	level = 4
+	influence_value = 25
+}
+
+TXR = {
+	value = 125
+	level = 3
+	influence_value = 25
+}
+
+MXE = {
+	value = 125
+	level = 3
+	influence_value = 25
+}
+
+# leaders
+leader = {
+	name = "Winfield Scott"
+	date = 1836.1.1
+	type = land
+	personality = steadfast
+	background = school_of_firepower
+	prestige = 0.3
+}
+
+leader = {
+	name = "Zachary Taylor"
+	date = 1836.1.1
+	type = land
+	personality = intuitive
+	background = school_of_offense
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Troops of D.C"
+	location = 3249
+	regiment = {
+		name= "1. Troop"
+		type = infantry
+		home = 3249
+	}
+
+	regiment = {
+		name= "2. Troop"
+		type = infantry
+		home = 3249
+	}
+
+	regiment = {
+		name= "3. Troop"
+		type = artillery
+		home = 232
+	}
+
+	regiment = {
+		name= "4. Troop"
+		type = artillery
+		home = 233
+	}
+
+	regiment = {
+		name= "5. Troop"
+		type = hussar
+		home = 231
+	}
+}
+
+army = {
+	name = "Troops of Boston"
+	location = 244
+	regiment = {
+		name= "1. Troop"
+		type = infantry
+		home = 244
+	}
+
+	regiment = {
+		name= "2. Troop"
+		type = infantry
+		home = 249
+	}
+
+	regiment = {
+		name= "3. Troop"
+		type = hussar
+		home = 242
+	}
+}

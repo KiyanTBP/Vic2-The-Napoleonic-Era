@@ -1,0 +1,2 @@
+owner = UPPcontroller = UPPadd_core = UPPtrade_goods = timber
+life_rating = 30

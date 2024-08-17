@@ -1,0 +1,164 @@
+#DC
+3249 = {
+	aristocrats = {
+		culture = dixie
+		religion = protestant
+		size = 750
+	}
+	
+	bureaucrats = {
+		culture = dixie
+		religion = protestant
+		size = 750
+	}
+
+	clergymen = {
+		culture = dixie
+		religion = protestant
+		size = 250
+	}
+
+	artisans = {
+		culture = dixie
+		religion = protestant
+		size = 1000
+	}
+
+	soldiers = {
+		culture = dixie
+		religion = protestant
+		size = 50
+	}
+
+	farmers = {
+		culture = dixie
+		religion = protestant
+		size = 25000
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = protestant
+		size = 15
+	}
+
+	artisans = {
+		culture = afro_american
+		religion = protestant
+		size = 2700
+	}
+
+	farmers = {
+		culture = afro_american
+		religion = protestant
+		size = 3000
+	}
+
+	slaves = {
+		culture = afro_american
+		religion = protestant
+		size = 26000
+	}
+}
+
+# Y Wladfa
+3250 = {
+	aristocrats = {
+		culture = new_welsh
+		religion = catholic
+		size = 50
+	}
+
+	capitalists = {
+		culture = new_welsh
+		religion = catholic
+		size = 50
+	}
+	
+	bureaucrats = {
+		culture = new_welsh
+		religion = catholic
+		size = 100
+	}
+
+	officers = {
+		culture = new_welsh
+		religion = catholic
+		size = 25
+	}
+
+	clergymen = {
+		culture = new_welsh
+		religion = catholic
+		size = 150
+	}
+
+	artisans = {
+		culture = new_welsh
+		religion = catholic
+		size = 450
+	}
+
+	soldiers = {
+		culture = new_welsh
+		religion = catholic
+		size = 500
+	}
+
+	farmers = {
+		culture = new_welsh
+		religion = catholic
+		size = 4000
+	}
+}
+
+# French Flanders
+3251 = {
+	aristocrats = {
+		culture = french
+		religion = catholic
+		size = 200
+	}
+
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 50
+	}
+
+	soldiers = {
+		culture = french
+		religion = catholic
+		size = 100
+	}
+
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 3350
+	}
+
+	artisans = {
+		culture = flemish
+		religion = catholic
+		size = 2000
+	}
+
+	soldiers = {
+		culture = flemish
+		religion = catholic
+		size = 250
+	}
+
+	farmers = {
+		culture = flemish
+		religion = catholic
+		size = 14000
+	}
+}

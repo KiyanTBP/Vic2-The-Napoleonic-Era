@@ -1,0 +1,6 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = ALB
+trade_goods = cattle
+life_rating = 35

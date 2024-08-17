@@ -1,0 +1,78 @@
+# armies and navies
+army = {
+	name = "Holy Cairo Force"
+	location = 1745
+	regiment = {
+		name= "1. Infantry"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "2. Infantry"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "3. Cavalry"
+		type = cavalry
+		home = 1751
+	}
+
+	regiment = {
+		name= "4. Cavalry"
+		type = cavalry
+		home = 1746
+	}
+
+	regiment = {
+		name= "5. Cavalry"
+		type = cavalry
+		home = 1748
+	}
+}
+
+army = {
+	name = "Holy Palestinian Force"
+	location = 917
+	regiment = {
+		name= "1. Infantry"
+		type = infantry
+		home = 917
+	}
+
+	regiment = {
+		name= "2. Infantry"
+		type = infantry
+		home = 917
+	}
+
+	regiment = {
+		name= "3. Cavalry"
+		type = cavalry
+		home = 920
+	}
+}
+
+army = {
+	name = "Holy Tripolian Force"
+	location = 1731
+	regiment = {
+		name= "1. Infantry"
+		type = infantry
+		home = 1731
+	}
+
+	regiment = {
+		name= "2. Infantry"
+		type = infantry
+		home = 1731
+	}
+
+	regiment = {
+		name= "3. Cavalry"
+		type = cavalry
+		home = 1734
+	}
+}

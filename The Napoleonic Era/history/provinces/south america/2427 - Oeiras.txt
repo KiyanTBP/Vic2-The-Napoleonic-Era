@@ -1,0 +1,5 @@
+owner = EOB
+controller = EOB
+add_core = EOB
+trade_goods = grain
+life_rating = 35

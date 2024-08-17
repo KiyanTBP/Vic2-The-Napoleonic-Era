@@ -1,0 +1,3 @@
+owner = UPPcontroller = UPPadd_core = UPPadd_core = PBC
+trade_goods = wool
+life_rating = 30

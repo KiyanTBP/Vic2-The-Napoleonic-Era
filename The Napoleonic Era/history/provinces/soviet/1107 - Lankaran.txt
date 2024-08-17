@@ -1,0 +1,2 @@
+owner = RUEcontroller = RUEadd_core = RUEtrade_goods = grain
+life_rating = 35

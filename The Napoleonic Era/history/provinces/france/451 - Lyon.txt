@@ -1,0 +1,10 @@
+owner = NFR
+controller = NFR
+add_core = NFR
+trade_goods = grain
+life_rating = 31
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}

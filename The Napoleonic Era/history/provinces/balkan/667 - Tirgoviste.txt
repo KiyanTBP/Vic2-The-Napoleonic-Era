@@ -1,0 +1,6 @@
+owner = WCT
+controller = WCT
+add_core = WCT
+add_core = RMU
+trade_goods = wool
+life_rating = 35

@@ -1,0 +1,5 @@
+owner = SIR
+controller = SIR
+add_core = SIR
+trade_goods = coal
+life_rating = 35

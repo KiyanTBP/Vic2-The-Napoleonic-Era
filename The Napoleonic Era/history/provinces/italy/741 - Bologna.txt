@@ -1,0 +1,5 @@
+owner = ITL
+controller = ITL
+add_core = ITL
+trade_goods = timber
+life_rating = 35

@@ -1,0 +1,57 @@
+# leaders
+leader = {
+	name = "Christian the X"
+	date = 1836.1.1
+	type = land
+	personality = impetuous
+	background = natural_born_leader
+	prestige = 0.2
+}
+
+leader = {
+	name = "Dellirious Napoléon"
+	date = 1836.1.1
+	type = land
+	personality = implacable
+	background = natural_born_leader
+	prestige = 0.2
+}
+
+# armies and navies
+army = {
+	name = "The Copenhagen Army"
+	location = 372
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 372
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 373
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 366
+	}
+}
+
+army = {
+	name = "Defense of Norway"
+	location = 313
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 313
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 316
+	}
+}

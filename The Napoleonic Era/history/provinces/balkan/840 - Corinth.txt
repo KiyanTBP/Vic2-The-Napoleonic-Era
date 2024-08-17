@@ -1,0 +1,6 @@
+owner = GRT
+controller = GRT
+add_core = GRT
+trade_goods = fruit
+life_rating = 35
+naval_base = 1

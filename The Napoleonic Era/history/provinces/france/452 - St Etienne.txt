@@ -1,0 +1,5 @@
+owner = NFR
+controller = NFR
+add_core = NFR
+trade_goods = sulphur
+life_rating = 31

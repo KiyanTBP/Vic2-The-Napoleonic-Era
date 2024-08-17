@@ -1,0 +1,12 @@
+name = "Texan Independance War"
+
+1835.10.7 = {
+	add_attacker = MXE
+	add_defender = TXR
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = MXE
+		receiver = TXR
+	}
+}

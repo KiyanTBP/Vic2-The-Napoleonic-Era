@@ -1,0 +1,26 @@
+# leaders
+leader = {
+	name = "Viktor Gregoric"
+	date = 1836.1.1
+	type = land
+	personality = coolminded
+	background = armchair_general
+	prestige = 0.4
+}
+
+# armies and navies
+army = {
+	name = "Slavonia First"
+	location = 768
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 768
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 773
+	}
+}

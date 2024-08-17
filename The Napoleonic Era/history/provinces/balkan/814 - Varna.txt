@@ -1,0 +1,6 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = BUL
+trade_goods = cotton
+life_rating = 35

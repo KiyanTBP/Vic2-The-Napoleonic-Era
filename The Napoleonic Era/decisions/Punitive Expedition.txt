@@ -1,0 +1,170 @@
+political_decisions = {
+	# Hong Kong Treaty Port
+	PUNEXP_hong_kong_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1496 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 15
+			1496 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Macau Treaty Port
+	PUNEXP_macau_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1498 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 15
+			1498 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Shanghai Treaty Port
+	PUNEXP_shanghai_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1538 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 10
+			1538 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Ningbo Treaty Port
+	PUNEXP_ningbo_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1608 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 10
+			1608 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Qingdao Treaty Port
+	PUNEXP_qingdao_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1566 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 7
+			1566 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Weihaiwei Treaty Port
+	PUNEXP_weihaiwei_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			QNG = { owns = 1569 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 7
+			1569 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Hainan Treaty Port
+	PUNEXP_hainan_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			year = 1850
+			QNG = { owns = 1499 }
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 10
+			1499 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+	# Formosa Treaty Port
+	PUNEXP_formosa_treaty_port = {
+		picture = punitive_expedition
+		potential = {
+			year = 1850
+			QNG = {
+				owns = 1485
+				owns = 2562
+			}
+			QNG = { has_country_flag = accepted_punitive_expedition }
+			THIS = { has_country_modifier = punitive_expedition_treaty }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige = 20
+			1485 = {
+				secede_province = THIS
+			}
+			2562 = {
+				secede_province = THIS
+			}
+			QNG = { clr_country_flag = accepted_punitive_expedition }
+			remove_country_modifier = punitive_expedition_treaty
+		}
+	}
+}

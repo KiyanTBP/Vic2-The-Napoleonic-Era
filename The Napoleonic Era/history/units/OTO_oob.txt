@@ -1,0 +1,52 @@
+# armies and navies
+army = {
+	name = "The Istanbul Army"
+	location = 860
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 860
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 860
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = artillery
+		home = 859
+	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 809
+	}
+
+	regiment = {
+		name= "5. Army"
+		type = hussar
+		home = 822
+	}
+
+	regiment = {
+		name= "6. Army"
+		type = hussar
+		home = 880
+	}
+
+	regiment = {
+		name= "7. Army"
+		type = infantry
+		home = 860
+	}
+
+	regiment = {
+		name= "8. Army"
+		type = infantry
+		home = 876
+	}
+}

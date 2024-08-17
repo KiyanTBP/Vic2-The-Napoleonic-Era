@@ -1,0 +1,26 @@
+political_decisions = {
+	### ANNEX NEW WALES
+	# Integrate New Wales
+	UPP_integrate_new_wales = {
+		picture = new_wales
+		potential = {
+			tag = UPP
+			NWL = { exists = yes }
+		}
+		allow = {
+			year = 1848
+			OR = {
+				NWL = {
+					in_sphere = THIS
+				}
+				UPP = {
+					is_our_vassal = NWL
+				}
+			}
+		}
+		effect = {
+			inherit = NWL
+			add_accepted_culture = new_welsh
+		}
+	}
+}

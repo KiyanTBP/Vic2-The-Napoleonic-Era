@@ -1,0 +1,4 @@
+owner = TUT
+controller = TUT
+add_core = TUT
+trade_goods = ironlife_rating = 35

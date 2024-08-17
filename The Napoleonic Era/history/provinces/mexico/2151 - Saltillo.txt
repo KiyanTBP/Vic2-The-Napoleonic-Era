@@ -1,0 +1,5 @@
+owner = MXE
+controller = MXE
+add_core = MXE
+trade_goods = dye
+life_rating = 35

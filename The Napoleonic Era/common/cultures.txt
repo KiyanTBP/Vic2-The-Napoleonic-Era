@@ -253,12 +253,14 @@ british = {
 	}
 	welsh = {
 		color = { 40  145  45 }
+		primary = WLE
 		first_names = { Aed Aedw Dlan Dafd Eis Osin Oen Rhs }
 		last_names = { Cays Cawyn Emyr Gareth Harri Ieun Osian Tomos }
 	}
 	scottish = {
 		color = { 65  155  230 }
 		radicalism = 5
+		primary = SCO
 		first_names = { Albert Andrew Askill Bernard Brian Christopher Kevin Kieran Walter }
 		last_names = { Douglas Fraser Godfrey Horner Len Magnus Neal }
 	}

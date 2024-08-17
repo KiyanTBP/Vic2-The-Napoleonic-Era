@@ -1,0 +1,32 @@
+# leaders
+leader = {
+	name = "Wladyslaw Chlaposwski"
+	date = 1836.1.1
+	type = land
+	personality = brash
+	background = eccentric_genius
+	prestige = 0.2
+}
+
+# armies and navies
+army = {
+	name = "Warsaw Guard"
+	location = 706
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 706
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 708
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 706
+	}
+}

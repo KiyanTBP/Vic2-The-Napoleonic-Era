@@ -70,9 +70,11 @@ political_decisions = {
 					is_greater_power = yes
 					year = 1845
 				}
+				AND = {
+					nationalism_n_imperialism = 1
+					average_militancy = 3
+				}
 			}
-			nationalism_n_imperialism = 1
-			average_militancy = 3
 		}
 		effect = {
 			prestige = 50

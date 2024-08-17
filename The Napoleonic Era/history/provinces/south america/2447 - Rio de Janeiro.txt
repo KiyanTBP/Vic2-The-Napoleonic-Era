@@ -1,0 +1,6 @@
+owner = EOB
+controller = EOB
+add_core = EOB
+trade_goods = coffee
+life_rating = 35
+naval_base = 1

@@ -1,0 +1,4 @@
+add_core = PBC
+add_core = BOL
+trade_goods = timber
+life_rating = 30

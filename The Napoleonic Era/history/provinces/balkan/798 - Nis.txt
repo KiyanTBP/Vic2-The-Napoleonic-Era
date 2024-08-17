@@ -1,0 +1,6 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = SER
+trade_goods = timber
+life_rating = 35

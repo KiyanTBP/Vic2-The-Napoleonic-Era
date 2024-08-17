@@ -1,0 +1,6 @@
+owner = UKG
+controller = UKG
+add_core = UKG
+add_core = ENG
+trade_goods = iron
+life_rating = 35

@@ -1,0 +1,6 @@
+owner = TUC
+controller = TUC
+add_core = TUC
+add_core = GUA
+trade_goods = iron
+life_rating = 30

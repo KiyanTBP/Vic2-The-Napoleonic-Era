@@ -1,0 +1,49 @@
+# leaders
+leader = {
+	name = "Jose Ballivián"
+	type = land
+	date = 1836.1.1
+	background = generals_aide
+	personality = bold
+}
+
+leader = {
+	name = "Andres de Santa Cruz"
+	type = land
+	date = 1836.1.1
+	personality = arrogant
+	background = old_school
+}
+
+# armies and navies
+army = {
+	name = "Guards of Lima"
+	location = 2295
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 2295
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 2295
+	}
+}
+
+army = {
+	name = "Guards of La Paz"
+	location = 2310
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 2310
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 2310
+	}
+}

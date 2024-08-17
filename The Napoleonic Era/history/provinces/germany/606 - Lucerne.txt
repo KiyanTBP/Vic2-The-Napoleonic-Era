@@ -1,0 +1,5 @@
+owner = SWC
+controller = SWC
+add_core = SWC
+trade_goods = timber
+life_rating = 40

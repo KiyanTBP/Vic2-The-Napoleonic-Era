@@ -1,0 +1,6 @@
+owner = NFR
+controller = NFR
+add_core = RHE
+add_core = KOG
+trade_goods = iron
+life_rating = 40

@@ -1,0 +1,149 @@
+# leaders
+leader = {
+	name = "Adolf Hummel"
+	date = 1836.1.1
+	type = land
+	personality = vicious
+	background = bootlicker
+	prestige = 0.1
+}
+
+leader = {
+	name = "Otto von Hartmann"
+	date = 1836.1.1
+	type = land
+	personality = deeply_religious
+	background = warmonger
+	prestige = 0.5
+}
+
+leader = {
+	name = "Rudolf der Clown"
+	date = 1836.1.1
+	type = land
+	personality = au_fait
+	background = hated
+	prestige = 0.4
+}
+
+leader = {
+	name = "Wilhelm Goering"
+	date = 1836.1.1
+	type = land
+	personality = stalwart
+	background = old_school
+	prestige = 0.5
+}
+
+# armies and navies
+army = {
+	name = "Vienna's Defense"
+	location = 619
+	regiment = {
+		name= "1. Vienna"
+		type = infantry
+		home = 619
+	}
+
+	regiment = {
+		name= "2. Vienna"
+		type = infantry
+		home = 619
+	}
+
+	regiment = {
+		name= "3. Vienna"
+		type = artillery
+		home = 620
+	}
+
+	regiment = {
+		name= "4. Vienna"
+		type = artillery
+		home = 624
+	}
+
+	regiment = {
+		name= "5. Vienna"
+		type = hussar
+		home = 621
+	}
+}
+
+army = {
+	name = "Pest Guard"
+	location = 641
+	regiment = {
+		name= "1. Pest"
+		type = infantry
+		home = 641
+	}
+
+	regiment = {
+		name= "2. Pest"
+		type = infantry
+		home = 641
+	}
+
+	regiment = {
+		name= "3. Pest"
+		type = artillery
+		home = 645
+	}
+
+	regiment = {
+		name= "4. Pest"
+		type = artillery
+		home = 650
+	}
+
+	regiment = {
+		name= "5. Pest"
+		type = hussar
+		home = 642
+	}
+}
+
+army = {
+	name = "The Croatian Army"
+	location = 771
+	regiment = {
+		name= "1. Croat"
+		type = infantry
+		home = 771
+	}
+
+	regiment = {
+		name= "2. Croat"
+		type = infantry
+		home = 771
+	}
+
+	regiment = {
+		name= "3. Croat"
+		type = artillery
+		home = 775
+	}
+
+	regiment = {
+		name= "4. Croat"
+		type = hussar
+		home = 776
+	}
+}
+
+army = {
+	name = "Bohemia's Defendant"
+	location = 625
+	regiment = {
+		name= "1. Bohemian"
+		type = infantry
+		home = 625
+	}
+
+	regiment = {
+		name= "2. Bohemian"
+		type = artillery
+		home = 625
+	}
+}

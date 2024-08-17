@@ -1,0 +1,2 @@
+owner = MXEcontroller = MXEadd_core = MXEtrade_goods = grain
+life_rating = 30

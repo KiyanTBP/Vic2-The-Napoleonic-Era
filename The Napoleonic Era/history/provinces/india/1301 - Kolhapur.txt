@@ -1,0 +1,6 @@
+owner = UKG
+controller = UKG
+add_core = HND
+trade_goods = tea
+life_rating = 32
+colonial = 2

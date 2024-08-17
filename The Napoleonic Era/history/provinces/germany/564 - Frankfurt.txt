@@ -1,0 +1,7 @@
+owner = HSE
+controller = HSE
+add_core = HSE
+add_core = KOG
+trade_goods = fruit
+life_rating = 40
+fort = 1

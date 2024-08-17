@@ -1,4 +1,42 @@
 political_decisions = {
+	# Dutch Reintegration
+	PGN_dutch_reintegration = {
+		picture = batavian_republic
+		potential = {
+			tag = PGN
+			exists = BTR
+		}
+		allow = {
+			JAV = { exists = no }
+			OR = {
+				AND = {
+					NOT = {
+						BTR = {
+							government = napoleonic_republic
+						}
+					}
+				}
+				AND = {
+					BTR = {
+						government = napoleonic_republic
+					}
+					PGN = {
+						government = napoleonic_republic
+					}
+				}
+			}
+		}
+		effect = {
+			BTR = {
+				inherit = PGN
+			}
+			PGN = {
+				all_core = {
+					add_core = BTR
+				}
+			}
+		}
+	}
 	# Incorperate Java
 	PGN_incorperate_java = {
 		picture = indonesia_java

@@ -1,0 +1,6 @@
+owner = NFR
+controller = NFR
+add_core = BEL
+add_core = FLA
+trade_goods = wool
+life_rating = 35

@@ -1,0 +1,6 @@
+owner = EGK
+controller = EGK
+add_core = EGK
+add_core = ABY
+trade_goods = fruit
+life_rating = 35

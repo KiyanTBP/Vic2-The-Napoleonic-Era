@@ -1,0 +1,6 @@
+owner = DMN
+controller = DMN
+add_core = DMN
+add_core = KOG
+trade_goods = cattle
+life_rating = 35

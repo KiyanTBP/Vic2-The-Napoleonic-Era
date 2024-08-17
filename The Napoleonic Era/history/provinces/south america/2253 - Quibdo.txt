@@ -1,0 +1,6 @@
+owner = GCT
+controller = GCT
+add_core = GCT
+add_core = CLM
+trade_goods = coal
+life_rating = 30

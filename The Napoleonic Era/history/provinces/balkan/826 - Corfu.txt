@@ -1,0 +1,5 @@
+owner = GRT
+controller = GRT
+add_core = GRT
+trade_goods = fish
+life_rating = 35

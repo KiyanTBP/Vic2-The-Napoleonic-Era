@@ -1,0 +1,114 @@
+political_decisions = {
+	### The United Kingdom
+	# Become England
+	UKG_become_england = {
+		picture = england
+		potential = {
+			tag = UKG
+			NOT = { has_country_flag = UKG_now_english }
+		}
+		allow = {
+			SCO = {
+				exists = yes
+			}
+			WLE = {
+				exists = yes
+			}
+			NOT = {
+				owns = 269
+				owns = 271
+				owns = 273
+			}
+		}
+		effect = {
+			any_pop = {
+				limit = {
+					culture = british
+				}
+				militancy = 0.5
+				consciousness = 0.5
+			}
+			remove_accepted_culture = welsh
+			remove_accepted_culture = scottish
+			change_tag = ENG
+		}
+	}
+	# Conquer Burma
+	EIC_conquer_burma = {
+		picture = burma
+		potential = {
+			tag = UKG
+			BUR = { exists = yes }
+			NOT = { has_country_flag = EIC_conquest_burma }
+		}
+		allow = {
+			year = 1840
+			is_independant = yes
+		}
+		effect = {
+			war = {
+				target = BUR
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+				defender_goal = { casus_belli = status_quo }
+			}
+			set_country_flag = EIC_conquest_burma
+		}
+	}
+	## UK VS FRANCE WAR
+	# Demand the Destruction of the Napoleonic Order
+	UKG_demand_destruction_of_napoleonic_order = {
+		potential = {
+			tag = UKG
+			NFR = {
+				government = napoleonic_republic
+				exists = yes
+			}
+			has_country_flag = UKG_possible_war_with_france
+			NOT = { has_country_flag = UKG_demanded_napoleonic_destruction }
+		}
+		allow = {
+			prestige = 100
+			nationalism_n_imperialism = 1
+			NFR = {
+				is_greater_power = yes
+			}
+		}
+		effect = {
+			set_country_flag = UKG_demanded_napoleonic_destruction
+			badboy = 5
+			NFR = {
+				country_event = {
+					id = 100014
+					days = 0
+				}
+			}
+		}
+	}
+	# British Victory: The London Conference
+	UKG_fr_dismantlement_the_london_conference = {
+		picture = wartreaty
+		potential = {
+			tag = UKG
+			set_country_flag = UKG_demanded_napoleonic_destruction
+			NOT = {
+				has_country_flag = UKG_british_victory_the_london_conference
+			}
+		}
+		allow = {
+			OR = {
+				NFR = { has_country_modifier = TREATY_event_war_accepted } 
+				NFR = { has_country_flag = NFR_accepted_british_dismantlement }
+			}
+		}
+		effect = {
+			set_country_flag = UKG_british_victory_the_london_conference
+			clr_country_flag = UKG_dismantle_war_against_france
+			NFR = { remove_country_modifier = TREATY_event_war_accepted }
+			country_event = {
+				id = 100025
+				days = 0
+			}
+		}
+	}
+	### England
+}

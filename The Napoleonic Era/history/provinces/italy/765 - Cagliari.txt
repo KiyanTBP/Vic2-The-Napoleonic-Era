@@ -1,0 +1,6 @@
+owner = ITL
+controller = ITL
+add_core = ITL
+trade_goods = sulphur
+naval_base = 1
+life_rating = 35

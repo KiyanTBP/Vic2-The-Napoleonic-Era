@@ -1,0 +1,7 @@
+owner = PBC
+controller = PBC
+add_core = PBC
+add_core = BOL
+add_core = UPP
+trade_goods = wool
+life_rating = 35

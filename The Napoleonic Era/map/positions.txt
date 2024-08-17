@@ -18418,18 +18418,23 @@
 
 # Dunkirk
 400 = {
+    text_position = {
+        x = 2835.200000
+        y = 1638.200000
+    }
+
+    text_rotation = 1.221731
+    text_scale = 2.100000
     unit = {
         x = 2835.000000
         y = 1644.000000
     }
 
-    text_position = {
-        x = 2837.800049
-        y = 1641.900024
+    factory = {
+        x = 2831.800000
+        y = 1644.950000
     }
 
-    text_rotation = 1.221731
-    text_scale = 2.100000
     building_construction = {
         x = 2836.699951
         y = 1633.900024
@@ -18440,20 +18445,10 @@
         y = 1636.000000
     }
 
-    factory = {
-        x = 2843.399902
-        y = 1648.599976
-    }
-
     building_position = {
         fort = {
             x = 2840.699951
             y = 1645.199951
-        }
-
-        naval_base = {
-            x = 2829.300049
-            y = 1641.000000
         }
 
         railroad = {
@@ -18461,19 +18456,16 @@
             y = 1644.400024
         }
 
-    }
-
-    spawn_railway_track = {
-        {
-            x = 2847.604492
-            y = 1647.299683
+        naval_base = {
+            x = 2829.300049
+            y = 1641.000000
         }
 
     }
 
     building_rotation = {
-        aeroplane_factory = 0.523599
         naval_base = 0.000001
+        aeroplane_factory = 0.523599
     }
 
 }
@@ -122645,6 +122637,60 @@
         naval_base = {
             x = 1790.950000
             y = 228.200000
+        }
+
+    }
+
+}
+
+# French Flanders
+3251 = {
+    text_position = {
+        x = 2840.600000
+        y = 1649.050000
+    }
+
+    text_rotation = 0.212144
+    text_scale = 1.5
+    unit = {
+        x = 2841.300000
+        y = 1650.100000
+    }
+
+    city = {
+        x = 2842.850000
+        y = 1648.100000
+    }
+
+    factory = {
+        x = 2839.200000
+        y = 1648.100000
+    }
+
+    building_construction = {
+        x = 2839.900000
+        y = 1648.050000
+    }
+
+    military_construction = {
+        x = 2843.600000
+        y = 1649.900000
+    }
+
+    building_position = {
+        fort = {
+            x = 2841.700000
+            y = 1648.500000
+        }
+
+        railroad = {
+            x = 2840.100000
+            y = 1650.300000
+        }
+
+        naval_base = {
+            x = 2838.250000
+            y = 1651.300000
         }
 
     }

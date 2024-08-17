@@ -6,9 +6,11 @@ political_decisions = {
 			tag = NFR
 			BEL_387 = { owned_by = THIS }
 			BEL_394 = { owned_by = THIS }
-			OR = {
-				NOT = { has_country_flag = NFR_accepted_belgians }
-				NOT = { has_country_flag = NFR_rejected_belgians }
+			NOT = {
+				OR = {
+					has_country_flag = NFR_belgian_rights_granted
+					has_country_flag = NFR_belgian_rights_revoked
+				}
 			}
 		}
 		allow = {
@@ -17,18 +19,27 @@ political_decisions = {
 			citizenship_policy = full_citizenship
 		}
 		effect = {
-			add_country_flag = NFR_accepted_belgians
+			set_country_flag = NFR_belgian_rights_granted
 			prestige = -10
 			badboy = -5
-			BEL_387 = { add_core = THIS }
-			BEL_394 = { add_core = THIS }
 			add_accepted_culture = flemish
 			any_pop = {
 				limit = {
 					culture = flemish
 					culture = wallonian
 				}
-				militancy = -3
+				militancy = -2
+				consciousness = -2
+			}
+			any_owned = {
+				limit = {
+					is_core = BEL
+				}
+				add_core = NFR
+			}
+			add_country_modifier = {
+				name = NFR_belgian_acceptance
+				duration = -1
 			}
 		}
 	}
@@ -39,9 +50,11 @@ political_decisions = {
 			tag = NFR
 			BEL_387 = { owned_by = THIS }
 			BEL_394 = { owned_by = THIS }
-			OR = {
-				NOT = { has_country_flag = NFR_accepted_belgians }
-				NOT = { has_country_flag = NFR_rejected_belgians }
+			NOT = {
+				OR = {
+					has_country_flag = NFR_belgian_rights_granted
+					has_country_flag = NFR_belgian_rights_revoked
+				}
 			}
 		}
 		allow = {
@@ -58,27 +71,26 @@ political_decisions = {
 			}
 		}
 		effect = {
-			add_country_flag = NFR_rejected_belgians
+			set_country_flag = NFR_belgian_rights_revoked
+			set_country_flag = NFR_very_rude
 			badboy = 5
 			remove_accepted_culture = wallonian
-			BEL_387 = {
-				add_province_modifier = {
-					name = NFR_belgian_assimilation
-					duration = -1
-				}
-			}
-			BEL_394 = {
-				add_province_modifier = {
-					name = NFR_belgian_assimilation
-					duration = -1
-				}
-			}
 			any_pop = {
 				limit = {
 					culture = flemish
 					culture = wallonian
 				}
 				militancy = 3
+				consciousness = 3
+			}
+			any_owned = {
+				limit = {
+					is_core = BEL
+				}
+				add_province_modifier = {
+					name = NFR_belgian_assimilation
+					duration = -1
+				}
 			}
 		}
 	}
@@ -103,6 +115,192 @@ political_decisions = {
 				type = establish_protectorate_casus_belli
 				months = 12
 			}
+		}
+	}
+	# Reorginize the Batavian Republic
+	NFR_reorginize_the_batavian_republic = {
+		picture = batavian_republic
+		potential = {
+			tag = NFR
+			BTR = { exists = yes }
+			NOT = { has_country_flag = NFR_reorginized_batavian_republic }
+		}
+		allow = {
+			year = 1850
+			OR = {
+				BTR = {
+					in_sphere = THIS
+				}
+				NFR = {
+					is_our_vassal = BTR
+				}
+			}
+		}
+		effect = {
+			set_country_flag = NFR_reorginized_batavian_republic
+			badboy = 5
+			BTR = {
+				country_event = {
+					id = 100008
+					days = 0
+				}
+			}
+		}
+	}
+	# Integrate Luxembourg
+	NFR_integrate_luxembourg = {
+		picture = luxembourg
+		potential = {
+			tag = NFR
+			owns = 397
+			NOT = { has_country_flag = NFR_integrated_luxembourg }
+		}
+		allow = {
+			war = no
+			average_militancy = 4
+			ideological_thought = 1
+		}
+		effect = {
+			prestige = 10
+			any_owned = {
+				limit = {
+					is_core = LUX
+				}
+				add_core = NFR
+				any_pops = {
+					militancy = -1.5
+				}
+			}
+		}
+	}
+	# Demand Catalonia
+	NFR_demand_catalonia = {
+		picture = catalonia
+		potential = {
+			tag = NFR
+			SPA_498 = { is_core = NFR }
+			NOT = { has_country_flag = NFR_demanded_catalonia }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			SIR = {
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			set_country_flag = NFR_demanded_catalonia
+			SIR = {
+				country_event = {
+					id = 100028
+					days = 0
+				}
+			}
+		}
+	}
+	### THIS IS FOR THE BRITAIN VS FRANCE WAR
+	# French Victory: The Paris Conference
+	NFR_uk_dismantlement_the_paris_conference = {
+		picture = wartreaty
+		potential = {
+			tag = NFR
+			has_country_flag = NFR_dismantle_war_against_britain
+			NOT = {
+				has_country_flag = NFR_french_victory_the_paris_conference
+			}
+		}
+		allow = {
+			UKG = { has_country_modifier = TREATY_event_war_accepted } 
+		}
+		effect = {
+			set_country_flag = NFR_french_victory_the_paris_conference
+			clr_country_flag = NFR_dismantle_war_against_britain
+			UKG = { remove_country_modifier = TREATY_event_war_accepted }
+			country_event = {
+				id = 100015
+				days = 0
+			}
+		}
+	}
+	### Carolingian Empire
+	# Restore Charlemagne's Legacy
+	NFR_restore_charlemagnes_legacy = {
+		picture = carolingian_empire
+		potential = {
+			tag = NFR
+			year = 1850
+			NOT = {
+				OR = {
+					has_country_flag = NFR_very_rude
+					has_global_flag = NFR_restored_charlemagnes_legacy
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			owns = 425
+			nationalism_n_imperialism = 1
+			citizenship_policy = full_citizenship
+			has_country_modifier = NFR_belgian_acceptance
+		}
+		effect = {
+			set_global_flag = NFR_restored_charlemagnes_legacy
+			country_event = {
+				id = 100021
+				days = 0
+			}
+		}
+	}
+	# Integrate Switzerland
+	TCE_integrate_switzerland = {
+		picture = switzerland
+		potential = {
+			tag = TCE
+			NOT = { has_country_flag = TCE_switzerland_integrated }
+		}
+		allow = {
+			OR = {
+				AND = {
+					prestige = 100
+					SWC = {
+						all_core = {
+							owned_by = THIS
+						}
+					}
+				}
+				AND = {
+					is_greater_power = yes
+					year = 1890
+				}
+			}
+		}
+		effect = {
+			set_country_flag = TCE_switzerland_integrated
+			prestige = 25
+			badboy = 2.5
+			SWC = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = swiss
+		}
+	}
+	# Move the Capital to Metz
+	TCE_capital_metz = {
+		picture = metz
+		potential = {
+			tag = TCE
+			NOT = { has_country_flag = TCE_moved_capital_to_metz }
+		}
+		allow = {
+			owns = 412
+			#revolution_n_counterrevolution = 1
+		}
+		effect = {
+			set_country_flag = TCE_moved_capital_to_metz
+			prestige = 10
+			capital = 412
+			412 = { life_rating = 10 }
 		}
 	}
 }

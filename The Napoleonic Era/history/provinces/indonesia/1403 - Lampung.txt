@@ -1,0 +1,5 @@
+owner = PGN
+controller = PGN
+add_core = PGN
+trade_goods = timber
+life_rating = 30

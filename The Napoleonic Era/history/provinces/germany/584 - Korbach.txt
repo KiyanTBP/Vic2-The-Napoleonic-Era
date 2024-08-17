@@ -1,0 +1,6 @@
+owner = HSE
+controller = HSE
+add_core = HSE
+add_core = KOG
+trade_goods = timber
+life_rating = 40

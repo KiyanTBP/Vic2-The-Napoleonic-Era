@@ -1,0 +1,32 @@
+# leaders
+leader = {
+	name = "Fredirick I"
+	date = 1836.1.1
+	type = land
+	personality = bold
+	background = cartographer
+	prestige = 0.2
+}
+
+# armies and navies
+army = {
+	name = "Hessen Corp"
+	location = 579
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 579
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 564
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 583
+	}
+}

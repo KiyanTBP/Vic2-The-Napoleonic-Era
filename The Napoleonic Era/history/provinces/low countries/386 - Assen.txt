@@ -1,0 +1,5 @@
+owner = BTR
+controller = BTR
+add_core = BTR
+trade_goods = wool
+life_rating = 35

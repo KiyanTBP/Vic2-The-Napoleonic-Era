@@ -1,0 +1,6 @@
+owner = SDT
+controller = SDT
+add_core = SDT
+trade_goods = fish
+life_rating = 35
+naval_base = 1

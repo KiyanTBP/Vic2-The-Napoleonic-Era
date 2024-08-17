@@ -1,0 +1,6 @@
+owner = MML
+controller = MML
+add_core = MML
+add_core = KOG
+trade_goods = fish
+life_rating = 40

@@ -1,0 +1,5 @@
+owner = TPR
+controller = TPR
+add_core = TPR
+trade_goods = fruit
+life_rating = 35

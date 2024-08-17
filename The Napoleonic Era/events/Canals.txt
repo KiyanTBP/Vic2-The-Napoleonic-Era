@@ -1,0 +1,56 @@
+### Kiel Canal
+# Funding the Kiel Canal
+country_event = {
+	id = 100022
+	title = "EVENTNAME100022"
+	desc = "EVENTDESC100022"
+	picture = "KielCanal"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100022"
+		treasury = -150000
+		country_event = {
+			id = 100023
+			days = 180
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100022"
+		treasury = -100000
+		country_event = {
+			id = 100023
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100022"
+		treasury = -50000
+		country_event = {
+			id = 100023
+			days = 500
+		}
+	}
+}
+
+# The Kiel Canal is Finished!
+country_event = {
+	id = 100023
+	title = "EVENTNAME100023"
+	desc = "EVENTDESC100023"
+	picture = "KielCanal"
+	is_triggered_only = yes
+	
+	news = yes
+	news_desc_long = "kiel_canal_NEWS_LONG"
+	news_desc_medium = "kiel_canal_NEWS_MEDIUM"
+	news_desc_short = "kiel_canal_NEWS_SHORT"
+	
+	option = {
+		name = "EVENTOPTA100023"
+		prestige = 50
+		enable_canal = 1
+	}
+}

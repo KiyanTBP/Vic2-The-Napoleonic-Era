@@ -1,0 +1,24 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Saint Petersburg's Guard"
+	location = 994
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 994
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 994
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 994
+	}
+}

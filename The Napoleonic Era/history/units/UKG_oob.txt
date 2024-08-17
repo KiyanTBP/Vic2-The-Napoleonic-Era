@@ -1,0 +1,18 @@
+# sphere of influence
+PNS = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+EIC = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+PGN = {
+	value = 200
+	level = 5
+	influence_value = 100
+}

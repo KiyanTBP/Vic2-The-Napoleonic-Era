@@ -1,0 +1,8 @@
+owner = DMN
+controller = DMN
+add_core = DMN
+add_core = NHO
+add_core = KOG
+trade_goods = fish
+life_rating = 35
+terrain = plains

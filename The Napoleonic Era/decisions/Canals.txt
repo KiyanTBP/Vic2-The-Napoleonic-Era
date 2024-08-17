@@ -1,0 +1,111 @@
+political_decisions = {
+	build_kiel_canal = {
+		potential = {
+			NOT = {
+				has_country_modifier = CANAL_kiel_canal
+			}
+			year = 1860
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			owns = 369
+			money = 50000
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = CANAL_kiel_canal
+				duration = -1
+			}
+			369 = { set_province_flag = kiel_canal }
+			country_event = {
+				id = 100022
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	
+	build_suez_canal = {
+		news = yes
+		news_desc_long = "suez_canal_NEWS_LONG"
+		news_desc_medium = "suez_canal_NEWS_MEDIUM"
+		news_desc_short = "suez_canal_NEWS_SHORT"
+		
+		picture = suezcanal
+		potential = {
+			NOT = { is_canal_enabled = 2 }
+			year = 1860
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			OR = {
+				1755 = { owner = { in_sphere = THIS } }
+				owns = 1755
+			}
+			invention = machine_tools
+			invention = nitroglycerin		
+			iron_steamers = 1
+		}
+		effect = {
+			1755 = { secede_province = THIS }
+			enable_canal = 2
+			1755 = { set_province_flag = suez_canal }
+			prestige = 10
+			set_global_flag = suez_canal_built
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	build_panama_canal = {
+		news = yes
+		news_desc_long = "panama_canal_NEWS_LONG"
+		news_desc_medium = "panama_canal_NEWS_MEDIUM"
+		news_desc_short = "panama_canal_NEWS_SHORT"
+		potential = {
+			NOT = { is_canal_enabled = 3 }
+			year = 1860
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			OR = {
+				1723 = { owner = { in_sphere = THIS } }
+				owns = 1723
+			}
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+			invention = prophylaxis_against_malaria
+		}
+		effect = {
+			1723 = { secede_province = THIS }
+			enable_canal = 3
+			1723 = { set_province_flag = panama_canal }
+			prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}	
+}

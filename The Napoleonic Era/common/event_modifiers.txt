@@ -12,13 +12,42 @@ TREATY_event_war_accepted = {
 	icon = 1
 }
 
+##### PUNITIVE EXPEDITION #####
+punitive_expedition_treaty = {
+	icon = 1
+}
+
+##### CANALS #####
+CANAL_kiel_canal = {
+	prestige = 0.01
+	icon = 1
+}
+
 ##### BELGIUM ######
+NFR_belgian_unrest = {
+	pop_consciousness_modifier = 0.5
+	pop_militancy_modifier = 0.5
+	icon = 6
+}
+
 NFR_belgian_assimilation = {
 	pop_consciousness_modifier = 0.25
 	pop_militancy_modifier = 0.25
 	immigrant_push = 1.5
 	assimilation_rate = 2
 	icon = 6
+}
+
+NFR_belgian_acceptance = {
+	prestige = -0.001
+	icon = 6
+}
+
+##### RHEINLAND ######
+NFR_rheinish_troubles = {
+	assimilation_rate = -0.5
+	pop_militancy_modifier = 0.5
+	icon = 8
 }
 
 ##### AMERICAN CANADA #####

@@ -1,0 +1,32 @@
+# leaders
+leader = {
+	name = "Ferdinand van Culemborg"
+	date = 1836.1.1
+	type = land
+	personality = earnest
+	background = cartographer
+	prestige = 0.2
+}
+
+# armies and navies
+army = {
+	name = "Defense of Baden-Wurttemburg"
+	location = 594
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 594
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 586
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 593
+	}
+}

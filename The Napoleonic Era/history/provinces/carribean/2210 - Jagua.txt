@@ -1,0 +1,5 @@
+owner = CBW
+controller = CBW
+add_core = CBW
+trade_goods = tobacco
+life_rating = 35

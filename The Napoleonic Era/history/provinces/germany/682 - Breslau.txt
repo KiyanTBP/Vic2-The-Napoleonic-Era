@@ -1,0 +1,16 @@
+owner = KOP
+controller = KOP
+add_core = KOP
+add_core = KOG
+trade_goods = grain
+life_rating = 40
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}

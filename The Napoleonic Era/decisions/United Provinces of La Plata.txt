@@ -1,0 +1,26 @@
+political_decisions = {
+	# Integrate Uruguay
+	UPP_integrate_uruguay = {
+		picture = uruguay
+		potential = {
+			tag = UPP
+			URU = { exists = yes }
+		}
+		allow = {
+			year = 1850
+			OR = {
+				URU = {
+					in_sphere = THIS
+				}
+				UPP = {
+					is_our_vassal = URU
+				}
+			}
+		}
+		effect = {
+			prestige = 15
+			badboy = 2.5
+			inherit = URU
+		}
+	}
+}

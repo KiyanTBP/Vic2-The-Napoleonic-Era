@@ -1,0 +1,6 @@
+owner = RUE
+controller = RUE
+add_core = RUE
+trade_goods = timber
+life_rating = 35
+fort = 1

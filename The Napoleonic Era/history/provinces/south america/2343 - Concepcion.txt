@@ -1,0 +1,3 @@
+owner = EOBcontroller = EOBadd_core = EOB
+trade_goods = cattle
+life_rating = 30

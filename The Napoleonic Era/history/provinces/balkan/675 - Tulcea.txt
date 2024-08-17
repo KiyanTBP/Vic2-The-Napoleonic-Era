@@ -1,0 +1,7 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = RMU
+add_core = BUL
+trade_goods = coal
+life_rating = 35

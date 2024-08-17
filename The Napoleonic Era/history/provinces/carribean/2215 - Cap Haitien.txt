@@ -1,0 +1,5 @@
+owner = HTW
+controller = HTW
+add_core = HTW
+trade_goods = tobacco
+life_rating = 35

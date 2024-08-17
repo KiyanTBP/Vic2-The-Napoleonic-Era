@@ -1,0 +1,5 @@
+owner = DOW
+controller = DOW
+add_core = DOW
+trade_goods = wool
+life_rating = 35

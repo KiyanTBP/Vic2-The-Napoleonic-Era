@@ -1,0 +1,5 @@
+owner = RUE
+controller = RUE
+add_core = RUE
+trade_goods = coal
+life_rating = 35

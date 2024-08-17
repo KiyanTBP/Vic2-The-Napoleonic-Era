@@ -1,0 +1,6 @@
+owner = AHT
+controller = AHT
+add_core = AHT
+add_core = KOG
+trade_goods = grain
+life_rating = 40

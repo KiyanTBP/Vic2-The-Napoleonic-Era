@@ -1,0 +1,7 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = GRT
+add_core = ALB
+trade_goods = wool
+life_rating = 35

@@ -1,0 +1,88 @@
+# Ottoman Egypt
+vassal = {
+	first = OTO
+	second = EGK
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# Ottoman Romania
+vassal = {
+	first = OTO
+	second = WCT
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+vassal = {
+	first = OTO
+	second = MDT
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# British India
+vassal = {
+	first = UKG
+	second = PNS
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+vassal = {
+	first = UKG
+	second = EIC
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# American Canada
+vassal = {
+	first = TUT
+	second = ACD
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# Dutch Java
+vassal = {
+	first = PGN
+	second = JAV
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# Chinese Substates
+substate = {
+	first = QNG
+	second = XIN
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+substate = {
+	first = QNG
+	second = YNN
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+substate = {
+	first = QNG
+	second = MCK
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+substate = {
+	first = QNG
+	second = MGL
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# Platine Urugay
+vassal = {
+	first = UPP
+	second = URU
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

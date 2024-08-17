@@ -1,0 +1,4 @@
+owner = TUCcontroller = TUCadd_core = TUC
+add_core = NIC
+trade_goods = coffee
+life_rating = 30

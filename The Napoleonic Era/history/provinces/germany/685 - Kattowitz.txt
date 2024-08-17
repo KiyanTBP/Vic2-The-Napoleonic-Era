@@ -1,0 +1,6 @@
+owner = DOW
+controller = DOW
+add_core = DOW
+add_core = KOP
+trade_goods = coal
+life_rating = 40

@@ -1,0 +1,5 @@
+owner = DOW
+controller = DOW
+add_core = DOW
+trade_goods = fruit
+life_rating = 35

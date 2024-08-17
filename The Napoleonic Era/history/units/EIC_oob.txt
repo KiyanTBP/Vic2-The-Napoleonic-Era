@@ -1,0 +1,99 @@
+# leaders
+leader = {
+	name = "Neville Bowles Chamberlain"
+	date = 1836.1.1
+	type = land
+	personality = relentless
+	background = cavalry_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "John Lawrence"
+	date = 1836.1.1
+	type = land
+	personality = tactful
+	background = generals_aide
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Corporate Army of East India"
+	location = 1256
+	regiment = {
+		name= "1. Worker"
+		type = infantry
+		home = 1256
+	}
+
+	regiment = {
+		name= "2. Worker"
+		type = infantry
+		home = 1256
+	}
+
+	regiment = {
+		name= "3. Worker"
+		type = infantry
+		home = 1255
+	}
+
+	regiment = {
+		name= "4. Worker"
+		type = infantry
+		home = 1255
+	}
+
+	regiment = {
+		name= "5. Worker"
+		type = artillery
+		home = 1256
+	}
+
+	regiment = {
+		name= "6. Worker"
+		type = artillery
+		home = 1255
+	}
+}
+
+army = {
+	name = "Corporate Army of Calculta"
+	location = 1251
+	regiment = {
+		name= "1. Worker"
+		type = infantry
+		home = 1251
+	}
+
+	regiment = {
+		name= "2. Worker"
+		type = infantry
+		home = 1251
+	}
+
+	regiment = {
+		name= "3. Worker"
+		type = hussar
+		home = 1251
+	}
+
+	regiment = {
+		name= "4. Worker"
+		type = hussar
+		home = 1251
+	}
+
+	regiment = {
+		name= "5. Worker"
+		type = artillery
+		home = 1251
+	}
+
+	regiment = {
+		name= "6. Worker"
+		type = artillery
+		home = 1251
+	}
+}

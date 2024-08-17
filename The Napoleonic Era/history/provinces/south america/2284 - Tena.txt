@@ -1,0 +1,6 @@
+owner = GCT
+controller = GCT
+add_core = GCT
+add_core = ECU
+trade_goods = timber
+life_rating = 30

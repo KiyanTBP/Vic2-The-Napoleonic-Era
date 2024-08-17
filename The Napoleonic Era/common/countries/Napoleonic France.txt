@@ -58,6 +58,20 @@ party = {
 }
 
 party = {
+	name = "NFR_liberal_2"
+	start_date = 1848.1.1
+	end_date = 1936.1.1
+
+	ideology = liberal
+
+	economic_policy = laissez_faire
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = full_citizenship
+	war_policy = pacifism
+}
+
+party = {
 	name = "NFR_anarcho_liberal"
 	start_date = 1848.1.1
 	end_date = 1936.1.1

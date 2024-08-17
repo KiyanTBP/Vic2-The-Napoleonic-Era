@@ -1,0 +1,3 @@
+owner = PBCcontroller = PBCadd_core = PBCadd_core = UPP
+trade_goods = timber
+life_rating = 30

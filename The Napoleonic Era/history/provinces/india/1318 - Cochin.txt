@@ -1,0 +1,7 @@
+owner = PNS
+controller = PNS
+add_core = PNS
+add_core = HND
+add_core = TRA
+trade_goods = grain
+life_rating = 32

@@ -1,0 +1,24 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Defense Force"
+	location = 2348
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 2348
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 2348
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = infantry
+		home = 2324
+	}
+}

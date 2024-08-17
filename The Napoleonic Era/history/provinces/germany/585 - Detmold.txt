@@ -1,0 +1,6 @@
+owner = NHO
+controller = NHO
+add_core = NHO
+add_core = KOG
+trade_goods = coal
+life_rating = 40

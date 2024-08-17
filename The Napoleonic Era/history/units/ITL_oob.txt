@@ -1,0 +1,136 @@
+# leaders
+leader = {
+	name = "Ferdinando I"
+	date = 1836.1.1
+	type = land
+	personality = cautious
+	background = eccentric_genius
+	prestige = 1
+}
+
+leader = {
+	name = "Ferdinando II"
+	date = 1836.1.1
+	type = land
+	personality = cautious
+	background = spoiled
+	prestige = 0.7
+}
+
+leader = {
+	name = "Roberto Leopoldo"
+	date = 1836.1.1
+	type = land
+	personality = implacable
+	background = rising_star
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Guard of Venice"
+	location = 729
+	regiment = {
+		name= "San Marco's First"
+		type = infantry
+		home = 729
+	}
+
+	regiment = {
+		name= "San Marco's Second"
+		type = infantry
+		home = 729
+	}
+
+	regiment = {
+		name= "San Marco's Third"
+		type = infantry
+		home = 728
+	}
+
+	regiment = {
+		name= "San Marco's Fourth"
+		type = artillery
+		home = 728
+	}
+
+	regiment = {
+		name= "San Marco's Fifth"
+		type = hussar
+		home = 731
+	}
+}
+
+army = {
+	name = "Roman Guard"
+	location = 749
+	regiment = {
+		name= "1. Roman Guard"
+		type = infantry
+		home = 749
+	}
+
+	regiment = {
+		name= "2. Roman Guard"
+		type = infantry
+		home = 749
+	}
+
+	regiment = {
+		name= "3. Roman Guard"
+		type = hussar
+		home = 750
+	}
+
+	regiment = {
+		name= "4. Roman Guard"
+		type = artillery
+		home = 745
+	}
+
+	regiment = {
+		name= "5. Roman Guard"
+		type = artillery
+		home = 750
+	}
+
+	regiment = {
+		name= "6. Roman Guard"
+		type = artillery
+		home = 752
+	}
+}
+
+army = {
+	name = "Army of Sardinia"
+	location = 754
+	regiment = {
+		name= "1. Sardinia Guard"
+		type = infantry
+		home = 754
+	}
+
+	regiment = {
+		name= "2. Sardinia Guard"
+		type = infantry
+		home = 749
+	}
+
+	regiment = {
+		name= "3. Sardinia Guard"
+		type = hussar
+		home = 755
+	}
+
+	regiment = {
+		name= "4. Sardinia Guard"
+		type = artillery
+		home = 2567
+	}
+
+	regiment = {
+		name= "5. Sardinia Guard"
+		type = artillery
+		home = 757
+	}
+}

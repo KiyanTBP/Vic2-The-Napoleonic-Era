@@ -44,6 +44,7 @@ take_from_sphere
 status_quo 
 gunboat 
 event_based_war 
+punitive_expedition 
 dismantle_empire 
 conquest 
 civil_war 
@@ -175,6 +176,63 @@ event_based_war = {
 		add_country_modifier = {
 			name = TREATY_event_war_accepted
 			duration = -1
+		}
+	}
+}
+
+# Punitive Expedition
+punitive_expedition = {
+	sprite_index = 14
+	is_triggered_only = no
+	months = 6
+	crisis = no
+
+	badboy_factor = 1
+	prestige_factor = 5
+	peace_cost_factor = 25
+	penalty_factor = 0.5
+	
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	construction_speed = 0.8
+	
+	po_remove_prestige = yes
+	po_reparations = yes
+	
+	war_name = WAR_PUNITIVE_NAME
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		THIS = { civilized = yes }
+		has_recently_lost_war = no
+		AND = {
+			tag = QNG
+			QNG = { civilized = no }
+		}
+	}
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.05
+		}
+	}
+	
+	on_po_accepted = {
+		set_country_flag = accepted_punitive_expedition
+		THIS = {
+			add_country_modifier = {
+				name = punitive_expedition_treaty
+				duration = -1
+			}
 		}
 	}
 }
@@ -455,6 +513,7 @@ acquire_core_state = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = { has_country_modifier = NFR_napoleonic_code }
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
@@ -505,6 +564,7 @@ annex_core_country = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = { has_country_modifier = NFR_napoleonic_code }
 		any_owned_province = {
 			is_core = THIS
 		}
@@ -1342,10 +1402,10 @@ demand_concession_casus_belli = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		civilized = no
 		THIS = {
 			civilized = yes
 		}
-		civilized = no
 		number_of_states = 2
 	}
 	

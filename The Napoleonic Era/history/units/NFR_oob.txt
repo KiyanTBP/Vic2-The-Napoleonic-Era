@@ -1,0 +1,614 @@
+# sphere of influence
+BTR = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+ITL = {
+	value = 175
+	level = 4
+	influence_value = 25
+}
+
+BVR = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+BDW = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+HSE = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+NHO = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+AHT = {
+	value = 125
+	level = 4
+	influence_value = 25
+}
+
+DOW = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+KOS = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+SIR = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+# leaders
+leader = {
+	name = "Napoléon III"
+	date = 1836.1.1
+	type = land
+	personality = bold
+	background = eccentric_genius
+	prestige = 0.1
+}
+
+leader = {
+	name = "Frédéric de Bourbon"
+	date = 1836.1.1
+	type = land
+	personality = cautious
+	background = school_of_the_bayonet
+	prestige = 0.1
+}
+
+leader = {
+	name = "Eugène Petain"
+	date = 1836.1.1
+	type = land
+	personality = merciless
+	background = cursed_luck
+	prestige = 0.1
+}
+
+leader = {
+	name = "Jacques d'Orleans"
+	date = 1836.1.1
+	type = land
+	personality = deeply_religious
+	background = expert_raider
+	prestige = 0.1
+}
+
+leader = {
+	name = "Édouard de Montaignac"
+	date = 1836.1.1
+	type = land
+	personality = stalwart
+	background = old_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "Léopold Courbet"
+	date = 1836.1.1
+	type = land
+	personality = defiant
+	background = school_of_defense
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Parisian Guard"
+	location = 425
+	regiment = {
+		name= "1. Paris"
+		type = infantry
+		home = 425
+	}
+
+	regiment = {
+		name= "2. Paris"
+		type = infantry
+		home = 426
+	}
+
+	regiment = {
+		name= "3. Paris"
+		type = infantry
+		home = 427
+	}
+
+	regiment = {
+		name= "4. Paris"
+		type = artillery
+		home = 440
+	}
+
+	regiment = {
+		name= "5. Paris"
+		type = artillery
+		home = 440
+	}
+}
+
+army = {
+	name = "Armee d'Orleans"
+	location = 426
+	regiment = {
+		name= "1. Orleans"
+		type = infantry
+		home = 426
+	}
+
+	regiment = {
+		name= "2. Orleans"
+		type = infantry
+		home = 427
+	}
+}
+
+army = {
+	name = "Provence Guard"
+	location = 470
+	regiment = {
+		name= "1. Provence"
+		type = infantry
+		home = 470
+	}
+
+	regiment = {
+		name= "2. Provence"
+		type = infantry
+		home = 467
+	}
+}
+
+army = {
+	name = "Armee d'Orleans"
+	location = 573
+	regiment = {
+		name= "1.1ère Division d'Infanterie"
+		type = infantry
+		home = 438
+	}
+
+	regiment = {
+		name= "2.1ère Division d'Infanterie"
+		type = infantry
+		home = 400
+	}
+
+	regiment = {
+		name= "3.1ère Division d'Infanterie"
+		type = infantry
+		home = 401
+	}
+
+	regiment = {
+		name= "1.2ème Division d'Infanterie"
+		type = infantry
+		home = 441
+	}
+
+	regiment = {
+		name= "2.2ème Division d'Infanterie"
+		type = infantry
+		home = 2570
+	}
+
+	regiment = {
+		name= "3.2ème Division d'Infanterie"
+		type = infantry
+		home = 404
+	}
+
+	regiment = {
+		name= "1.3ème Division d'Infanterie"
+		type = infantry
+		home = 402
+	}
+
+	regiment = {
+		name= "2.3ème Division d'Infanterie"
+		type = infantry
+		home = 403
+	}
+
+	regiment = {
+		name= "3.3ème Division d'Infanterie"
+		type = artillery
+		home = 399
+	}
+}
+
+army = {
+	name = "Armee de Rhin"
+	location = 575
+	regiment = {
+		name= "1.1ère Division d'Infanterie"
+		type = infantry
+		home = 438
+	}
+
+	regiment = {
+		name= "2.1ère Division d'Infanterie"
+		type = infantry
+		home = 400
+	}
+
+	regiment = {
+		name= "3.1ère Division d'Infanterie"
+		type = infantry
+		home = 401
+	}
+
+	regiment = {
+		name= "1.2ème Division d'Infanterie"
+		type = infantry
+		home = 441
+	}
+
+	regiment = {
+		name= "2.2ème Division d'Infanterie"
+		type = infantry
+		home = 2570
+	}
+
+	regiment = {
+		name= "3.2ème Division d'Infanterie"
+		type = infantry
+		home = 404
+	}
+
+	regiment = {
+		name= "1.3ème Division d'Infanterie"
+		type = infantry
+		home = 402
+	}
+
+	regiment = {
+		name= "2.3ème Division d'Infanterie"
+		type = infantry
+		home = 403
+	}
+
+	regiment = {
+		name= "3.3ème Division d'Infanterie"
+		type = artillery
+		home = 399
+	}
+}
+	
+army = {
+	name = "Cavalerie de la Belgique"
+	location = 387
+
+
+	regiment = {
+		name= "1.Cavalerie de la Garde"
+		type = hussar
+		home = 458
+	}
+
+	regiment = {
+		name= "2.Cavalerie de la Garde"
+		type = hussar
+		home = 420
+	}
+
+	regiment = {
+		name= "3.Cavalerie de la Garde"
+		type = cuirassier
+		home = 418
+	}
+
+	regiment = {
+		name= "4.Cavalerie de la Garde"
+		type = cuirassier
+		home = 406
+	}
+
+}
+
+army = {
+	name = "Southern Guard"
+	location = 458
+	regiment = {
+		name= "1. Bordeaux"
+		type = infantry
+		home = 458
+	}
+
+	regiment = {
+		name= "2. Bordeaux"
+		type = infantry
+		home = 455
+	}
+
+	regiment = {
+		name= "3. Bordeaux"
+		type = infantry
+		home = 461
+	}
+}
+
+army = {
+	name = "Provencal Guard"
+	location = 472
+	regiment = {
+		name= "1. Provencal"
+		type = infantry
+		home = 467
+	}
+
+	regiment = {
+		name= "2. Provencal"
+		type = infantry
+		home = 451
+	}
+
+	regiment = {
+		name= "3. Provencal"
+		type = infantry
+		home = 464
+	}
+}
+
+navy = {
+	name = "Escadre du Nord"
+	location = 420
+	ship = {
+		name= "Couronne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Superbe"
+		type = manowar
+	}
+
+	ship = {
+		name= "Jean Bart"
+		type = manowar
+	}
+
+	ship = {
+		name= "Dix-huit Fructidor"
+		type = manowar
+	}
+
+	ship = {
+		name= "République Française"
+		type = manowar
+	}
+
+	ship = {
+		name= "Conquérant"
+		type = manowar
+	}
+
+	ship = {
+		name= "Neptune"
+		type = manowar
+	}
+
+	ship = {
+		name= "Algerisas"
+		type = manowar
+	}
+
+	ship = {
+		name= "Nestor"
+		type = manowar
+	}
+
+	ship = {
+		name= "Duchesse de Berry"
+		type = frigate
+	}
+
+	ship = {
+		name= "Thétis"
+		type = frigate
+	}
+
+	ship = {
+		name= "Astrée"
+		type = frigate
+	}
+
+	ship = {
+		name= "Amazone"
+		type = frigate
+	}
+
+	ship = {
+		name= "Clorinde"
+		type = frigate
+	}
+
+	ship = {
+		name= "Maure"
+		type = frigate
+	}
+
+	ship = {
+		name= "Vestale"
+		type = frigate
+	}
+
+	ship = {
+		name= "Magicienne"
+		type = frigate
+	}
+
+	ship = {
+		name= "Marie Thérese"
+		type = frigate
+	}
+
+	ship = {
+		name= "Venus"
+		type = frigate
+	}
+
+	ship = {
+		name= "Sirène"
+		type = frigate
+	}
+
+	ship = {
+		name= "Atalante"
+		type = frigate
+	}
+
+	ship = {
+		name= "Surveillante"
+		type = frigate
+	}
+
+	ship = {
+		name= "Iphigénie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Sultane"
+		type = frigate
+	}
+
+	ship = {
+		name= "1ère Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Escadre de Méditerranée"
+	location = 470
+	ship = {
+		name= "Triton"
+		type = manowar
+	}
+
+	ship = {
+		name= "Etats de Bourgogne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Souverain"
+		type = manowar
+	}
+
+	ship = {
+		name= "Royal Louis "
+		type = manowar
+	}
+
+	ship = {
+		name= "Commerces de Paris"
+		type = manowar
+	}
+
+	ship = {
+		name= "Terpsichore"
+		type = frigate
+	}
+
+	ship = {
+		name= "Arthémise"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Gabrielle"
+		type = frigate
+	}
+
+	ship = {
+		name= "Didon"
+		type = frigate
+	}
+
+	ship = {
+		name= "Caroline"
+		type = frigate
+	}
+
+	ship = {
+		name= "Herminie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Melpomène"
+		type = frigate
+	}
+
+	ship = {
+		name= "Uranie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Andromède"
+		type = frigate
+	}
+
+	ship = {
+		name= "Jeanne d’Arc"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Poule"
+		type = frigate
+	}
+
+	ship = {
+		name= "4ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "6ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+}
+

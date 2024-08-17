@@ -1,0 +1,44 @@
+# leaders
+leader = {
+	name = "Alexander van Culemborg"
+	date = 1836.1.1
+	type = land
+	personality = aggressive
+	background = adventurer
+	prestige = 1
+}
+
+# armies and navies
+army = {
+	name = "Amsterdam's Defense"
+	location = 375
+	regiment = {
+		name= "1. Amsterdam"
+		type = infantry
+		home = 375
+	}
+
+	regiment = {
+		name= "2. Amsterdam"
+		type = infantry
+		home = 376
+	}
+
+	regiment = {
+		name= "3. Amsterdam"
+		type = artillery
+		home = 377
+	}
+
+	regiment = {
+		name= "4. Amsterdam"
+		type = artillery
+		home = 385
+	}
+
+	regiment = {
+		name= "5. Amsterdam"
+		type = hussar
+		home = 386
+	}
+}

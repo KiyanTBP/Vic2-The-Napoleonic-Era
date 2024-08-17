@@ -1,0 +1,808 @@
+# Belgian Unrest
+country_event = {
+	id = 100005
+	title = "EVENTNAME100005" 
+	desc = "EVENTDESC100005"
+	fire_only_once = yes
+	picture = "Belgium"
+	
+	trigger = {
+		tag = NFR
+		year = 1836
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100005"
+		set_country_flag = NFR_belgian_unrest_confirmed
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			add_province_modifier = {
+				name = NFR_belgian_unrest
+				duration = -1
+			}
+			any_pop = {
+				limit = {
+					culture = flemish
+					culture = wallonian
+				}
+				militancy = 1
+			}
+		}
+	}
+}
+
+# Belgian Revolt!
+country_event = {
+	id = 100006
+	title = "EVENTNAME100006"
+	desc = "EVENTDESC100006"
+	fire_only_once = yes
+	picture = "Belgium"
+	
+	trigger = {
+		tag = NFR
+		OR = {
+			AND = {
+				year = 1842
+				average_militancy = 3
+			}
+			AND = {
+				average_militancy = 6
+				average_consciousness = 3
+			}
+		}
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100006"
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			secede_province = BEL
+			remove_province_modifier = NFR_belgian_unrest
+		}
+		BEL = {
+			leadership = 30
+			treasury = 50000
+		}
+		NFR = {
+			war = {
+				target = BEL
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -22
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100006"
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			secede_province = BEL
+			remove_province_modifier = NFR_belgian_unrest
+		}
+		change_tag_no_core_switch = BEL
+		BEL = {
+			leadership = 30
+			treasury = 50000
+		}
+		NFR = {
+			war = {
+				target = BEL
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -22
+		}
+	}
+}
+
+# Rheinish Troubles
+country_event = {
+	id = 100007
+	title = "EVENTNAME100007"
+	desc = "EVENTDESC100007"
+	fire_only_once = yes
+	picture = "Rheinland"
+	
+	trigger = {
+		tag = NFR
+		has_country_flag = NFR_belgian_unrest_confirmed
+		year = 1836
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100007"
+		any_owned = {
+			limit = {
+				is_core = RHE
+			}
+			add_province_modifier = {
+				name = NFR_rheinish_troubles
+				duration = -1
+			}
+		}
+	}
+}
+
+# Rheinish Revolt!
+country_event = {
+	id = 100011
+	title = "EVENTNAME100011"
+	desc = "EVENTDESC100011"
+	fire_only_once = yes
+	picture = "Rheinland"
+	
+	trigger = {
+		tag = NFR
+		year = 1842
+		BEL = { exists = yes }
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100011"
+		any_owned = {
+			limit = {
+				is_core = RHE
+			}
+			secede_province = RHE
+			remove_province_modifier = NFR_rheinish_troubles
+		}
+		RHE = {
+			leadership = 30
+			treasury = 50000
+		}
+		NFR = {
+			war = {
+				target = RHE
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -22
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100011"
+		any_owned = {
+			limit = {
+				is_core = RHE
+			}
+			secede_province = RHE
+			remove_province_modifier = NFR_rheinish_troubles
+		}
+		change_tag_no_core_switch = RHE
+		RHE = {
+			leadership = 30
+			treasury = 50000
+		}
+		NFR = {
+			war = {
+				target = RHE
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -22
+		}
+	}
+}
+
+# Claim Catalonia?
+country_event = {
+	id = 100010
+	title = "EVENTNAME100010"
+	desc = "EVENTDESC100010"
+	fire_only_once = yes
+	picture = "Catalonia"
+	
+	trigger = {
+		tag = NFR
+		year = 1850
+	}
+	
+	mean_time_to_trigger = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVENTOPTA100010"
+		badboy = 2.5
+		prestige = 5
+		treasury = 1000
+		SPA_498 = { add_core = THIS }
+		relation = {
+			who = SIR
+			value = -100
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100010"
+		badboy = -2.5
+	}
+}
+
+# No more Belgium
+country_event = {
+	id = 100012
+	title = "EVENTNAME100012"
+	desc = "EVENTDESC100012"
+	picture = "TreatyBelgium"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NFR
+		year = 1870
+		OR = {
+			AND = {
+				has_country_flag = NFR_belgian_rights_granted
+				accepted_culture = flemish
+				accepted_culture = wallonian
+			}
+			AND = {
+				has_country_flag = NFR_belgian_rights_revoked
+				NOT = { average_militancy = 2 }
+			}
+		}
+	}
+	
+	mean_time_to_trigger = {
+		months = 18
+	}
+	
+	option = {
+		name = "EVENTOPTA100012"
+		prestige = 15
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			add_core = NFR
+			remove_core = BEL
+			any_pop = {
+				limit = {
+					culture = flemish
+					culture = wallonian
+				}
+				militancy = -3
+				consciousness = -3
+			}
+		}
+	}
+}
+
+# War with the United Kingdom?
+country_event = {
+	id = 100013
+	title = "EVENTNAME100013"
+	desc = "EVENTDESC100013"
+	picture = "BritishShip"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NFR
+		UKG = { exists = yes }
+		year = 1855
+	}
+	
+	option = {
+		name = "EVENTOPTA100013"
+		prestige = -5
+		UKG = { set_country_flag = UKG_possible_war_with_france }
+	}
+}
+
+# UK demands Dismantlement!
+country_event = {
+	id = 100014
+	title = "EVENTNAME100014"
+	desc = "EVENTDESC100014"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100014"
+		set_country_flag = NFR_dismantle_war_against_britain
+		prestige = 30
+		UKG = {
+			set_country_flag = UKG_dismantle_war_against_france
+			war = {
+				target = NFR
+				attacker_goal = { casus_belli = event_based_war }
+				defender_goal = { casus_belli = event_based_war }
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100014"
+		set_country_flag = NFR_accepted_british_dismantlement
+		set_global_flag = NFR_napoleonic_code_abolished
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+### BRITISH DISMANTLEMENT
+# The Paris Conference
+country_event = {
+	id = 100015
+	title = "EVENTNAME100015"
+	desc = "EVENTDESC100015"
+	picture = "UnitedKingdom"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100015"
+		country_event = {
+			id = 100016
+			days = 0
+		}
+	}
+}
+
+# Dismantlement of The British Isles
+country_event = {
+	id = 100016
+	title = "EVENTNAME100016"
+	desc = "EVENTDESC100016"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100016"
+		prestige = 15
+		badboy = 1
+		UKG = {
+			prestige = -30
+			government = napoleonic_republic
+			create_alliance = NFR
+		}
+		country_event = {
+			id = 100017
+			days = 0
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100016"
+		prestige = 25
+		badboy = 2.5
+		UKG = {
+			prestige = -50
+			government = napoleonic_republic
+			create_alliance = NFR
+			release = IRE
+		}
+		IRE = {
+			government = napoleonic_republic
+			create_alliance = NFR
+			remove_core = ENG
+		}
+		country_event = {
+			id = 100017
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100016"
+		prestige = 35
+		badboy = 5
+		UKG = {
+			prestige = -70
+			government = napoleonic_republic
+			create_alliance = NFR
+			release = IRE
+			release = SCO
+			release = WLE
+			change_tag = ENG
+		}
+		WLE = {
+			government = napoleonic_republic
+			create_alliance = NFR
+		}
+		SCO = {
+			government = napoleonic_republic
+			create_alliance = NFR
+		}
+		IRE = {
+			government = napoleonic_republic
+			create_alliance = NFR
+		}
+		country_event = {
+			id = 100018
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Dismantlement of The British Raj
+country_event = {
+	id = 100017
+	title = "EVENTNAME100017"
+	desc = "EVENTDESC100017"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100017"
+		prestige = -10
+		badboy = -5
+		UKG = {
+			prestige = -25
+			release = HND
+		}
+		country_event = {
+			id = 100019
+			days = 0
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100017"
+		badboy = -2.5
+		country_event = {
+			id = 100019
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100017"
+		prestige = 100
+		badboy = 7.5
+		UKG = {
+			prestige = -30
+			release = HND
+		}
+		inherit = HND
+		country_event = {
+			id = 100019
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Dismantlement of The English Raj
+country_event = {
+	id = 100018
+	title = "EVENTNAME100018"
+	desc = "EVENTDESC100018"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100018"
+		prestige = -10
+		badboy = -5
+		ENG = {
+			prestige = -25
+			release = HND
+		}
+		country_event = {
+			id = 100020
+			days = 0
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100018"
+		badboy = -2.5
+		country_event = {
+			id = 100020
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100018"
+		prestige = 100
+		badboy = 7.5
+		ENG = {
+			prestige = -30
+			release = HND
+		}
+		inherit = HND
+		country_event = {
+			id = 100020
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# United Kingdom: Dismantlement of Australia and New Zealand
+country_event = {
+	id = 100019
+	title = "EVENTNAME100019"
+	desc = "EVENTDESC100019"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100019"
+		UKG = {
+			prestige = -10
+			release = AST
+			release = NZL
+		}
+		AST = {
+			government = napoleonic_republic
+		}
+		NZL = {
+			government = napoleonic_republic
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100019"
+		UKG = {
+			prestige = -15
+			release = AST
+			release = NZL
+		}
+		inherit = AST
+		inherit = NZL
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# England: Dismantlement of Australia and New Zealand
+country_event = {
+	id = 100020
+	title = "EVENTNAME100020"
+	desc = "EVENTDESC100020"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100020"
+		badboy = -2.5
+		ENG = {
+			prestige = -10
+			release = AST
+			release = NZL
+		}
+		AST = {
+			government = napoleonic_republic
+		}
+		NZL = {
+			government = napoleonic_republic
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100020"
+		prestige = 5
+		badboy = 2.5
+		ENG = {
+			prestige = -15
+			release = AST
+			release = NZL
+		}
+		inherit = AST
+		inherit = NZL
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Paris Conference Ends!
+country_event = {
+	id = 100024
+	title = "EVENTNAME100024"
+	desc = "EVENTDESC100024"
+	picture = "UnitedKingdom"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100024"
+		prestige = 50
+	}
+}
+
+### BATAVIAN REPUBLIC REORGINIZATION EVENTS
+# France requests Reorginization!
+country_event = {
+	id = 100008
+	title = "EVENTNAME100008"
+	desc = "EVENTDESC100008"
+	picture = "BatavianRepublic"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100008"
+		NFR = {
+			country_event = {
+				id = 100009
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100008"
+		badboy = 0.5
+		relation = {
+			who = NFR
+			value = -50
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+# Reorginizing the Batavian Republic
+country_event = {
+	id = 100009
+	title = "EVENTNAME100009"
+	desc = "EVENTDESC100009"
+	picture = "BatavianRepublic"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100009"
+		set_country_flag = NFR_very_rude
+		prestige = 40
+		inherit = BTR
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = NFR
+				value = -75
+			}
+		}
+		any_pop = {
+			militancy = 1.5
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100009"
+		prestige = 10
+		381 = { secede_province = NFR }
+		NFR = { create_vassal = BTR }
+		any_pop = {
+			militancy = 0.5
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100009"
+		prestige = 25
+		378 = { secede_province = NFR }
+		379 = { secede_province = NFR }
+		380 = { secede_province = NFR }
+		381 = { secede_province = NFR }
+		NFR = { create_vassal = BTR }
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = NFR
+				value = -25
+			}
+		}
+		any_pop = {
+			militancy = 1
+		}
+	}
+}
+
+### Carolingian Empire
+# The Carolingian Restoration
+country_event = {
+	id = 100021
+	title = "EVENTNAME100021"
+	desc = "EVENTDESC100021"
+	picture = "Charlemagne"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100021"
+		change_tag = TCE
+		BTR = {
+			all_core = {
+				add_core = TCE
+			}
+			country_event = { id = 11101 days = 0 }
+		}
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					primary_culture = south_german
+				}
+				OR = {
+					is_our_vassal = NFR
+					in_sphere = NFR
+				}
+				NOT = { is_greater_power = yes }
+			}
+			all_core = {
+				add_core = TCE
+			}
+			country_event = { id = 11101 days = 0 }
+		}
+		KOG = {
+			all_core = {
+				add_core = TCE
+			}
+		}
+		add_accepted_culture = north_german
+		add_accepted_culture = south_german
+		add_accepted_culture = flemish
+		add_accepted_culture = dutch
+		set_global_flag = NFR_napoleonic_code_abolished
+	}
+}

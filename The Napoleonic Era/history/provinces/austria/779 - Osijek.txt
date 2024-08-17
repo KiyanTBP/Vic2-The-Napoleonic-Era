@@ -1,0 +1,6 @@
+owner = AUE
+controller = AUE
+add_core = KOS
+add_core = HUN
+trade_goods = cattle
+life_rating = 35

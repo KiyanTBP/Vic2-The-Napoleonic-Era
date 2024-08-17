@@ -1,0 +1,6 @@
+owner = ITL
+controller = ITL
+add_core = ITL
+add_core = KOS
+trade_goods = fruit
+life_rating = 35

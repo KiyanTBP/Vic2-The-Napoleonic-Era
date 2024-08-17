@@ -1,0 +1,6 @@
+owner = TUT
+controller = TUT
+add_core = TUT
+add_core = CHE
+trade_goods = grain
+life_rating = 35

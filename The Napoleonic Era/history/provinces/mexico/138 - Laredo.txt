@@ -1,0 +1,6 @@
+owner = MXE
+controller = MXE
+add_core = MXE
+add_core = TXR
+trade_goods = cattle
+life_rating = 35

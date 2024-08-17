@@ -1,0 +1,5 @@
+owner = ALG
+controller = ALG
+add_core = ALG
+trade_goods = wool
+life_rating = 35

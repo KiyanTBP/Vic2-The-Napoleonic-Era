@@ -1,0 +1,11 @@
+owner = NFR
+controller = NFR
+add_core = RHE
+add_core = KOG
+trade_goods = coal
+life_rating = 40
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}

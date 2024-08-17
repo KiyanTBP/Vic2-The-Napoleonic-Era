@@ -1,0 +1,6 @@
+owner = GRT
+controller = GRT
+add_core = GRT
+add_core = CRE
+trade_goods = fruit
+life_rating = 35

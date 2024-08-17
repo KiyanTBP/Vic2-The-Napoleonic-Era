@@ -20,8 +20,19 @@ not_signed_the_geneva_convention = {
 		has_global_flag = geneva_convention_held
 		NOT = { has_country_flag = signed_the_geneva_convention }
 	}
+	badboy = 0.01
 	research_points_modifier = -0.10
 	pop_militancy_modifier = 0.5
 	pop_consciousness_modifier = 0.25
 	icon = 6
+}
+
+# Napoleonic Code
+NFR_napoleonic_code = {
+	trigger = {
+		capital_scope = { continent = europe }
+		NOT = { has_global_flag = NFR_napoleonic_code_abolished }
+	}
+	prestige = -0.001
+	icon = 7
 }

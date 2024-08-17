@@ -1,0 +1,7 @@
+owner = NHO
+controller = NHO
+add_core = NHO
+add_core = KOG
+trade_goods = fruit
+life_rating = 40
+naval_base = 1

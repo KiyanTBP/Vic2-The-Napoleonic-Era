@@ -1,0 +1,6 @@
+owner = WCT
+controller = WCT
+add_core = WCT
+add_core = RMU
+trade_goods = grain
+life_rating = 35

@@ -1,0 +1,5 @@
+owner = EGK
+controller = EGK
+add_core = TRI
+trade_goods = wool
+life_rating = 35

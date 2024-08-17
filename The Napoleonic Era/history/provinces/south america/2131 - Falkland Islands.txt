@@ -1,0 +1,6 @@
+owner = UKG
+controller = UKG
+add_core = UPP
+trade_goods = wool
+life_rating = 30
+colonial = 2

@@ -1,0 +1,32 @@
+# leaders
+leader = {
+	name = "Alexander van Culemborg"
+	date = 1836.1.1
+	type = land
+	personality = earnest
+	background = bootlicker
+	prestige = 0.2
+}
+
+# armies and navies
+army = {
+	name = "Army of Sud Deutschland"
+	location = 599
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 599
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 601
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 600
+	}
+}

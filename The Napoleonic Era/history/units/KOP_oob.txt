@@ -1,0 +1,150 @@
+# sphere of influence
+AHT = {
+	value = 125
+	level = 4
+	influence_value = 25
+}
+
+MML = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+# leaders
+leader = {
+	name = "Adolf von Berliner"
+	date = 1836.1.1
+	type = land
+	personality = relentless
+	background = uncommonly_young
+	prestige = 0.5
+}
+
+leader = {
+	name = "Erich Bismarck"
+	date = 1836.1.1
+	type = land
+	personality = merciless
+	background = school_of_defense
+	prestige = 0.8
+}
+
+leader = {
+	name = "Wilhelm I"
+	date = 1836.1.1
+	type = land
+	personality = soldierly
+	background = engineer
+	prestige = 0.5
+}
+
+# armies and navies
+army = {
+	name = "Army of Berlin"
+	location = 549
+	regiment = {
+		name= "1. Berlin"
+		type = infantry
+		home = 549
+	}
+
+	regiment = {
+		name= "2. Berlin"
+		type = infantry
+		home = 549
+	}
+
+	regiment = {
+		name= "3. Berlin"
+		type = hussar
+		home = 552
+	}
+
+	regiment = {
+		name= "4. Berlin"
+		type = artillery
+		home = 551
+	}
+
+	regiment = {
+		name= "5. Berlin"
+		type = artillery
+		home = 545
+	}
+
+	regiment = {
+		name= "6. Berlin"
+		type = artillery
+		home = 545
+	}
+}
+
+army = {
+	name = "Pommeranian Guard"
+	location = 548
+	regiment = {
+		name= "Guard of 1. Pommeria"
+		type = infantry
+		home = 548
+	}
+
+	regiment = {
+		name= "Guard of 2. Pommeria"
+		type = infantry
+		home = 548
+	}
+
+	regiment = {
+		name= "Guard of 3. Pommeria"
+		type = hussar
+		home = 547
+	}
+
+	regiment = {
+		name= "Guard of 4. Pommeria"
+		type = artillery
+		home = 547
+	}
+
+	regiment = {
+		name= "Guard of 5. Pommeria"
+		type = artillery
+		home = 544
+	}
+
+	regiment = {
+		name= "Guard of 6. Pommeria"
+		type = artillery
+		home = 544
+	}
+}
+
+army = {
+	name = "Konigsberg Militia"
+	location = 695
+	regiment = {
+		name= "1. Militia Men"
+		type = infantry
+		home = 698
+	}
+
+	regiment = {
+		name= "1. Militia Men"
+		type = infantry
+		home = 695
+	}
+
+	regiment = {
+		name= "1. Militia Men"
+		type = hussar
+		home = 697
+	}
+
+	regiment = {
+		name= "1. Militia Men"
+		type = artillery
+		home = 695
+	}
+}
+

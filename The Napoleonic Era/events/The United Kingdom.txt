@@ -1,0 +1,164 @@
+
+
+### FRENCH DISMANTLEMENT
+# The London Conference
+country_event = {
+	id = 100025
+	title = "EVENTNAME100025"
+	desc = "EVENTDESC100025"
+	picture = "France"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100025"
+		set_global_flag = NFR_napoleonic_code_abolished
+		any_country = {
+			limit = {
+				in_sphere = NFR
+				government = napoleonic_republic
+			}
+			government = hms_government
+			sphere_owner = {
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}
+			}
+		}
+		country_event = {
+			id = 100026
+			days = 0
+		}
+	}
+}
+
+# Reorginization of Belgium
+country_event = {
+	id = 100026
+	title = "EVENTNAME100026"
+	desc = "EVENTDESC100026"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100026"
+		country_event = {
+			id = 100027
+			days = 0
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100026"
+		prestige = 20
+		NFR = {
+			release = BEL
+			prestige = -25
+		}
+		country_event = {
+			id = 100027
+			days = 0
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100026"
+		prestige = 15
+		NFR = {
+			release = FLA
+			release = WLL
+			prestige = -10
+		}
+		country_event = {
+			id = 100027
+			days = 0
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTD100026"
+		prestige = 20
+		badboy = 2.5
+		NFR = {
+			release = BEL
+			prestige = -25
+		}
+		BTR = {
+			inherit = BEL
+		}
+		country_event = {
+			id = 100027
+			days = 0
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+# Reorginization of the Rheinland
+country_event = {
+	id = 100027
+	title = "EVENTNAME100027"
+	desc = "EVENTDESC100027"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100027"
+		prestige = 15
+		badboy = -1
+		NFR = {
+			prestige = -15
+			release = RHE
+			release = LUX
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100027"
+		prestige = 20
+		NFR = {
+			prestige = -20
+			release = RHE
+			release = LUX
+		}
+		KOP = {
+			inherit = RHE
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100027"
+		prestige = 20
+		badboy = 1
+		NFR = {
+			prestige = -20
+			release = RHE
+			release = LUX
+		}
+		BTR = {
+			inherit = RHE
+			inherit = LUX
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}

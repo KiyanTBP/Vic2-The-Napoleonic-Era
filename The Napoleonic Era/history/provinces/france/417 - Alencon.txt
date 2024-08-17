@@ -1,0 +1,5 @@
+owner = NFR
+controller = NFR
+add_core = NFR
+trade_goods = cotton
+life_rating = 32

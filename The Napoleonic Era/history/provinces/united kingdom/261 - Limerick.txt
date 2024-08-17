@@ -1,0 +1,6 @@
+owner = UKG
+controller = UKG
+add_core = IRE
+add_core = UKG
+trade_goods = fish
+life_rating = 35

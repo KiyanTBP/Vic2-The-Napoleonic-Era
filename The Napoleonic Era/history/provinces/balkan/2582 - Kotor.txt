@@ -1,0 +1,7 @@
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = MON
+add_core = KOS
+trade_goods = fish
+life_rating = 35

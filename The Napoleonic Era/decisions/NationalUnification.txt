@@ -93,194 +93,194 @@ political_decisions = {
 		}
 	}
 	## vanilla
-	form_south_german_confederation = {
-		potential = {
-			is_greater_power = yes
-			primary_culture = south_german
-			NOT = {
-				exists = SGF
-				exists = GER
-				tag = AUS
-				tag = KUK
-			}
-		}	
-		allow = {
-			war = no
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							owned_by = THIS
-							province_id = 370
-							province_id = 371
-							province_id = 410
-							province_id = 409
-							province_id = 412
-							owner = {
-								in_sphere = THIS
-							}
-						}
-						NOT = {
-							culture = south_german
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 10
-			any_country = {
-				limit = {
-					primary_culture = south_german
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				limit = {
-					is_core = GER
-				}
-				add_core = SGF
-			}
-			change_tag = SGF
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#form_south_german_confederation = {
+	#	potential = {
+	#		is_greater_power = yes
+	#		primary_culture = south_german
+	#		NOT = {
+	#			exists = SGF
+	#			exists = GER
+	#			tag = AUS
+	#			tag = KUK
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		GER = {
+	#			all_core = {
+	#				OR = {
+	#					OR = {
+	#						owned_by = THIS
+	#						province_id = 370
+	#						province_id = 371
+	#						province_id = 410
+	#						province_id = 409
+	#						province_id = 412
+	#						owner = {
+	#							in_sphere = THIS
+	#						}
+	#					}
+	#					NOT = {
+	#						culture = south_german
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				primary_culture = south_german
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			limit = {
+	#				is_core = GER
+	#			}
+	#			add_core = SGF
+	#		}
+	#		change_tag = SGF
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 	
-	austrian_form_south_german_confederation = {
-		potential = {
-			OR = {
-				tag = AUS
-				tag = KUK
-			}
-			is_greater_power = yes
-			primary_culture = south_german
-			NOT = {
-				exists = GER
-				exists = SGF
-			}
-		}	
-		allow = {
-			war = no
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							province_id = 370 # Ignore Schleswig
-							province_id = 371 # Ignore Schleswig
-							province_id = 410 # Need not have Elsaﬂ-Lothringen
-							province_id = 409 # Need not have Elsaﬂ-Lothringen
-							province_id = 412 # Need not have Elsaﬂ-Lothringen
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-						NOT = {
-							culture = south_german
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 10
-			any_country = {
-				limit = {
-					primary_culture = south_german
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				limit = {
-					OR = {
-						culture = south_german
-						province_id = 412
-					}
-					is_core = GER
-					NOT = {
-						is_core = AUS
-					}
-				}
-				add_core = SGF
-			}
-			release_vassal = SGF
-			diplomatic_influence = {
-				who = SGF
-				value = 300
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
+	#austrian_form_south_german_confederation = {
+	#	potential = {
+	#		OR = {
+	#			tag = AUS
+	#			tag = KUK
+	#		}
+	#		is_greater_power = yes
+	#		primary_culture = south_german
+	#		NOT = {
+	#			exists = GER
+	#			exists = SGF
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		GER = {
+	#			all_core = {
+	#				OR = {
+	#					OR = {
+	#						province_id = 370 # Ignore Schleswig
+	#						province_id = 371 # Ignore Schleswig
+	#						province_id = 410 # Need not have Elsaﬂ-Lothringen
+	#						province_id = 409 # Need not have Elsaﬂ-Lothringen
+	#						province_id = 412 # Need not have Elsaﬂ-Lothringen
+	#						owned_by = THIS
+	#						owner = {
+	#							in_sphere = THIS
+	#						}
+	#					}
+	#					NOT = {
+	#						culture = south_german
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 10
+	#		any_country = {
+	#			limit = {
+	#				primary_culture = south_german
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			limit = {
+	#				OR = {
+	#					culture = south_german
+	#					province_id = 412
+	#				}
+	#				is_core = GER
+	#				NOT = {
+	#					is_core = AUS
+	#				}
+	#			}
+	#			add_core = SGF
+	#		}
+	#		release_vassal = SGF
+	#		diplomatic_influence = {
+	#			who = SGF
+	#			value = 300
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}	
 	
-	form_north_german_confederation = {
-		potential = {
-			is_greater_power = yes
-			primary_culture = north_german
-			NOT = {
-				exists = GER
-				exists = NGF
-			}
-		}	
-		allow = {
-			war = no
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-						NOT = {
-							culture = north_german
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 15
-			any_country = {
-				limit = {
-					OR = {
-						primary_culture = north_german
-						tag = SCH 
-					}
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				limit = {
-					is_core = GER
-				}
-				add_core = NGF
-			}			
-			change_tag = NGF
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#form_north_german_confederation = {
+	#	potential = {
+	#		is_greater_power = yes
+	#		primary_culture = north_german
+	#		NOT = {
+	#			exists = GER
+	#			exists = NGF
+	#		}
+	#	}	
+	#	allow = {
+	#		war = no
+	#		GER = {
+	#			all_core = {
+	#				OR = {
+	#					OR = {
+	#						owned_by = THIS
+	#						owner = {
+	#							in_sphere = THIS
+	#						}
+	#					}
+	#					NOT = {
+	#						culture = north_german
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 15
+	#		any_country = {
+	#			limit = {
+	#				OR = {
+	#					primary_culture = north_german
+	#					tag = SCH 
+	#				}
+	#				in_sphere = THIS
+	#				NOT = {
+	#					tag = THIS
+	#				}
+	#			}
+	#			annex_to = THIS
+	#		}
+	#		any_owned = {
+	#			limit = {
+	#				is_core = GER
+	#			}
+	#			add_core = NGF
+	#		}			
+	#		change_tag = NGF
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 	
 	form_union_nation = {
 		potential = {
@@ -293,6 +293,7 @@ political_decisions = {
 					is_culture_group = scandinavian
 					is_culture_group = italian
 					is_culture_group = arab
+					is_culture_group = south_slavic
 					tag = ECU
 					tag = CLM
 					tag = VNZ
@@ -344,8 +345,7 @@ political_decisions = {
 		potential = {
 			is_culture_group = germanic
 			NOT = {
-				exists = GER
-				tag = ISR
+				exists = KOG
 			}
 		}
 		
@@ -353,7 +353,7 @@ political_decisions = {
 			is_greater_power = yes
 			prestige = 45
 			war = no
-			GER = {
+			KOG = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -367,7 +367,7 @@ political_decisions = {
 		
 		effect = {
 			prestige = 20
-			change_tag = GER
+			change_tag = KOG
 			add_accepted_culture = north_german
 			add_accepted_culture = south_german
 			any_country = {
@@ -382,53 +382,53 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	form_italy = {
-		news = yes
-		news_desc_long = "form_italy_NEWS_LONG"
-		news_desc_medium = "form_italy_NEWS_MEDIUM"
-		news_desc_short = "form_italy_NEWS_SHORT"
-		potential = {
-			is_culture_group = italian
-			
-			NOT = {
-				exists = ITA
-			}
-		}
-		
-		allow = {
-			is_greater_power = yes
-			prestige = 45
-			war = no
-			ITA = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 20
-			change_tag = ITA
-			capital = 749
-			add_accepted_culture = north_italian
-			add_accepted_culture = south_italian
-			any_country = {
-				limit = {
-					is_culture_group = italian
-					in_sphere = THIS
-				}
-				country_event = { id=11101 days=0 }
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#form_italy = {
+	#	news = yes
+	#	news_desc_long = "form_italy_NEWS_LONG"
+	#	news_desc_medium = "form_italy_NEWS_MEDIUM"
+	#	news_desc_short = "form_italy_NEWS_SHORT"
+	#	potential = {
+	#		is_culture_group = italian
+	#		
+	#		NOT = {
+	#			exists = ITA
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#		is_greater_power = yes
+	#		prestige = 45
+	#		war = no
+	#		ITA = {
+	#			all_core = {
+	#				OR = {
+	#					owned_by = THIS
+	#					owner = {
+	#						in_sphere = THIS
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 20
+	#		change_tag = ITA
+	#		capital = 749
+	#		add_accepted_culture = north_italian
+	#		add_accepted_culture = south_italian
+	#		any_country = {
+	#			limit = {
+	#				is_culture_group = italian
+	#				in_sphere = THIS
+	#			}
+	#			country_event = { id=11101 days=0 }
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 	form_scandinavia = {
 		news = yes
 		news_desc_long = "form_scandinavia_NEWS_LONG"

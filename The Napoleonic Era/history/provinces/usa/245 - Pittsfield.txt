@@ -1,0 +1,5 @@
+owner = TUTcontroller = TUTadd_core = TUT
+add_core = NEN
+trade_goods = iron
+life_rating = 35
+railroad = 1

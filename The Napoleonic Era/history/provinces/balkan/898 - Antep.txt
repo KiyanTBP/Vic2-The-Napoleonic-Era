@@ -1,0 +1,5 @@
+owner = EGK
+controller = EGK
+add_core = EGK
+trade_goods = wool
+life_rating = 35

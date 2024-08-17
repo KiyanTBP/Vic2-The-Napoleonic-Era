@@ -1,0 +1,6 @@
+owner = DMN
+controller = DMN
+colonial = 2
+
+trade_goods = cattle
+life_rating = 15

@@ -1,0 +1,5 @@
+owner = NWL
+controller = NWL
+add_core = NWL
+trade_goods = wool
+life_rating = 25

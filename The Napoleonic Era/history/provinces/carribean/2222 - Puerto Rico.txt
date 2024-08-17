@@ -1,0 +1,4 @@
+owner = HTW
+controller = HTW
+trade_goods = cotton
+life_rating = 35

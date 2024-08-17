@@ -1,0 +1,6 @@
+owner = SDT
+controller = SDT
+add_core = SDT
+trade_goods = coal
+life_rating = 35
+naval_base = 1

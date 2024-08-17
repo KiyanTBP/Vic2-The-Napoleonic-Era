@@ -1,0 +1,6 @@
+owner = SIR
+controller = SIR
+add_core = SIR
+trade_goods = wool
+life_rating = 35
+colonial = 2

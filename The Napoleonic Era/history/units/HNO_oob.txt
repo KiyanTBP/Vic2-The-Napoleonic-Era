@@ -1,0 +1,32 @@
+# leaders
+leader = {
+	name = "Alexander the Great"
+	date = 1836.1.1
+	type = land
+	personality = wrathful
+	background = school_of_the_bayonet
+	prestige = 0.7
+}
+
+# armies and navies
+army = {
+	name = "The Hanover Guard"
+	location = 599
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 541
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 542
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = hussar
+		home = 543
+	}
+}

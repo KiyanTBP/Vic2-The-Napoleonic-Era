@@ -1,0 +1,5 @@
+owner = SDT
+controller = SDT
+add_core = SDT
+trade_goods = grain
+life_rating = 35
