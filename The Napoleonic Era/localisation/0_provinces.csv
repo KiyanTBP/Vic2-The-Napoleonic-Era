@@ -1,8 +1,9 @@
 key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portugese;Russian;Finnish;
-PROV220;North Washington;x;
+PROV220;Annapolis;x;
 PROV3249;D.C.;x;
 PROV3250;Y Wladfa;x;
-PROV3251;French Flanders;x;
+PROV3251;Calais;x;
+PROV3252;Stajerska;x;
 NWL_3250;New Wales;x;
 BVR_561;Thuringen;x;
 BDW_583;Nassau;x;
@@ -10,3 +11,5 @@ CHI_1555;South Manchuria;x;
 CHI_1553;North Manchuria;x;
 FRA_399;North Picarde;x;
 FRA_401;South Picarde;x;
+MEX_2181;Chiapas and Tabasco;x;
+MXE_2183;The Yucatan;x;

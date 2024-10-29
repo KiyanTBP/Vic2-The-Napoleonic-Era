@@ -1,5 +1,5 @@
-owner = KOS
-controller = KOS
+owner = AUE
+controller = AUE
 add_core = KOS
 trade_goods = timber
 life_rating = 35

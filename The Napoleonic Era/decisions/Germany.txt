@@ -1,0 +1,66 @@
+political_decisions = {
+	### Kingdom of Prussia
+	# Declare a German Nation
+	KOP_declare_a_german_nation = {
+		picture = formable_germany
+		potential = {
+			tag = KOP
+			is_greater_power = yes
+			NOT = { exists = KOG }
+			NOT = { tag = KOG }
+		}
+		allow = {
+			year = 1880
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			change_tag = KOG
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = south_german
+					}
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+				diplomatic_influence = {
+					who = THIS
+					value = -100
+				}
+			}
+			any_country = {
+				limit = {
+					is_greater_power = yes
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+		}
+	}
+	### Kingdom of Germany
+	# Integrate Alsace-Lorraine
+	KOG_integrate_alsacelorraine = {
+		picture = alsacelorraine
+		potential = {
+			tag = KOG
+			NOT = { has_country_flag = KOG_integrated_alsacelorraine }
+		}
+		allow = {
+			owns = 409
+			owns = 412
+			owns = 410
+		}
+		effect = {
+			set_country_flag = KOG_integrated_alsacelorraine
+			prestige = 15
+			409 = { add_core = KOG }
+			412 = { add_core = KOG }
+			410 = { add_core = KOG }
+		}
+	}
+}

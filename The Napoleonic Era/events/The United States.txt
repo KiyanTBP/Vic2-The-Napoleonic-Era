@@ -1,0 +1,161 @@
+### Manifest Destiny - Mexican Response
+# America demands our Territories!
+country_event = {
+	id = 100034
+	title = "EVENTNAME100034"
+	desc = "EVENTDESC100034"
+	is_triggered_only = yes
+	picture = "ManifestDestiny"
+	
+	option = {
+		name = "EVENTOPTA100034"
+		prestige = -20
+		any_owned = {
+			limit = { is_core = TUT }
+			secede_province = TUT
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100034"
+		prestige = 20
+		war = {
+			target = TUT
+			attacker_goal = { casus_belli = event_based_war }
+			defender_goal = { casus_belli = event_based_war }
+		}
+		set_country_flag = MXETUT_MEXICAN_AMERICAN_WAR
+		TUT = { set_country_flag = MXETUT_MEXICAN_AMERICAN_WAR }
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+## MURICA WINNNNN
+# The Treaty of Guadalupe Higaldo
+country_event = {
+	id = 100035
+	title = "EVENTNAME100035"
+	desc = "EVENTDESC100035"
+	is_triggered_only = yes
+	picture = "TreatyGuadalupeHigaldo"
+	
+	option = {
+		name = "EVENTOPTA100035"
+		prestige = 20
+		MXE = {
+			any_owned = {
+				limit = { is_core = TUT }
+				secede_province = TUT
+			}
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100035"
+		prestige = 30
+		badboy = 5
+		MXE = {
+			any_owned = {
+				limit = { is_core = TUT }
+				secede_province = TUT
+			}
+		}
+		MEX_2138 = { secede_province = TUT }
+		MEX_2142 = { secede_province = TUT }
+		MEX_2146 = { secede_province = TUT }
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = TUT
+				value = -10
+			}
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100035"
+		prestige = 40
+		badboy = 15
+		MXE = {
+			any_owned = {
+				limit = { is_core = TUT }
+				secede_province = TUT
+			}
+		}
+		MEX_2138 = { secede_province = TUT }
+		MEX_2142 = { secede_province = TUT }
+		MEX_2146 = { secede_province = TUT }
+		MXE_2183 = { secede_province = TUT }
+		MEX_2151 = { secede_province = TUT }
+		MEX_2161 = { secede_province = TUT }
+		MEX_2173 = { secede_province = TUT }
+		TUT = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = TUT }
+					is_core = MXE
+				}
+				add_province_modifier = {
+					name = TUT_the_mexican_mafia
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = TUT
+				value = -25
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTD100035"
+		prestige = 50
+		badboy = 24.99
+		inherit = MXE
+		TUT = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = TUT }
+					is_core = MXE
+				}
+				add_province_modifier = {
+					name = TUT_the_mexican_mafia
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = TUT
+				value = -50
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

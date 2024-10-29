@@ -1,3 +1,30 @@
+# The Destruction of the Napoleonic Code
+country_event = {
+	id = 100042
+	title = "EVENTNAME100042" 
+	desc = "EVENTDESC100042"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = NFR
+		year = 1865
+		NOT = { rank = 3 }
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100042"
+		prestige = -5
+		any_country = {
+			set_global_flag = NFR_napoleonic_code_abolished
+		}
+	}
+}
+
 # Belgian Unrest
 country_event = {
 	id = 100005
@@ -804,5 +831,73 @@ country_event = {
 		add_accepted_culture = flemish
 		add_accepted_culture = dutch
 		set_global_flag = NFR_napoleonic_code_abolished
+	}
+}
+
+### Aosta Valley
+# Fate of the Aosta Valley
+country_event = {
+	id = 100040
+	title = "EVENTNAME100040"
+	desc = "EVENTDESC100040"
+	picture = "AostaValley"
+	
+	trigger = {
+		tag = AOS
+		year = 1845
+	}
+	
+	option = {
+		name = "EVENTOPTA100040"
+		any_pop = {
+			limit = {
+				culture = north_italian
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		THIS = { annex_to = NFR }
+		721 = {
+			remove_core = AOV
+			add_core = NFR
+			add_core = ITL
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100040"
+		any_pop = {
+			limit = {
+				culture = occitan
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		THIS = { annex_to = ITL }
+		721 = {
+			remove_core = AOV
+			add_core = ITL
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100040"
+		any_pop = {
+			militancy = -1
+			consciousness = -1
+		}
+		721 = {
+			add_core = NFR
+			add_core = ITL
+		}
+		ai_chance = {
+			factor = 20
+		}
 	}
 }

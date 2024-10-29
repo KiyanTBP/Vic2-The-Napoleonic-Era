@@ -57,6 +57,36 @@ ACD_conversion = {
 	icon = 6
 }
 
+##### THE MEXICAN MAFIA #####
+TUT_the_mexican_mafia = {
+	pop_militancy_modifier = 0.75
+	pop_consciousness_modifier = 0.25
+	assimilation_rate = -0.5
+	population_growth = -0.5
+	icon = 6
+}
+
+##### AUSTRIA #####
+AUE_reformation_of_the_habsburgs = {
+	global_pop_militancy_modifier = -0.1
+	influence_modifier = 0.5
+	research_points = 0.25
+	icon = 5
+}
+
+AUE_outdated_constitution = {
+	administrative_efficiency_modifier = -0.05
+	global_pop_militancy_modifier = 0.1
+	icon = 6
+}
+
+AUE_habsburg_unrest = {
+	immigration_attract = -0.25
+	immigration_push = 0.25
+	pop_militancy_modifier = 0.05
+	icon = 8
+}
+
 ##### POLITICAL EVENTS ######
 government_sanitarium = {
 	population_growth = 0.005
@@ -67,7 +97,7 @@ government_sanitarium = {
 academic_confusion = {
 	research_points_modifier = -0.01
 	prestige = -0.01
-	icon = 6
+	icon = 2
 }
 
 ##### LIBERAL REVOLUTIONS #####

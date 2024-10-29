@@ -5,6 +5,12 @@ BTR = {
 	influence_value = 100
 }
 
+AOV = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
 ITL = {
 	value = 175
 	level = 4

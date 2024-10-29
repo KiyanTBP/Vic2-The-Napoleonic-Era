@@ -9,6 +9,7 @@ country_event = {
 	trigger = {
 		tag = AUE
 		year = 1848
+		NOT = { exists = HUN }
 	}
 	
 	mean_time_to_trigger = {
@@ -44,13 +45,184 @@ country_event = {
 			leadership = 30
 			capital = 641
 		}
+		war = {
+			target = HUN
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = status_quo }
+		}
 		change_tag_no_core_switch = HUN
-		AUE = {
-			war = {
-				target = HUN
-				attacker_goal = civil_war
-				defender_goal = status_quo
+	}
+}
+
+# The Outdated Constitution
+country_event = {
+	id = 100038
+	title = "EVENTNAME100038"
+	desc = "EVENTDESC100038"
+	fire_only_once = yes
+	picture = HabsburgReform
+	
+	trigger = {
+		tag = AUE
+	}
+	
+	option = {
+		name = "EVENTOPTA100038"
+		add_country_modifier = {
+			name = AUE_outdated_constitution
+			duration = -1
+		}
+		any_owned = {
+			limit = { NOT = { is_core = AUE } }
+			add_province_modifier = {
+				name = AUE_habsburg_unrest
+				duration = -1
 			}
 		}
+	}
+}
+
+# Successful Reformation of the Habsburg Empire!
+country_event = {
+	id = 100037
+	title = "EVENTNAME100037"
+	desc = "EVENTDESC100037"
+	fire_only_once = yes
+	picture = HabsburgReform
+	
+	trigger = {
+		tag = AUE
+		AND = {
+			has_country_flag = AUE_integrated_hungary
+			has_country_flag = AUE_integrated_bohemia
+			has_country_flag = AUE_reformed_the_empires_constitution
+		}
+		NOT = { has_country_flag = AUE_successful_empire }
+		NOT = {
+			has_global_flag = AUE_collapsed_empire
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100037"
+		set_country_flag = AUE_successful_empire
+		prestige = 20
+		plurality = 5
+		add_country_modifier = {
+			name = AUE_reformation_of_the_habsburgs
+			duration = -1
+		}
+	}
+}
+
+# Liberal Revolution!
+country_event = {
+	id = 100041
+	title = "EVENTNAME100041"
+	desc = "EVENTDESC100041"
+	fire_only_once = yes
+	picture = HabsburgReform
+	
+	trigger = {
+		tag = AUE
+		NOT = { government = absolute_monarchy }
+		NOT = {
+			has_global_flag = AUE_collapsed_empire
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100041"
+		set_country_flag = AUE_reformed_the_empires_constitution
+		remove_country_modifier = AUE_outdated_constitution
+		any_pop = {
+			militancy = -4
+			consciousness = -4
+		}
+		any_owned = {
+			limit = {
+				has_province_modifier = AUE_habsburg_unrest
+			}
+			remove_province_modifier = AUE_habsburg_unrest
+		}
+	}
+}
+
+# Failed Reformation of the Empire
+country_event = {
+	id = 100039
+	title = "EVENTNAME100039"
+	desc = "EVENTDESC100039"
+	fire_only_once = yes
+	picture = HabsburgsFailed
+	
+	trigger = {
+		tag = AUE
+		year = 1865
+		NOT = { has_country_flag = AUE_successful_empire }
+		NOT = {
+			has_global_flag = AUE_collapsed_empire
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100039"
+		set_country_flag = AUE_failed_empire
+	}
+}
+
+## Austrian Collapse
+# The End of the Austrian Empire
+country_event = {
+	id = 100036
+	title = "EVENTNAME100036"
+	desc = "EVENTDESC100036"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = AUE
+		year = 1870
+		OR = {
+			AND = {
+				has_country_flag = AUE_failed_empire
+			}
+			AND = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		NOT = {
+			has_country_flag = AUE_successful_empire
+		}
+		NOT = {
+			has_global_flag = AUE_collapsed_empire
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100036"
+		set_global_flag = AUE_collapsed_empire
+		prestige = -50
+		government = napoleonic_republic
+		any_owned = {
+			remove_core = AUE
+		}
+		any_country = {
+			any_owned = {
+				remove_core = AUE
+			}
+		}
+		AUS_619 = { add_core = AUE }
+		AUS_613 = { add_core = AUE }
+		AUS_612 = { add_core = AUE }
+		any_owned = {
+			limit = { is_core = KOS }
+			secede_province = KOS
+		}
+		release = BOH
+		release = SIE
+		release = SLV
+		release = HUN
 	}
 }

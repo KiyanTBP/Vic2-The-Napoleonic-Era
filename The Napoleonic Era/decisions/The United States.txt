@@ -93,12 +93,30 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = TUT_manifested_some_destiny
+			MXE = { country_event = 100034 }
 			prestige = 30
 			USA_106 = { add_core = TUT }
 			MEX_103 = { add_core = TUT }
 			MEX_100 = { add_core = TUT }
 			MEX_94 = { add_core = TUT }
 			MEX_85 = { add_core = TUT }
+		}
+	}
+	### Mexican-American War
+	# American Victory
+	TUT_working_on_the_treaty_of_guadalupe_hidalgo = {
+		picture = wartreaty
+		potential = {
+			tag = TUT
+			has_country_flag = MXETUT_MEXICAN_AMERICAN_WAR
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			country_event = 100035
+			clr_country_flag = MXETUT_MEXICAN_AMERICAN_WAR
+			MXE = { clr_country_flag = MXETUT_MEXICAN_AMERICAN_WAR }
 		}
 	}
 	### THIS IS FOR AMERICAN CANADA
@@ -110,7 +128,7 @@ political_decisions = {
 			NOT = { has_country_flag = ACD_conversion_started }
 		}
 		allow = {
-			year = 1850
+			year = 1840
 			war = no
 		}
 		effect = {

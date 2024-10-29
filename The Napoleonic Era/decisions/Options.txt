@@ -1,0 +1,100 @@
+political_decisions = {
+	# Open Options
+	OPTIONS_open = {
+		picture = OPTIONS
+		alert = no
+		potential = {
+			NOT = {
+				OR = {
+					year = 1837
+					has_country_flag = OPTIONS_checking
+				}
+			}
+		}
+		allow = {}
+		effect = {
+			set_country_flag = OPTIONS_checking
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	# Close Options
+	OPTIONS_close = {
+		picture = OPTIONS
+		alert = no
+		potential = {
+			has_country_flag = OPTIONS_checking
+			NOT = {
+				year = 1837
+			}
+		}
+		allow = {}
+		effect = {
+			clr_country_flag = OPTIONS_checking
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	# Disable Napoleonic Order
+	OPTIONS_disable_napoleonic_order = {
+		picture = OPTIONS_two
+		alert = no
+		potential = {
+			has_country_flag = OPTIONS_checking
+			NOT = {
+				OR = {
+					has_global_flag = NFR_napoleonic_code_abolished
+					year = 1837
+				}
+			}
+		}
+		allow = {}
+		effect = {
+			any_country = {
+				set_global_flag = NFR_napoleonic_code_abolished
+			}
+		}
+	}
+	# Enable Test Decisions
+	OPTIONS_enable_test_decisions = {
+		picture = OPTIONS_two
+		alert = no
+		potential = {
+			has_country_flag = OPTIONS_checking
+			NOT = {
+				OR = {
+					has_country_flag = ENABLED_TEST_DECISIONS
+					year = 1837
+				}
+			}
+		}
+		allow = {}
+		effect = {
+			set_country_flag = ENABLED_TEST_DECISIONS
+		}
+	}
+	# Take all Cores
+	OPTIONS_take_all_cores = {
+		picture = OPTIONS_two
+		alert = no
+		potential = {
+			has_country_flag = ENABLED_TEST_DECISIONS
+			NOT = {
+				OR = {
+					THIS = { all_core = { owned_by = THIS } }
+					year = 1837
+				}
+			}
+		}
+		allow = {}
+		effect = {
+			THIS = {
+				all_core = {
+					secede_province = THIS
+				}
+			}
+		}
+	}
+}

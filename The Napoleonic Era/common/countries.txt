@@ -12,6 +12,7 @@ NFR = "countries/Napoleonic France.txt"
 # Napoleonic States
 BTR = "countries/Batavian Republic.txt"
 ITL = "countries/Napoleonic Italy.txt"
+AOV = "countries/Aosta Valley.txt"
 
 # switzerland
 SWC = "countries/The Swiss Confederation.txt"
@@ -38,7 +39,9 @@ WLE = "countries/Wales.txt"
 
 # Osterreich
 AUE = "countries/Austrian Empire.txt"
+DNC = "countries/Danubian Confederation.txt"
 KOS = "countries/Kingdom of Slavonia.txt"
+GLR = "countries/GaliciaLodomeria.txt"
 
 # Iberia
 SIR = "countries/Spanish Republic.txt"
@@ -99,6 +102,9 @@ QNG = "countries/Qing Empire.txt"
 
 # The Great Power Formables
 TCE = "countries/The Carolingian Empire.txt"
+
+# TRANSFER COUNTRY
+ABC = "countries/ABC.txt"
 
 ### Vannila ###
 

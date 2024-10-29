@@ -1,4 +1,39 @@
-
+# The Kowloon Incident
+country_event = {
+	id = 100029
+	title = "EVENTNAME100029"
+	desc = "EVENTDESC100029"
+	fire_only_once = yes
+	picture = "Kowloon"
+	
+	trigger = {
+		tag = UKG
+		year = 1839
+	}
+	
+	mean_time_to_trigger = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVENTOPTA100029"
+		prestige = 25
+		war = {
+			target = QNG
+			attacker_goal = { casus_belli = punitive_expedition }
+			defender_goal = { casus_belli = status_quo }
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100029"
+		prestige = -25
+		relation = {
+			who = QNG
+			value = 50
+		}
+	}
+}
 
 ### FRENCH DISMANTLEMENT
 # The London Conference
@@ -19,11 +54,9 @@ country_event = {
 				government = napoleonic_republic
 			}
 			government = hms_government
-			sphere_owner = {
-				diplomatic_influence = {
-					who = THIS
-					value = -200
-				}
+			diplomatic_influence = {
+				who = NFR
+				value = -200
 			}
 		}
 		country_event = {
@@ -123,6 +156,19 @@ country_event = {
 			release = RHE
 			release = LUX
 		}
+		464 = {
+			add_core = ABC
+		}
+		460 = {
+			add_core = ABC
+		}
+		457 = {
+			add_core = ABC
+		}
+		country_event = {
+			id = 100030
+			days = 0
+		}
 		ai_chance = {
 			factor = 33
 		}
@@ -138,6 +184,19 @@ country_event = {
 		}
 		KOP = {
 			inherit = RHE
+		}
+		464 = {
+			add_core = ABC
+		}
+		460 = {
+			add_core = ABC
+		}
+		457 = {
+			add_core = ABC
+		}
+		country_event = {
+			id = 100030
+			days = 0
 		}
 		ai_chance = {
 			factor = 34
@@ -156,6 +215,240 @@ country_event = {
 		BTR = {
 			inherit = RHE
 			inherit = LUX
+		}
+		464 = {
+			add_core = ABC
+		}
+		460 = {
+			add_core = ABC
+		}
+		457 = {
+			add_core = ABC
+		}
+		country_event = {
+			id = 100030
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Spainish Expansion?
+country_event = {
+	id = 100030
+	title = "EVENTNAME100030"
+	desc = "EVENTDESC100030"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100030"
+		badboy = 2.5
+		NFR = {
+			release = ABC
+		}
+		SIR = {
+			inherit = ABC
+			prestige = 15
+		}
+		relation = {
+			who = SIR
+			value = 50
+		}
+		diplomatic_influence = {
+			who = SIR
+			value = 50
+		}
+		464 = {
+			remove_core = ABC
+		}
+		460 = {
+			remove_core = ABC
+		}
+		457 = {
+			remove_core = ABC
+		}
+		465 = {
+			add_core = ABC
+		}
+		466 = {
+			add_core = ABC
+		}
+		472 = {
+			add_core = ABC
+		}
+		country_event = {
+			id = 100031
+			days = 0
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100030"
+		relation = {
+			who = SIR
+			value = -50
+		}
+		diplomatic_influence = {
+			who = SIR
+			value = -50
+		}
+		464 = {
+			remove_core = ABC
+		}
+		460 = {
+			remove_core = ABC
+		}
+		457 = {
+			remove_core = ABC
+		}
+		465 = {
+			add_core = ABC
+		}
+		466 = {
+			add_core = ABC
+		}
+		472 = {
+			add_core = ABC
+		}
+		country_event = {
+			id = 100031
+			days = 0
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Italian Expansion?
+country_event = {
+	id = 100031
+	title = "EVENTNAME100031"
+	desc = "EVENTDESC100031"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100031"
+		badboy = 2.5
+		NFR = {
+			release = ABC
+		}
+		ITL = {
+			inherit = ABC
+			prestige = 20
+		}
+		relation = {
+			who = ITL
+			value = 50
+		}
+		465 = {
+			remove_core = ABC
+		}
+		466 = {
+			remove_core = ABC
+		}
+		472 = {
+			remove_core = ABC
+		}
+		country_event = {
+			id = 100033
+			days = 0
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100031"
+		relation = {
+			who = ITL
+			value = -50
+		}
+		465 = {
+			remove_core = ABC
+		}
+		466 = {
+			remove_core = ABC
+		}
+		472 = {
+			remove_core = ABC
+		}
+		country_event = {
+			id = 100033
+			days = 0
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# London Conference Ends!
+country_event = {
+	id = 100032
+	title = "EVENTNAME100032"
+	desc = "EVENTDESC100032"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100032"
+		prestige = 50
+	}
+}
+
+# French Government Change
+country_event = {
+	id = 100033
+	title = "EVENTNAME100033"
+	desc = "EVENTDESC100033"
+	picture = "France"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100033"
+		NFR = {
+			government = absolute_monarchy
+		}
+		country_event = {
+			id = 100032
+			days = 0
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100033"
+		NFR = {
+			government = democracy
+		}
+		country_event = {
+			id = 100032
+			days = 0
+		}
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100033"
+		NFR = {
+			government = hms_government
+		}
+		country_event = {
+			id = 100032
+			days = 0
 		}
 		ai_chance = {
 			factor = 33

@@ -162,3 +162,78 @@
 		size = 14000
 	}
 }
+
+# Stajerska
+3252 = {
+	aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 425
+	}
+
+	capitalists = {
+		culture = south_german
+		religion = catholic
+		size = 125
+	}
+	
+	bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 125
+	}
+
+	officers = {
+		culture = south_german
+		religion = catholic
+		size = 1100
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 50 
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 1100
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 50 
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 3150
+	}
+
+	clergymen = {
+		culture = slovene
+		religion = catholic
+		size = 225
+	}
+
+	artisans = {
+		culture = slovene
+		religion = catholic
+		size = 1600
+	}
+
+	soldiers = {
+		culture = slovene
+		religion = catholic
+		size = 225 
+	}
+
+	farmers = {
+		culture = slovene
+		religion = catholic
+		size = 23500
+	}
+}

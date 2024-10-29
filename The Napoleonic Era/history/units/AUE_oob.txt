@@ -1,3 +1,28 @@
+# sphere
+BVR = {
+	value = 75
+	level = 3
+	influence_value = 50
+}
+
+BDW = {
+	value = 75
+	level = 3
+	influence_value = 50
+}
+
+HSE = {
+	value = 75
+	level = 3
+	influence_value = 50
+}
+
+NHO = {
+	value = 75
+	level = 3
+	influence_value = 50
+}
+
 # leaders
 leader = {
 	name = "Adolf Hummel"

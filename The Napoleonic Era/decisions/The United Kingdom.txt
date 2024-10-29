@@ -43,7 +43,6 @@ political_decisions = {
 		}
 		allow = {
 			year = 1840
-			is_independant = yes
 		}
 		effect = {
 			war = {
@@ -52,6 +51,27 @@ political_decisions = {
 				defender_goal = { casus_belli = status_quo }
 			}
 			set_country_flag = EIC_conquest_burma
+		}
+	}
+	# Accept the Irish
+	UKG_accept_the_irish = {
+		picture = ireland
+		potential = {
+			tag = UKG
+			NOT = { has_country_flag = UKG_accepted_irish_pops }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = UKG_accepted_irish_pops
+			prestige = -5
+			badboy = -2.5
+			add_accepted_culture = irish
+			any_pop = {
+				limit = { culture = irish }
+				militancy = -3
+			}
 		}
 	}
 	## UK VS FRANCE WAR
@@ -89,7 +109,7 @@ political_decisions = {
 		picture = wartreaty
 		potential = {
 			tag = UKG
-			set_country_flag = UKG_demanded_napoleonic_destruction
+			has_country_flag = UKG_demanded_napoleonic_destruction
 			NOT = {
 				has_country_flag = UKG_british_victory_the_london_conference
 			}
@@ -111,4 +131,29 @@ political_decisions = {
 		}
 	}
 	### England
+	# Claim Wales
+	ENG_claim_wales = {
+		picture = wales
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = ENG_claimed_wales }
+		}
+		allow = {
+			state_n_government = 1
+			OR = {
+				rank = 16
+				WLE = { all_core = { owned_by = THIS } }
+			}
+		}
+		effect = {
+			set_country_flag = ENG_claimed_wales
+			prestige = 20
+			badboy = 2.5
+			WLE = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+	}
 }

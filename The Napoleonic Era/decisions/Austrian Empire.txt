@@ -1,0 +1,199 @@
+political_decisions = {
+	# Annex the Kingdom of Slavonia
+	AUE_annex_the_kingdom_of_slavonia = {
+		picture = kingdom_of_slavonia
+		potential = {
+			tag = AUE
+			exists = KOS
+			NOT = { has_country_flag = AUE_annexed_slavonia }
+			NOT = { has_country_flag = AUE_failed_empire }
+		}
+		allow = {
+			KOS = {
+				OR = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+			NOT = {
+				KOS = {
+					OR = {
+						is_greater_power = yes
+						is_secondary_power = yes
+						government = napoleonic_government
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = AUE_annexed_slavonia
+			prestige = 15
+			badboy = 2.5
+			inherit = KOS
+		}
+	}
+	# Reclaim Galicia-Lodomeria
+	AUE_reclaim_galicialodomeria = {
+		picture = galicialodomeria
+		potential = {
+			tag = AUE
+			NOT = { has_country_flag = AUE_reclaimed_galicialodomeria }
+			NOT = { has_country_flag = AUE_failed_empire }
+		}
+		allow = {
+			state_n_government = 1
+			AUS_633 = { is_core = AUE }
+		}
+		effect = {
+			set_country_flag = AUE_reclaimed_galicialodomeria
+			prestige = 20
+			badboy = 5
+			GLR = {
+				all_core = {
+					add_core = AUE
+					owner = {
+						relation = {
+							who = THIS
+							value = -150
+						}
+					}
+				}
+			}
+		}
+	}
+	# Integrate Hungary
+	AUE_integrate_hungary = {
+		picture = hungary
+		potential = {
+			tag = AUE
+			NOT = { has_country_flag = AUE_integrated_hungary }
+			NOT = { has_country_flag = AUE_failed_empire }
+		}
+		allow = {
+			war = no
+			average_militancy = 3
+			OR = {
+				AND = {
+					citizenship_policy = full_citizenship
+					is_greater_power = yes
+				}
+				AND = {
+					citizenship_policy = limited_citizenship
+					nationalism_n_imperialism = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = AUE_integrated_hungary
+			prestige = 5
+			badboy = -2.5
+			add_accepted_culture = hungarian
+			AUS_641 = { add_core = AUE }
+			AUS_623 = { add_core = AUE }
+			AUS_633 = { add_core = AUE }
+			any_pop = {
+				limit = {
+					culture = hungarian
+				}
+				militancy = -2
+			}
+		}
+	}
+	# Integrate Bohemia
+	AUE_integrate_bohemia = {
+		picture = bohemia
+		potential = {
+			tag = AUE
+			NOT = { has_country_flag = AUE_integrated_bohemia }
+			NOT = { has_country_flag = AUE_failed_empire }
+		}
+		allow = {
+			war = no
+			average_militancy = 4
+		}
+		effect = {
+			set_country_flag = AUE_integrated_bohemia
+			prestige = 5
+			badboy = -2.5
+			add_accepted_culture = czech
+			AUS_625 = { add_core = AUE }
+			AUS_626 = { add_core = AUE }
+			any_pop = {
+				limit = {
+					culture = czech
+				}
+				militancy = -2
+			}
+		}
+	}
+	# Reform the Empire's Constitution
+	AUE_reform_the_empires_constitution = {
+		picture = austrian_constitution
+		potential = {
+			tag = AUE
+			government = absolute_monarchy
+			NOT = { has_country_flag = AUE_reformed_the_empires_constitution }
+			NOT = { has_country_flag = AUE_failed_empire }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			average_militancy = 2
+		}
+		effect = {
+			set_country_flag = AUE_reformed_the_empires_constitution
+			remove_country_modifier = AUE_outdated_constitution
+			prestige = 30
+			government = hms_government
+			political_reform = wealth_voting
+			political_reform = state_equal_weight
+			political_reform = jefferson_method
+			political_reform = free_press
+			political_reform = non_socialist
+			political_reform = gerrymandering
+			election = yes
+			any_pop = {
+				militancy = -4
+				consciousness = -4
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = AUE_habsburg_unrest
+				}
+				remove_province_modifier = AUE_habsburg_unrest
+			}
+		}
+	}
+	### Danubian Confederation
+	# Form the Danubian Confederation
+	AUE_form_danubian_confederation = {
+		picture = danubia
+		potential = {
+			tag = AUE
+			has_country_flag = AUE_integrated_hungary
+			has_country_flag = AUE_integrated_bohemia
+			has_country_flag = AUE_reformed_the_empires_constitution
+			NOT = { exists = DNC }
+		}
+		allow = {
+			war = no
+			average_militancy = 3
+			government = hms_government
+			citizenship_policy = full_citizenship
+		}
+		effect = {
+			prestige = 30
+			any_owned = {
+				limit = {
+					continent = europe
+				}
+				add_core = DNC
+			}
+			change_tag = DNC
+			add_accepted_culture = slovene
+			add_accepted_culture = croat
+			add_accepted_culture = bosniak
+			add_accepted_culture = slovak
+			add_accepted_culture = ukrainian
+		}
+	}
+}
