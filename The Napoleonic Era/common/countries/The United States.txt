@@ -4,7 +4,7 @@ graphical_culture = UsGC
 party = {
 	name = "TUT_conservative"
 	start_date = 1835.1.1
-	end_date = 1936.1.1
+	end_date = 1860.1.1
 
 	ideology = conservative
 
@@ -12,6 +12,20 @@ party = {
 	trade_policy = free_trade
 	religious_policy = moralism
 	citizenship_policy = residency
+	war_policy = pro_military
+}
+
+party = {
+	name = "TUT_conservative_2"
+	start_date = 1860.1.1
+	end_date = 1936.1.1
+
+	ideology = conservative
+
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
 	war_policy = pro_military
 }
 
@@ -32,7 +46,7 @@ party = {
 party = {
 	name = "TUT_liberal"
 	start_date = 1835.1.1
-	end_date = 1936.1.1
+	end_date = 1860.1.1
 
 	ideology = liberal
 
@@ -40,6 +54,20 @@ party = {
 	trade_policy = free_trade
 	religious_policy = pluralism
 	citizenship_policy = limited_citizenship
+	war_policy = pro_military
+}
+
+party = {
+	name = "TUT_liberal_2"
+	start_date = 1860.1.1
+	end_date = 1936.1.1
+
+	ideology = liberal
+
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
 

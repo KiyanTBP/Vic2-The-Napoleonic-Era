@@ -14,12 +14,12 @@ TUC = {
 TXR = {
 	value = 125
 	level = 3
-	influence_value = 25
+	influence_value = 45
 }
 
 MXE = {
-	value = 125
-	level = 3
+	value = 75
+	level = 2
 	influence_value = 25
 }
 

@@ -1,0 +1,62 @@
+# Selling Alaska
+country_event = {
+	id = 100058
+	title = "EVENTNAME100058"
+	desc = "EVENTDESC100058"
+	is_triggered_only = yes
+	picture = "Alaska"
+	
+	option = {
+		name = "EVENTOPTA100058"
+		TUT = { country_event = 100059 }
+		ai_chance = {
+			factor = 34
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100058"
+		MXE = { country_event = 100059 }
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100058"
+		SWC = { country_event = 100059 }
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+# Alaska for Purchase
+country_event = {
+	id = 100059
+	title = "EVENTNAME100059"
+	desc = "EVENTDESC100059"
+	is_triggered_only = yes
+	picture = "Alaska"
+	
+	option = {
+		name = "EVENTOPTA100059"
+		USA_1 = {
+			secede_province = THIS
+			add_core = THIS
+		}
+		THIS = { treasury = -500000 }
+		RUE = { treasury = 500000 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100059"
+		prestige = -5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

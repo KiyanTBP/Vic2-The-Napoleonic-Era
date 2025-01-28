@@ -42,6 +42,78 @@ political_decisions = {
 			}
 		}
 	}
+	# Reclaim the Territories of the Polish Partition
+	KOP_reclaim_polish_partition = {
+		picture = poland_map
+		potential = {
+			tag = KOP
+			NOT = { has_country_flag = KOP_reclaimed_polish_partition }
+		}
+		allow = {
+			jingoism = 6
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = KOP_reclaimed_polish_partition
+			prestige = 20
+			badboy = 5
+			362 = { add_core = KOP }
+			710 = { add_core = KOP }
+			712 = { add_core = KOP }
+			717 = { add_core = KOP }
+			711 = { add_core = KOP }
+			719 = { add_core = KOP }
+			706 = { add_core = KOP }
+			708 = { add_core = KOP }
+			709 = { add_core = KOP }
+			707 = { add_core = KOP }
+		}
+	}
+	## These can be done by both Germany and Prussia
+	# Inspire German Militarism
+	KOP_inspire_german_militarism = {
+		picture = german_militarism
+		potential = {
+			OR = {
+				tag = KOP
+				tag = KOG
+			}
+			NOT = { has_country_modifier = KOP_german_militarism }
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 5
+			add_country_modifier = {
+				name = KOP_german_militarism
+				duration = -1
+			}
+		}
+	}
+	### Memel
+	# Petition for Annexation into Prussia
+	MML_petition_annex_prussia = {
+		picture = prussia
+		potential = {
+			tag = MML
+			exists = KOP
+			NOT = { MML = { is_greater_power = yes } }
+			NOT = { has_country_flag = MML_petition_annexed }
+		}
+		allow = {
+			year = 1848
+			MML = {
+				OR = {
+					is_our_vassal = KOP
+					in_sphere = KOP
+				}
+			}
+		}
+		effect = {
+			KOP = { country_event = 100044 }
+		}
+	}
 	### Kingdom of Germany
 	# Integrate Alsace-Lorraine
 	KOG_integrate_alsacelorraine = {
@@ -63,4 +135,63 @@ political_decisions = {
 			410 = { add_core = KOG }
 		}
 	}
-}
+	# The Question of German-Austria
+	KOG_question_of_germanaustria = {
+		picture = osterreich
+		potential = {
+			tag = KOG
+			NOT = { has_country_flag = KOG_germanaustria_question }
+		}
+		allow = {
+			AUE = {
+				NOT = {
+					is_greater_power = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = KOG_germanaustria_question
+			country_event = 100043
+		}
+	}
+	# Restore the Teutonic Legacy
+	KOG_restore_the_teutonic_legacy = {
+		picture = teutonic_knights
+		potential = {
+			OR = {
+				tag = KOG
+				tag = MML # if you're insane enough to do it as memel go ahead
+			}
+			NOT = { has_country_flag = KOG_restored_teutonic_legacy }
+		}
+		allow = {
+			OR = {
+				AND = {
+					is_greater_power = yes
+					nationalism_n_imperialism = 1
+					RUE = {
+						NOT = { rank = 8 }
+					}
+				}
+				AND = {
+					RUE = {
+						NOT = { rank = 16 }
+					}
+					RUS_354 = { owned_by = THIS }
+					RUS_349 = { owned_by = THIS }
+				}
+				AND = {
+					tag = MML
+					is_greater_power = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = KOG_restored_teutonic_legacy
+			prestige = 20
+			badboy = 2.5
+			RUS_354 = { add_core = THIS }
+			RUS_349 = { add_core = THIS }
+		}
+	}
+}	

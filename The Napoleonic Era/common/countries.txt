@@ -42,6 +42,7 @@ AUE = "countries/Austrian Empire.txt"
 DNC = "countries/Danubian Confederation.txt"
 KOS = "countries/Kingdom of Slavonia.txt"
 GLR = "countries/GaliciaLodomeria.txt"
+BAN = "countries/Banat.txt"
 
 # Iberia
 SIR = "countries/Spanish Republic.txt"
@@ -79,6 +80,9 @@ EIC = "countries/East India Company.txt"
 
 # MURICAAAA FUCK YEAHHH
 TUT = "countries/The United States.txt"
+TCT = "countries/The Confederate States.txt"
+FSA = "countries/The Free States of America.txt"
+PSA = "countries/The Pacific States of America.txt"
 ACD = "countries/American Canada.txt"
 TXR = "countries/Texan Republic.txt"
 
@@ -95,6 +99,7 @@ EOB = "countries/Empire of Brazil.txt"
 PBC = "countries/The PeruBolivian Confederation.txt"
 NWL = "countries/New Wales.txt"
 UPP = "countries/The United Provinces of La Plata.txt"
+PTG = "countries/Patagonia.txt"
 
 # uhh umm east asia
 PGN = "countries/Provisial Government of the Netherlands.txt"

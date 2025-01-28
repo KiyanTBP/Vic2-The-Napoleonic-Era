@@ -1,3 +1,4 @@
 add_core = UPP
+add_core = PTG
 trade_goods = fruit
 life_rating = 25

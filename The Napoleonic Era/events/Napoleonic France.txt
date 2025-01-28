@@ -83,6 +83,9 @@ country_event = {
 				average_militancy = 6
 				average_consciousness = 3
 			}
+			AND = {
+				year = 1848
+			}
 		}
 	}
 	
@@ -843,7 +846,7 @@ country_event = {
 	picture = "AostaValley"
 	
 	trigger = {
-		tag = AOS
+		tag = AOV
 		year = 1845
 	}
 	

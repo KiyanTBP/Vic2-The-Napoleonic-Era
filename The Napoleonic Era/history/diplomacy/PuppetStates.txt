@@ -86,3 +86,11 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+
+# French Slavonia
+vassal = {
+	first = NFR
+	second = KOS
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

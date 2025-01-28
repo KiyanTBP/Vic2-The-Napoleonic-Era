@@ -1,5 +1,5 @@
 color = { 40  70  100 }
-graphical_culture = EuropeanGC
+graphical_culture = PrussianGC
 
 party = {
 	name = "KOP_conservative"

@@ -77,7 +77,7 @@ political_decisions = {
 	}
 	# Take all Cores
 	OPTIONS_take_all_cores = {
-		picture = OPTIONS_two
+		picture = OPTIONS_test
 		alert = no
 		potential = {
 			has_country_flag = ENABLED_TEST_DECISIONS
@@ -97,4 +97,23 @@ political_decisions = {
 			}
 		}
 	}
+	## Spectator Mode
+	#OPTIONS_spectator_mode = {
+	#	picture = OPTIONS_test
+	#	alert = no
+	#	potential = {
+	#		has_country_flag = ENABLED_TEST_DECISIONS
+	#		NOT = {
+	#			has_global_flag = OPTION_ENABLED_SPECTATOR_MODE
+	#		}
+	#	}
+	#	allow = {}
+	#	effect = {
+	#		set_global_flag = OPTION_ENABLED_SPECTATOR_MODE
+	#		3246 = {
+	#			secede_province = JAN
+	#		}
+	#		change_tag_no_core_switch = JAN
+	#	}
+	#}
 }

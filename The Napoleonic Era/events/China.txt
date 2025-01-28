@@ -1,0 +1,27 @@
+# Traditional Ideals
+country_event = {
+	id = 100047
+	title = "EVENTNAME100047"
+	desc = "EVENTDESC100047"
+	picture = "Traditionalism"
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = XIN
+			tag = YNN
+			tag = MCK
+			tag = MGL
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100047"
+		add_country_modifier = {
+			name = QNG_rejection_of_modernity
+			duration = -1
+		}
+		
+	}
+}

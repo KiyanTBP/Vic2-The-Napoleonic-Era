@@ -1,0 +1,23 @@
+political_decisions = {
+	# Sell Alaska
+	RUE_sell_alaska = {
+		picture = alaska
+		potential = {
+			tag = RUE
+			year = 1860
+			owns = 3
+			owns = 4
+			NOT = { has_country_flag = RUE_sold_alaska }
+		}
+		allow = {
+			OR = {
+				is_greater_power = no
+				has_recently_lost_war = yes
+			}
+		}
+		effect = {
+			set_country_flag = RUE_sold_alaska
+			country_event = 100058
+		}
+	}
+}

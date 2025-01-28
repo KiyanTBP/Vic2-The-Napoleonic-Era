@@ -159,3 +159,267 @@ country_event = {
 		}
 	}
 }
+
+# Confederate Scum!
+country_event = {
+	id = 100048
+	title = "EVENTNAME100048"
+	desc = "EVENTDESC100048"
+	fire_only_once = yes
+	picture = "Confederacy"
+	
+	trigger = {
+		tag = TUT
+		year = 1855
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100048"
+		set_country_flag = TUT_confederate_scum
+		any_owned = {
+			limit = {
+				is_slave = yes
+			}
+			add_core = TCT
+			flashpoint_tension = 15
+		}
+	}
+}
+
+# A House Divided
+country_event = {
+	id = 100053
+	title = "EVENTNAME100053"
+	desc = "EVENTDESC100053"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TUT
+		year = 1860
+		has_country_flag = TUT_confederate_scum
+		NOT = { has_global_flag = TUT_american_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100053"
+		set_global_flag = TUT_american_civil_war
+		TUT = { clr_country_flag = the_slavery_debate }
+		any_owned = {
+			limit = {
+				is_core = TCT
+				NOT = {
+					province_id = 3249
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = TCT
+		}
+		war = {
+			target = TCT
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = status_quo }
+		}
+		TCT = { set_country_flag = the_slavery_debate }
+	}
+	
+	option = {
+		name = "EVENTOPTB100053"
+		set_global_flag = TUT_american_civil_war
+		TUT = { clr_country_flag = the_slavery_debate }
+		any_owned = {
+			limit = {
+				is_core = TCT
+				NOT = {
+					province_id = 3249
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = TCT
+		}
+		war = {
+			target = TCT
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = status_quo }
+		}
+		TCT = { set_country_flag = the_slavery_debate }
+		change_tag_no_core_switch = TCT
+	}
+}
+
+# The Slavery Debate
+country_event = {
+	id = 100054
+	title = "EVENTNAME100054"
+	desc = "EVENTDESC100054"
+	fire_only_once = yes
+	picture = "SlaveryDebate"
+	
+	trigger = {
+		tag = TUT
+	}
+	
+	option = {
+		name = "EVENTOPTA100054"
+		set_country_flag = the_slavery_debate
+	}
+}
+
+# End of the American Dream
+country_event = {
+	id = 100055
+	title = "EVENTNAME100055"
+	desc = "EVENTDESC100055"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TUT
+		year = 1890
+		government = proletarian_dictatorship
+		government = presidential_dictatorship
+		government = bourgeois_dictatorship
+		government = fascist_dictatorship
+		government = absolute_monarchy
+	}
+	
+	option = {
+		name = "EVENTOPTA100055"
+		set_global_flag = TUT_american_dream_over
+		prestige = -75
+	}
+}
+
+# The Disunited States
+country_event = {
+	id = 100056
+	title = "EVENTNAME100056"
+	desc = "EVENTDESC100056"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TUT
+		has_global_flag = TUT_american_dream_over
+		owns = 84
+		owns = 232
+		OR = {
+			has_recently_lost_war = yes
+			is_greater_power = no
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100055"
+		set_global_flag = TUT_the_disunited_states
+		release = CAN
+		TEX_132 = {
+			secede_province = TXR
+			remove_core = TUT
+		}
+		USA_2556 = { secede_province = TCT }
+		USA_201 = { secede_province = TCT }
+		USA_200 = { secede_province = TCT }
+		USA_196 = { secede_province = TCT }
+		USA_194 = { secede_province = TCT }
+		USA_139 = { secede_province = TCT }
+		USA_247 = { secede_province = NEN }
+		USA_243 = { secede_province = NEN }
+		USA_144 = { secede_province = CHE }
+		232 = { secede_province = MAN }
+		233 = { secede_province = MAN }
+		234 = { secede_province = FSA }
+		235 = { secede_province = FSA }
+		236 = { secede_province = FSA }
+		237 = { secede_province = FSA }
+		238 = { secede_province = FSA }
+		239 = { secede_province = FSA }
+		240 = { secede_province = FSA }
+		USA_231 = { secede_province = FSA }
+		USA_223 = { secede_province = FSA }
+		USA_178 = { secede_province = FSA }
+		USA_176 = { secede_province = FSA }
+		USA_170 = { secede_province = FSA }
+		USA_168 = { secede_province = FSA }
+		USA_162 = { secede_province = FSA }
+		USA_158 = { secede_province = FSA }
+		MEX_85 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		MEX_94 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		MEX_103 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		MEX_100 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		USA_91 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		USA_81 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		USA_78 = {
+			secede_province = PSA
+			add_core = PSA
+		}
+		TUT = {
+			all_core = {
+				add_core = FSA
+			}
+		}
+		any_owned = {
+			limit = {
+				has_province_modifier = TUT_the_mexican_mafia
+			}
+			secede_province = MXE
+		}
+		USA_232 = { add_core = MAN }
+	}
+}
+
+# Abandon the USA: Which Nation?
+country_event = {
+	id = 100057
+	title = "EVENTNAME100057"
+	desc = "EVENTDESC100057"
+	is_triggered_only = yes
+	picture = "DisunitedStates"
+	
+	option = {
+		name = "EVENTOPTA100057"
+		change_tag_no_core_switch = FSA
+	}
+	
+	option = {
+		name = "EVENTOPTB100057"
+		change_tag_no_core_switch = PSA
+	}
+	
+	option = {
+		name = "EVENTOPTC100057"
+		change_tag_no_core_switch = TCT
+	}
+}

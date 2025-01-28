@@ -3,5 +3,6 @@ controller = AUE
 add_core = RMU
 add_core = HUN
 add_core = SIE
+add_core = BAN
 trade_goods = grain
 life_rating = 35

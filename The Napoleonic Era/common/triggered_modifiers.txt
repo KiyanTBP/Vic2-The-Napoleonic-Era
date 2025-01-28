@@ -36,3 +36,13 @@ NFR_napoleonic_code = {
 	prestige = -0.001
 	icon = 7
 }
+
+# Napoleonic Influence
+NFR_napoleonic_influence = {
+	trigger = {
+		tag = NFR
+		NOT = { year = 1849 }
+	}
+	influence_modifier = 1
+	icon = 7
+}

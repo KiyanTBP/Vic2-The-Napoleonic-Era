@@ -54,3 +54,118 @@ country_event = {
 		enable_canal = 1
 	}
 }
+
+### Suez Canal
+# Funding the Suez Canal
+country_event = {
+	id = 100051
+	title = "EVENTNAME100051"
+	desc = "EVENTDESC100051"
+	picture = "SuezCanal"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100051"
+		treasury = -150000
+		country_event = {
+			id = 100049
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100051"
+		treasury = -100000
+		country_event = {
+			id = 100049
+			days = 500
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100051"
+		treasury = -50000
+		country_event = {
+			id = 100049
+			days = 720
+		}
+	}
+}
+
+# The Suez Canal is Finished!
+country_event = {
+	id = 100049
+	title = "EVENTNAME100049"
+	desc = "EVENTDESC100049"
+	picture = "SuezCanal"
+	is_triggered_only = yes
+	
+	news = yes
+	news_desc_long = "suez_canal_NEWS_LONG"
+	news_desc_medium = "suez_canal_NEWS_MEDIUM"
+	news_desc_short = "suez_canal_NEWS_SHORT"
+	
+	option = {
+		name = "EVENTOPTA100049"
+		prestige = 80
+		enable_canal = 2
+		set_global_flag = suez_canal_built
+	}
+}
+
+### Panama Canal
+# Funding the Panama Canal
+country_event = {
+	id = 100052
+	title = "EVENTNAME100052"
+	desc = "EVENTDESC100052"
+	picture = "SuezCanal"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100052"
+		treasury = -150000
+		country_event = {
+			id = 100050
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100052"
+		treasury = -100000
+		country_event = {
+			id = 100050
+			days = 500
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100052"
+		treasury = -50000
+		country_event = {
+			id = 100050
+			days = 720
+		}
+	}
+}
+
+# The Suez Canal is Finished!
+country_event = {
+	id = 100050
+	title = "EVENTNAME100050"
+	desc = "EVENTDESC100050"
+	picture = "PanamaCanal"
+	is_triggered_only = yes
+	
+	news = yes
+	news_desc_long = "panama_canal_NEWS_LONG"
+	news_desc_medium = "panama_canal_NEWS_MEDIUM"
+	news_desc_short = "panama_canal_NEWS_SHORT"
+	
+	option = {
+		name = "EVENTOPTA100050"
+		prestige = 80
+		enable_canal = 3
+	}
+}

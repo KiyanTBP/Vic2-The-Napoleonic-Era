@@ -1,0 +1,33 @@
+# Fate of the Kingdom of Slavonia
+country_event = {
+	id = 100060
+	title = "EVENTNAME100060"
+	desc = "EVENTDESC100060"
+	picture = "Slavonia"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100060"
+		THIS = {
+			all_core = {
+				add_core = NFR
+			}
+		}
+		NFR = {
+			inherit = KOS
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100060"
+		NFR = {
+			release_vassal = KOS
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

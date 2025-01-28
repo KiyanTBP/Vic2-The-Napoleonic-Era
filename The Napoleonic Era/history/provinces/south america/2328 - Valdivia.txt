@@ -1,1 +1,1 @@
-add_core = UPPtrade_goods = grainlife_rating = 35
+add_core = UPPadd_core = PTGtrade_goods = grainlife_rating = 35

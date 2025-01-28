@@ -614,6 +614,7 @@ acquire_substate_region = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = { has_country_modifier = QNG_rejection_of_modernity }
 		num_of_substates = 1 # if has any substate
 		any_substate = {
 			number_of_states = 1
@@ -1402,6 +1403,7 @@ demand_concession_casus_belli = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = { has_country_modifier = QNG_rejection_of_modernity }
 		civilized = no
 		THIS = {
 			civilized = yes
@@ -1455,6 +1457,7 @@ establish_protectorate_casus_belli = {
 	
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = { has_country_modifier = QNG_rejection_of_modernity }
 		THIS = {
 			civilized = yes
 		}

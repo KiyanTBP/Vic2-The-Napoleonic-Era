@@ -20,4 +20,104 @@ political_decisions = {
 			907 = { secede_province = THIS }
 		}
 	}
+	# Take Quebec
+	COLON_take_quebec = {
+		picture = COLONIZEQUEBEC
+		potential = {
+			owns = 65
+			NOT = {
+				owns = 76
+				owns = 60
+				owns = 59
+				owns = 2592
+				owns = 2593
+				owns = 2626
+				owns = 2627
+			}
+		}
+		allow = {
+			medicine = 1
+		}
+		effect = {
+			prestige = 10
+			76 = { secede_province = THIS }
+			60 = { secede_province = THIS }
+			59 = { secede_province = THIS }
+			2592 = { secede_province = THIS }
+			2593 = { secede_province = THIS }
+			2626 = { secede_province = THIS }
+			2627 = { secede_province = THIS }
+		}
+	}
+	# The North Canadian Frontier
+	COLON_the_north_canadian_frontier = {
+		picture = canada
+		potential = {
+			owns = 57
+			NOT = {
+				has_country_flag = COLONIZED_NORTH_CANADA
+			}
+		}
+		allow = {
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_country_flag = COLONIZED_NORTH_CANADA
+			prestige = 10
+			47 = { secede_province = THIS }
+			48 = { secede_province = THIS }
+			2594 = { secede_province = THIS }
+			2628 = { secede_province = THIS }
+			37 = { secede_province = THIS }
+			38 = { secede_province = THIS }
+			39 = { secede_province = THIS }
+			40 = { secede_province = THIS }
+			31 = { secede_province = THIS }
+			32 = { secede_province = THIS }
+			33 = { secede_province = THIS }
+			34 = { secede_province = THIS }
+			2597 = { secede_province = THIS }
+			23 = { secede_province = THIS }
+			22 = { secede_province = THIS }
+			27 = { secede_province = THIS }
+			26 = { secede_province = THIS }
+			24 = { secede_province = THIS }
+			25 = { secede_province = THIS }
+			16 = { secede_province = THIS }
+			19 = { secede_province = THIS }
+			18 = { secede_province = THIS }
+			17 = { secede_province = THIS }
+			2629 = { secede_province = THIS }
+		}
+	}
+	# The Arctic Frontier
+	COLON_the_arctic_frontier = {
+		picture = canada
+		potential = {
+			has_country_flag = COLONIZED_NORTH_CANADA
+			NOT = {
+				has_country_flag = COLONIZED_ARCTIC_CANADA
+			}
+		}
+		allow = {
+			year = 1870
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_country_flag = COLONIZED_ARCTIC_CANADA
+			prestige = 10
+			43 = { secede_province = THIS }
+			44 = { secede_province = THIS }
+			2595 = { secede_province = THIS }
+			6 = { secede_province = THIS }
+			7 = { secede_province = THIS }
+			8 = { secede_province = THIS }
+			9 = { secede_province = THIS }
+			10 = { secede_province = THIS }
+			11 = { secede_province = THIS }
+			12 = { secede_province = THIS }
+			2596 = { secede_province = THIS }
+			2598 = { secede_province = THIS }
+		}
+	}
 }

@@ -23,6 +23,16 @@ CANAL_kiel_canal = {
 	icon = 1
 }
 
+CANAL_suez_canal = {
+	prestige = 0.05
+	icon = 1
+}
+
+CANAL_panama_canal = {
+	prestige = 0.05
+	icon = 1
+}
+
 ##### BELGIUM ######
 NFR_belgian_unrest = {
 	pop_consciousness_modifier = 0.5
@@ -85,6 +95,23 @@ AUE_habsburg_unrest = {
 	immigration_push = 0.25
 	pop_militancy_modifier = 0.05
 	icon = 8
+}
+
+##### GERMANY #####
+KOP_german_militarism = {
+	cb_generation_speed_modifier = 0.25
+	mobilization_impact = -0.05
+	mobilisation_size = 0.1
+	icon = 15
+}
+
+##### QING EMPIRE #####
+QNG_rejection_of_modernity = {
+	global_pop_militancy_modifier = -0.2
+	global_pop_consciousness_modifier = -0.1
+	research_points_modifier = -0.75
+	research_points = -1
+	icon = 4
 }
 
 ##### POLITICAL EVENTS ######

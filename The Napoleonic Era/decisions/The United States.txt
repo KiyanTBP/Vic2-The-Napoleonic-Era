@@ -79,11 +79,7 @@ political_decisions = {
 			NOT = { has_country_flag = TUT_manifested_some_destiny }
 			NOT = {
 				OR = {
-					TXR = {
-						all_core = {
-							owned_by = MXE
-						}
-					}
+					MXE = { is_greater_power = yes }
 					year = 1860
 				}
 			}
@@ -100,6 +96,71 @@ political_decisions = {
 			MEX_100 = { add_core = TUT }
 			MEX_94 = { add_core = TUT }
 			MEX_85 = { add_core = TUT }
+		}
+	}
+	# The Canadian Oath
+	TUT_the_canadian_oath = {
+		picture = canada
+		potential = {
+			tag = TUT
+			NOT = { has_country_flag = TUT_proclaimed_canadian_destiny }
+		}
+		allow = {
+			owns = 46
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = TUT_proclaimed_canadian_destiny
+			prestige = 20
+			badboy = 5
+			CAN = {
+				all_core = {
+					add_core = TUT
+				}
+			}
+		}
+	}
+	# Emancipation Proclamation
+	TUT_emancipation_proclamation = {
+		picture = emancipation_proclamation
+		potential = {
+			tag = TUT
+			has_global_flag = TUT_american_civil_war
+			NOT = { has_country_flag = TUT_accepted_afro_americans }
+		}
+		allow = {
+			OR = {
+				citizenship_policy = limited_citizenship
+				citizenship_policy = full_citizenship
+			}
+		}
+		effect = {
+			set_country_flag = TUT_accepted_afro_americans
+			prestige = 10
+			badboy = -1
+			add_accepted_culture = afro_american
+		}
+	}
+	# Native Rights Act
+	TUT_native_rights_act = {
+		picture = american_natives
+		potential = {
+			tag = TUT
+			year = 1890
+			NOT = { has_country_flag = TUT_accepted_natives }
+		}
+		allow = {
+			citizenship_policy = full_citizenship
+		}
+		effect = {
+			set_country_flag = TUT_accepted_natives
+			prestige = 20
+			add_accepted_culture = inuit
+			add_accepted_culture = cherokee
+			add_accepted_culture = metis
+			add_accepted_culture = navajo
+			add_accepted_culture = dakota
+			add_accepted_culture = native_american_minor
 		}
 	}
 	### Mexican-American War
@@ -119,12 +180,38 @@ political_decisions = {
 			MXE = { clr_country_flag = MXETUT_MEXICAN_AMERICAN_WAR }
 		}
 	}
+	### The Disunited States
+	# Abandon the USA
+	TUT_abandon_the_usa = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			tag = TUT
+			ai = no
+			has_global_flag = TUT_the_disunited_states
+			NOT = { has_country_flag = TUT_abandoned_usa }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = TUT_abandoned_usa
+			country_event = 100057
+		}
+	}
 	### THIS IS FOR AMERICAN CANADA
 	# Convert the People's
 	ACD_convert_the_people = {
 		picture = AMERICAN_CANADA
 		potential = {
-			tag = ACD
+			OR ={
+				AND = {
+					tag = ACD
+				}
+				AND = {
+					tag = TUT
+					owns = 46
+				}
+			}
 			NOT = { has_country_flag = ACD_conversion_started }
 		}
 		allow = {
@@ -134,11 +221,47 @@ political_decisions = {
 		effect = {
 			set_country_flag = ACD_conversion_started
 			any_owned = {
+				limit = {
+					is_core = ACD
+				}
 				add_province_modifier = {
 					name = ACD_conversion
 					duration = 3650
 				}
 			}
+		}
+	}
+	### The Confederates
+	# Enact the Golden Circle
+	TCT_enact_the_golden_circle = {
+		picture = confederacy_golden_circle
+		potential = {
+			tag = TCT
+			NOT = { has_country_flag = TCT_enacted_golden_circle }
+		}
+		allow = {
+			war = no
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = TCT_enacted_golden_circle
+			prestige = 80
+			badboy = 20
+			MXE = {
+				all_core = { add_core = TCT }
+			}
+			TUC = {
+				all_core = { add_core = TCT }
+			}
+			SPA_2209 = { add_core = TCT }
+			ENG_203 = { add_core = TCT }
+			HAI_2213 = { add_core = TCT }
+			ENG_2224 = { add_core = TCT }
+			ENG_2228 = { add_core = TCT }
+			CLM_1723 = { add_core = TCT }
+			CLM_2251 = { add_core = TCT }
+			VNZ_2234 = { add_core = TCT }
+			VNZ_2269 = { add_core = TCT }
 		}
 	}
 }

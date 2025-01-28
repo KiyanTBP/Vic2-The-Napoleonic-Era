@@ -1,0 +1,149 @@
+### Kingdom of Prussia
+# Memel to be annexed
+country_event = {
+	id = 100044
+	title = "EVENTNAME100044"
+	desc = "EVENTDESC100044"
+	is_triggered_only = yes
+	picture = "Memel"
+	
+	option = {
+		name = "EVENTOPTA100044"
+		inherit = MML
+		MML = {
+			all_core = { add_core = KOP }
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100044"
+		badboy = -1
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Accept the Lithuanians and Ashkhenazi?
+country_event = {
+	id = 100045
+	title = "EVENTNAME100045" 
+	desc = "EVENTDESC100045"
+	fire_only_once = yes
+	picture = "Memel"
+	
+	trigger = {
+		OR = {
+			tag = KOP
+			tag = KOG
+		}
+		owns = 698
+		year = 1860
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100045"
+		any_pop = {
+			limit = {
+				culture = north_german
+				culture = south_german
+			}
+			militancy = 3
+		}
+		add_accepted_culture = ashkenazi
+		add_accepted_culture = lithuanian
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100045"
+		any_pop = {
+			limit = {
+				culture = ashkenazi
+				culture = lithuanian
+			}
+			militancy = 1
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Claim Bohemia?
+country_event = {
+	id = 100046
+	title = "EVENTNAME100046" 
+	desc = "EVENTDESC100046"
+	fire_only_once = yes
+	picture = "Bohemia"
+	
+	trigger = {
+		tag = KOP
+		year = 1840
+	}
+	
+	mean_time_to_trigger = {
+		months = 3
+	}
+	
+	option = {
+		name = "EVENTOPTA100046"
+		prestige = 10
+		badboy = 2.5
+		AUS_625 = { add_core = KOP }
+		AUS_626 = { add_core = KOP }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100046"
+		badboy = -2.5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+### Kingdom of Germany
+# Is Austria German?
+country_event = {
+	id = 100043
+	title = "EVENTNAME100043"
+	desc = "EVENTDESC100043"
+	is_triggered_only = yes
+	picture = "Osterreich"
+	
+	option = {
+		name = "EVENTOPTA100043"
+		prestige = 30
+		badboy = 10
+		AUS_619 = { add_core = KOG }
+		AUS_612 = { add_core = KOG }
+		AUS_613 = { add_core = KOG }
+		AUS_734 = { add_core = KOG }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100043"
+		badboy = -5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
