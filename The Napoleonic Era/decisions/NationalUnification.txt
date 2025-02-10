@@ -92,6 +92,64 @@ political_decisions = {
 			947 = { add_core = POL }
 		}
 	}
+	# Unite Turkestan
+	TRK_unite_turkestan = {
+		picture = turkestan
+		potential = {
+			THIS = {
+				is_culture_group = turkestani
+			}
+			NOT = {
+				TRK = { exists = yes }
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					nationalism_n_imperialism = 1
+					TRK = {
+						all_core = {
+							owned_by = THIS
+						}
+					}
+				}
+				AND = {
+					civilized = yes
+					TRK = {
+						all_core = {
+							owner = {
+								OR = {
+									is_our_vassal = THIS
+									in_sphere = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 30
+			change_tag = TRK
+			any_country = {
+				limit = {
+					is_culture_group = turkestani
+					OR = {
+						is_our_vassal = THIS
+						in_sphere = THIS
+					}
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			add_accepted_culture = uzbek
+			add_accepted_culture = kirgiz
+			add_accepted_culture = kazak
+			add_accepted_culture = tajik
+			add_accepted_culture = turkmen
+		}
+	}
 	## vanilla
 	#form_south_german_confederation = {
 	#	potential = {

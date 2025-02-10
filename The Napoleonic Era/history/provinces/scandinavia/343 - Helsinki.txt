@@ -1,5 +1,6 @@
-owner = RUE
-controller = RUE
+owner = FIN
+controller = FIN
+add_core = FIN
 add_core = RUE
 trade_goods = grain
 life_rating = 35

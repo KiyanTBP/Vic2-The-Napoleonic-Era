@@ -1,0 +1,13 @@
+name = "Finnish War of Independence"
+
+1830.10.31 = {
+	add_attacker = FIN
+	add_defender = RUE
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = RUE
+		receiver = FIN
+	}
+
+}

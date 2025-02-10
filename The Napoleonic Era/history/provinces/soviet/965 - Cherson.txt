@@ -1,6 +1,7 @@
-owner = RUE
+owner = UKR
 controller = RUE
 add_core = RUE
+add_core = UKR
 trade_goods = fish
 life_rating = 35
 naval_base = 1

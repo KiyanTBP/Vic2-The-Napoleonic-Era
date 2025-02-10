@@ -1,5 +1,6 @@
-owner = EOB
-controller = EOB
+owner = RGR
+controller = RGR
+add_core = RGR
 add_core = EOB
 trade_goods = tobacco
 life_rating = 35

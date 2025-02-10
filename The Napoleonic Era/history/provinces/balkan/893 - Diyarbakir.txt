@@ -1,5 +1,7 @@
 owner = OTO
 controller = OTO
 add_core = OTO
+add_core = CUS
+add_core = ARM
 trade_goods = iron
 life_rating = 35

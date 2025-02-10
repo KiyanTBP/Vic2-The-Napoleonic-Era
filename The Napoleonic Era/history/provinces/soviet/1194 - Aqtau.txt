@@ -1,2 +1,3 @@
+add_core = TRK
 trade_goods = opium
 life_rating = 25

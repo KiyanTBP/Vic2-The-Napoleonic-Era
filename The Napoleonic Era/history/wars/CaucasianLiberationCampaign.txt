@@ -1,0 +1,13 @@
+name = "Caucasian Liberation Campaign"
+
+1830.11.5 = {
+	add_attacker = CUS
+	add_defender = RUE
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = RUE
+		receiver = CUS
+	}
+
+}

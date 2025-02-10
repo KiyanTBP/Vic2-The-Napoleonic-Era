@@ -1,0 +1,19 @@
+name = "The Ragamuffin War"
+
+1835.9.20 = {
+	add_attacker = RGR
+	add_defender = EOB
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = EOB
+		receiver = RGR
+	}
+	
+	war_goal = {
+		casus_belli = status_quo
+		actor = RGR
+		receiver = EOB
+	}
+
+}

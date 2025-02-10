@@ -1,10 +1,6 @@
-owner = RUE
-controller = RUE
+owner = UKR
+controller = UKR
+add_core = UKR
 add_core = RUE
 trade_goods = grain
 life_rating = 35
-#state_building = {
-#	level = 1
-#	building = glass_factory
-#	upgrade = yes
-#}

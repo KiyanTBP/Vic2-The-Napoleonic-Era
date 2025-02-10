@@ -27598,7 +27598,7 @@
 
 }
 
-# Hradec Kr�lov�
+# Hradec Králové
 626 = {
     text_position = {
         x = 3054.399902
@@ -27723,30 +27723,30 @@
 
 # Plzen
 629 = {
-    unit = {
-        x = 3011.000000
-        y = 1622.000000
-    }
-
     text_position = {
-        x = 3011.600098
-        y = 1619.800049
+        x = 3007.100000
+        y = 1619.450000
     }
 
     text_scale = 2.400000
-    building_construction = {
-        x = 3017.000000
-        y = 1626.000000
-    }
-
-    military_construction = {
-        x = 3016.800049
-        y = 1620.000000
+    unit = {
+        x = 3007.450000
+        y = 1621.150000
     }
 
     factory = {
         x = 3004.300049
         y = 1625.000000
+    }
+
+    building_construction = {
+        x = 3012.700000
+        y = 1618.700000
+    }
+
+    military_construction = {
+        x = 3008.400000
+        y = 1620.800000
     }
 
     building_position = {
@@ -27762,12 +27762,17 @@
 # Budejovice
 630 = {
     text_position = {
-        x = 3031.399902
-        y = 1608.699951
+        x = 3030.050000
+        y = 1605.200000
     }
 
     text_rotation = 6.283185
     text_scale = 2.600000
+    factory = {
+        x = 3024.700000
+        y = 1607.100000
+    }
+
     building_construction = {
         x = 3041.199951
         y = 1612.900024
@@ -27778,15 +27783,10 @@
         y = 1607.000000
     }
 
-    factory = {
-        x = 3024.000000
-        y = 1614.000000
-    }
-
     building_position = {
         fort = {
-            x = 3043.000000
-            y = 1617.000000
+            x = 3037.400000
+            y = 1608.750000
         }
 
         naval_base = {

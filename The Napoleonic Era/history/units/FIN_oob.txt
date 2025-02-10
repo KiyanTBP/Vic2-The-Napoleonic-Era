@@ -1,0 +1,24 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Finnish Militia"
+	location = 343
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 343
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 345
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = artillery
+		home = 346
+	}
+}

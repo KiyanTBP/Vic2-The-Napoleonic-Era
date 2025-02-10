@@ -1,5 +1,6 @@
-owner = RUE
+owner = UBD
 controller = RUE
 add_core = RUE
+add_core = UBD
 trade_goods = grain
 life_rating = 35

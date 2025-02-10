@@ -1,5 +1,6 @@
 owner = RUE
 controller = RUE
+add_core = ALT
 trade_goods = fish
 life_rating = 20
 colonial = 2

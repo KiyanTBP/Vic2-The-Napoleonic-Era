@@ -1,3 +1,121 @@
+### Russia
+# The Tsardom
+country_event = {
+	id = 100062
+	title = "EVENTNAME100062"
+	desc = "EVENTDESC100062"
+	picture = "RussianTsardom"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUE
+		war = no
+	}
+	
+	option = {
+		name = "EVENTOPTA100062"
+		add_country_modifier = {
+			name = RUE_tsardom
+			duration = 1280
+		}
+		any_pop = {
+			consciousness = 1
+		}
+	}
+}
+
+# Taking Control of Central Asia
+country_event = {
+	id = 100063
+	title = "EVENTNAME100063"
+	desc = "EVENTDESC100063"
+	picture = "CentralAsia"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUE
+		year = 1845
+		war = no
+	}
+	
+	option = {
+		name = "EVENTOPTA100063"
+		prestige = 25
+		TRK = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100063"
+		prestige = -20
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+# The Tsar flees!
+country_event = {
+	id = 100064
+	title = "EVENTNAME100064"
+	desc = "EVENTDESC100064"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = RUE
+		owns = 3
+		owns = 4
+		NOT = {
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100064"
+		prestige = -10
+		remove_country_modifier = RUE_tsardom
+		USA_1 = {
+			secede_province = ALT
+		}
+		ALT = {
+			government = absolute_monarchy
+			capital = 4
+			add_country_modifier = {
+				name = RUE_tsardom
+				duration = 480
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100064"
+		prestige = -10
+		remove_country_modifier = RUE_tsardom
+		USA_1 = {
+			secede_province = ALT
+		}
+		ALT = {
+			government = absolute_monarchy
+			capital = 4
+			add_country_modifier = {
+				name = RUE_tsardom
+				duration = 480
+			}
+		}
+		change_tag_no_core_switch = ALT
+	}
+}
+
 # Selling Alaska
 country_event = {
 	id = 100058
@@ -55,6 +173,53 @@ country_event = {
 	option = {
 		name = "EVENTOPTB100059"
 		prestige = -5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+### Russian Breakaway States - Caucasian Union State
+# Fate of the Caucasian Union
+country_event = {
+	id = 100061
+	title = "EVENTNAME100061"
+	desc = "EVENTDESC100061"
+	is_triggered_only = yes
+	picture = "CaucasianUnion"
+	
+	option = {
+		name = "EVENTOPTA100061"
+		RUS_1098 = {
+			remove_core = RUE
+			secede_province = ARM
+		}
+		RUS_1102 = {
+			remove_core = RUE
+			secede_province = AZB
+		}
+		RUS_1090 = {
+			remove_core = RUE
+			secede_province = GEO
+		}
+		1049 = { secede_province = GEO }
+		1052 = { secede_province = AZB }
+		change_tag_no_core_switch = GEO
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100061"
+		prestige = 30
+		RUS_1098 = { remove_core = RUE }
+		RUS_1102 = { remove_core = RUE }
+		RUS_1090 = { remove_core = RUE }
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
 		ai_chance = {
 			factor = 50
 		}

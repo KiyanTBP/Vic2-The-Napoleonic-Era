@@ -1,5 +1,7 @@
-owner = RUE
-controller = RUE
+owner = CUS
+controller = CUS
+add_core = CUS
+add_core = ARM
 add_core = RUE
 trade_goods = iron
 life_rating = 35

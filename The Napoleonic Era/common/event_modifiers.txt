@@ -114,6 +114,21 @@ QNG_rejection_of_modernity = {
 	icon = 4
 }
 
+##### FINLAND #####
+FIN_free_finland = {
+	prestige = 0.01
+	research_points_modifier = 0.1
+	icon = 5
+}
+
+##### RUSSIA #####
+RUE_tsardom = {
+	global_pop_militancy_modifier = 0.1
+	global_pop_consciousness_modifier = 0.1
+	suppression_points_modifier = 0.1
+	icon = 4
+}
+
 ##### POLITICAL EVENTS ######
 government_sanitarium = {
 	population_growth = 0.005

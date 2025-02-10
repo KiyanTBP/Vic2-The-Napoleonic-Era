@@ -1,5 +1,6 @@
-owner = RUE
+owner = CUS
 controller = RUE
+add_core = CUS
 add_core = RUE
 trade_goods = fruit
 life_rating = 35

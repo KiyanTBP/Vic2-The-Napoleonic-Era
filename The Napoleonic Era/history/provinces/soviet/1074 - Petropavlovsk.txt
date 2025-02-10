@@ -1,5 +1,4 @@
-owner = RUE
-controller = RUE
-add_core = RUE
+owner = TGS
+controller = TGS
 trade_goods = fish
 life_rating = 20

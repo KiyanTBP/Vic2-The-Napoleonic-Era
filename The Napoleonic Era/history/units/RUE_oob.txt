@@ -1,4 +1,57 @@
 # leaders
+leader = {
+	name = "Prince Vasilchikov"
+	date = 1801.1.1
+	type = land
+	personality = competent
+	background = powerful_friends
+	prestige = 0.4
+}
+
+leader = {
+	name = "Prince Mikhail Vorontsov"
+	date = 1814.1.1
+	type = land
+	personality = daring
+	background = gifted_administrator
+	prestige = 0.3
+}
+
+leader = {
+	name = "Pyotr Chicherin"
+	date = 1835.1.1
+	type = land
+	personality = earnest
+	background = cavalry_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "Alexander Chernyshev"
+	date = 1821.1.1
+	type = land
+	personality = intelligent
+	background = diplomat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Prince Menshikov"
+	date = 1833.1.1
+	type = sea
+	personality = lackluster
+	background = clueless
+	prestige = 0.1
+}
+
+leader = {
+	name = " Ivan Paskevich"
+	date = 1812.1.1
+	type = land
+	personality = merciless
+	background = school_of_offense
+	prestige = 0.3
+}
 
 # armies and navies
 army = {
@@ -19,6 +72,118 @@ army = {
 	regiment = {
 		name= "3. Army"
 		type = hussar
+		home = 994
+	}
+}
+
+army = {
+	name = "Ukrainian Regiment"
+	location = 962
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 718
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 977
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = infantry
+		home = 977
+	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 1019
+	}
+
+	regiment = {
+		name= "5. Army"
+		type = artillery
+		home = 1019
+	}
+}
+
+army = {
+	name = "Caucasian Regiment"
+	location = 1103
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 1050
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 1050
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = artillery
+		home = 1051
+	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 1047
+	}
+
+	regiment = {
+		name= "5. Army"
+		type = artillery
+		home = 1047
+	}
+}
+
+army = {
+	name = "Baltic Regiment"
+	location = 360
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 1008
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 1010
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = artillery
+		home = 1010
+	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 1010
+	}
+}
+
+army = {
+	name = "Finnish Regiment"
+	location = 340
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 997
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
 		home = 994
 	}
 }

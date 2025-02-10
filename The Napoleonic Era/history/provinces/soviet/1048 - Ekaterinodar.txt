@@ -1,5 +1,6 @@
 owner = RUE
 controller = RUE
 add_core = RUE
+add_core = CUS
 trade_goods = cattle
 life_rating = 35

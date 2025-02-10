@@ -1,5 +1,6 @@
-owner = RUE
+owner = UKR
 controller = RUE
 add_core = RUE
+add_core = UKR
 trade_goods = coal
 life_rating = 35

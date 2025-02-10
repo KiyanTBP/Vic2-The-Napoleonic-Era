@@ -1,0 +1,42 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Ukrainian Militia"
+	location = 958
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 958
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 960
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = artillery
+		home = 969
+	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 968
+	}
+
+	regiment = {
+		name= "5. Army"
+		type = artillery
+		home = 954
+	}
+
+	regiment = {
+		name= "6. Army"
+		type = hussar
+		home = 955
+	}
+}

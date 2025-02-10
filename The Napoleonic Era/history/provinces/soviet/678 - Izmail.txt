@@ -1,5 +1,5 @@
-owner = RUE
-controller = RUE
+owner = UKR
+controller = UKR
 add_core = RUE
 add_core = RMU
 trade_goods = fish

@@ -943,51 +943,6 @@ iranian_turanian = {
 			Shirazi Tabrizi Tahmasebi Zahedi
 			}
 	}
-	uzbek = {
-		color = {152 67 56}
-		first_names = {
-			"Abd al-Ahad" "Abd al-Karim" "Abu al-Ghazi" Abulfayz Alimqul Aqim "Allah Quli" Haydar Husayn 
-			Iltazar Isfandiyar Jahangir Khudayar Madali Mahmud Muhammad Murad 
-			Nasrallah "Nasir al-Din" Nurali Pulad Qilich Qutlugh Rahim Shir Umar Yadigar Yaqub 
-			}
-		last_names = {
-			Bahadur Bukhari Khan
-			}
-	}
-	kazak = {
-		color = {83 102 46}
-		first_names = {
-			Ablai "Abu al-Khayr" Aryn Bukei Chokan 
-			Dulat Ibirai Isatai Ishim Jangir Kenisary 
-			Mashur Murat "Nur Ali" Qayip 
-			Sadyk Sirim Sarzhan 
-			Tenek Tolshan Vali
-			}
-		last_names = {
-			Beg  Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
-			}
-	}
-	kirgiz = {
-		color = {62 73 41}
-		first_names = {
-			Askar Chingiz Ishim Kasim Kurman Jangir Murat Nasiridin Sadyk Vali
-			}
-		last_names = {
-			Beg 
-			}
-	}
-	tajik = {
-		color = {122 127 111}
-			first_names = {
-			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
-			Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
-			Nadir "Naser ed-Din" Nosret Reza
-			}
-		last_names = {
-			Khan
-			}
-	}
 	uighur = {
 		color = {92 96 168}
 		first_names = { 
@@ -1027,15 +982,6 @@ iranian_turanian = {
 		color = {172 120 211}
 		first_names = {
 			Ali Azim Jafar Mohammad Riza
-		}
-		last_names = {
-			Beg Khan
-		}
-	}
-	turkmen = {
-		color = {192 150 190}
-		first_names = {
-			Ahmed Haydar Mehmed Murad Nurberdi Qilich
 		}
 		last_names = {
 			Beg Khan
@@ -1109,6 +1055,68 @@ central_asian = {
 		}
 		radicalism = 10
 	}
+}
+
+turkestani = {
+	leader = arab
+	is_overseas = no
+	unit = MiddleEasternGC
+	uzbek = {
+		color = {152 67 56}
+		first_names = {
+			"Abd al-Ahad" "Abd al-Karim" "Abu al-Ghazi" Abulfayz Alimqul Aqim "Allah Quli" Haydar Husayn 
+			Iltazar Isfandiyar Jahangir Khudayar Madali Mahmud Muhammad Murad 
+			Nasrallah "Nasir al-Din" Nurali Pulad Qilich Qutlugh Rahim Shir Umar Yadigar Yaqub 
+			}
+		last_names = {
+			Bahadur Bukhari Khan
+			}
+	}
+	kazak = {
+		color = {83 102 46}
+		first_names = {
+			Ablai "Abu al-Khayr" Aryn Bukei Chokan 
+			Dulat Ibirai Isatai Ishim Jangir Kenisary 
+			Mashur Murat "Nur Ali" Qayip 
+			Sadyk Sirim Sarzhan 
+			Tenek Tolshan Vali
+			}
+		last_names = {
+			Beg  Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
+			}
+	}
+	kirgiz = {
+		color = {62 73 41}
+		first_names = {
+			Askar Chingiz Ishim Kasim Kurman Jangir Murat Nasiridin Sadyk Vali
+			}
+		last_names = {
+			Beg 
+			}
+	}
+	tajik = {
+		color = {122 127 111}
+			first_names = {
+			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			Nadir "Naser ed-Din" Nosret Reza
+			}
+		last_names = {
+			Khan
+			}
+	}
+	turkmen = {
+		color = {192 150 190}
+		first_names = {
+			Ahmed Haydar Mehmed Murad Nurberdi Qilich
+		}
+		last_names = {
+			Beg Khan
+		}
+	}
+	
+	union = TRK
 }
 
 south_asian = {

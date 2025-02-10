@@ -1,0 +1,18 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Baltic Militia"
+	location = 363
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 355
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 349
+	}
+}

@@ -65,6 +65,9 @@ RMU = "countries/ROMANIAUNION.txt"
 
 # Russia... oh dear lord
 RUE = "countries/Russian Empire.txt"
+CUS = "countries/Caucasian Union State.txt"
+TRK = "countries/Turkestan.txt"
+ALT = "countries/Alaskan Tsardom.txt"
 
 # THE MAGHRED!!!
 ALG = "countries/AlgeriaTWO.txt"
@@ -100,10 +103,13 @@ PBC = "countries/The PeruBolivian Confederation.txt"
 NWL = "countries/New Wales.txt"
 UPP = "countries/The United Provinces of La Plata.txt"
 PTG = "countries/Patagonia.txt"
+RGR = "countries/Riograndense Republic.txt"
 
 # uhh umm east asia
 PGN = "countries/Provisial Government of the Netherlands.txt"
 QNG = "countries/Qing Empire.txt"
+TGS = "countries/Tokugawa Shogunate.txt"
+JPE = "countries/Japanese Empire.txt"
 
 # The Great Power Formables
 TCE = "countries/The Carolingian Empire.txt"

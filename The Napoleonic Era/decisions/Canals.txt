@@ -63,6 +63,10 @@ political_decisions = {
 			1755 = { secede_province = THIS }
 			1755 = { set_province_flag = suez_canal }
 			prestige = 10
+			country_event = {
+				id = 100051
+				days = 0
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -100,6 +104,10 @@ political_decisions = {
 			1723 = { secede_province = THIS }
 			1723 = { set_province_flag = panama_canal }
 			prestige = 10
+			country_event = {
+				id = 100052
+				days = 0
+			}
 		}
 		ai_will_do = {
 			factor = 1

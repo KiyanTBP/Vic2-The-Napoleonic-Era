@@ -1,0 +1,18 @@
+# leaders
+
+# armies and navies
+army = {
+	name = "Caucasian Rebellion Force"
+	location = 1090
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 1090
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = artillery
+		home = 1049
+	}
+}

@@ -1,0 +1,5 @@
+owner = TGS
+controller = TGS
+add_core = TGS
+trade_goods = tea
+life_rating = 35

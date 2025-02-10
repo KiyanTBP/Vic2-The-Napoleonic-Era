@@ -1,0 +1,20 @@
+name = "West Russian Liberation Campaign"
+
+1830.11.5 = {
+	add_attacker = UKR
+	add_attacker = UBD
+	add_defender = RUE
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = RUE
+		receiver = UKR
+	}
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = RUE
+		receiver = UBD
+	}
+
+}

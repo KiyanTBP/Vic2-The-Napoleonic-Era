@@ -1,0 +1,77 @@
+political_decisions = {
+	# Proclaim the Japanese Empire
+	TGS_proclaim_japanese_empire = {
+		picture = japan
+		potential = {
+			tag = TGS
+			year = 1845
+			NOT = { has_country_flag = TGS_is_japan_now }
+		}
+		allow = {
+			OR ={
+				AND = {
+					civilized = yes
+					state_n_government = 1
+				}
+				AND = {
+					year = 1890
+					rank = 12
+				}
+			}
+		}
+		effect = {
+			set_country_flag = TGS_is_japan_now
+			prestige = 35
+			change_tag = JPE
+		}
+	}
+	# Proclaim Japanese Siberia
+	TGS_proclaim_japanese_siberia = {
+		picture = kamchatka
+		potential = {
+			OR = {
+				tag = TGS
+				tag = JPE
+			}
+			NOT = { has_country_flag = TGS_proclaimed_japenese_siberia }
+		}
+		allow = {
+			civilized = yes
+			owns = 1074
+			owns = 2633
+		}
+		effect = {
+			set_country_flag = TGS_proclaimed_japenese_siberia
+			prestige = 30
+			badboy = 5
+			RUS_1074 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_2590 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_2618 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_2621 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_1072 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_2668 = {
+				add_core = TGS
+				add_core = JPE
+			}
+			RUS_1071 = {
+				add_core = TGS
+				add_core = JPE
+			}
+		}
+	}
+}
