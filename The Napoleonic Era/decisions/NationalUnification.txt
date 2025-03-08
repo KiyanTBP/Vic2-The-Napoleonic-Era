@@ -150,6 +150,82 @@ political_decisions = {
 			add_accepted_culture = turkmen
 		}
 	}
+	# Unite South America
+	UAS_unite_south_america = {
+		picture = south_america_map
+		potential = {
+			THIS = {
+				capital_scope = { continent = south_america }
+			}
+			NOT = {
+				UAS = { exists = yes }
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			year = 1900
+			OR = {
+				AND = {
+					owns = 2447
+					owns = 2348
+					owns = 2311
+					owns = 2247
+				}
+				AND = {
+					tag = EOB
+					2348 = { owner = { in_sphere = THIS } }
+					2311 = { owner = { in_sphere = THIS } }
+					2247 = { owner = { in_sphere = THIS } }
+				}
+				AND = {
+					tag = UPP
+					2447 = { owner = { in_sphere = THIS } }
+					2311 = { owner = { in_sphere = THIS } }
+					2247 = { owner = { in_sphere = THIS } }
+				}
+				AND = {
+					tag = PBC
+					2447 = { owner = { in_sphere = THIS } }
+					2348 = { owner = { in_sphere = THIS } }
+					2247 = { owner = { in_sphere = THIS } }
+				}
+				AND = {
+					tag = GCT
+					2447 = { owner = { in_sphere = THIS } }
+					2348 = { owner = { in_sphere = THIS } }
+					2311 = { owner = { in_sphere = THIS } }
+				}
+			}
+		}
+		effect = {
+			prestige = 50
+			change_tag = UAS
+			any_country = {
+				limit = {
+					capital_scope = { continent = south_america }
+				}
+				all_core = {
+					add_core = UAS
+				}
+			}
+			any_country = {
+				limit = {
+					capital_scope = { continent = south_america }
+					OR = {
+						is_our_vassal = THIS
+						in_sphere = THIS
+					}
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			add_accepted_culture = brazilian
+			add_accepted_culture = platinean
+			add_accepted_culture = south_andean
+			add_accepted_culture = north_andean
+		}
+	}
 	## vanilla
 	#form_south_german_confederation = {
 	#	potential = {
@@ -352,6 +428,7 @@ political_decisions = {
 					is_culture_group = italian
 					is_culture_group = arab
 					is_culture_group = south_slavic
+					is_culture_group = turkestani
 					tag = ECU
 					tag = CLM
 					tag = VNZ

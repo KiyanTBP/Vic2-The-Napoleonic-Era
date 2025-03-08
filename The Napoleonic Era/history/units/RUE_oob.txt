@@ -53,6 +53,15 @@ leader = {
 	prestige = 0.3
 }
 
+leader = {
+	name = "Ferdinand Wrangel"
+	date = 1836.1.1
+	type = sea
+	personality = active_p
+	background = cartographer
+	prestige = 0.0
+}
+
 # armies and navies
 army = {
 	name = "Saint Petersburg's Guard"
@@ -186,4 +195,139 @@ army = {
 		type = infantry
 		home = 994
 	}
+}
+
+navy = {
+	name = "Imperial Northern Fleet"
+	location = 994
+	ship = {
+		name= "Dvenadtsat' Apostolov"
+		type = manowar
+	}
+
+	ship = {
+		name= "Poltava"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ratnyi"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hiagudil"
+		type = manowar
+	}
+
+	ship = {
+		name= "Gangut"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ezekiel"
+		type = manowar
+	}
+
+	ship = {
+		name= "Tsar Konstantin"
+		type = manowar
+	}
+
+	ship = {
+		name= "Yaroslav"
+		type = manowar
+	}
+
+	ship = {
+		name= "Izyaslav"
+		type = manowar
+	}
+
+	ship = {
+		name= "Pravyi"
+		type = manowar
+	}
+
+	ship = {
+		name= "Isidor"
+		type = manowar
+	}
+
+	ship = {
+		name= "Anapa"
+		type = manowar
+	}
+
+	ship = {
+		name= "Maria"
+		type = manowar
+	}
+
+	ship = {
+		name= "Dimitri Donskoi"
+		type = manowar
+	}
+
+	ship = {
+		name= "Paraskevia"
+		type = manowar
+	}
+
+	ship = {
+		name= "Sv Ytoslav"
+		type = manowar
+	}
+
+	ship = {
+		name= "Spyesttunyi"
+		type = frigate
+	}
+
+	ship = {
+		name= "Narva"
+		type = frigate
+	}
+
+	ship = {
+		name= "Premyslav"
+		type = frigate
+	}
+
+	ship = {
+		name= "Riga"
+		type = frigate
+	}
+
+	ship = {
+		name= "Viatcheslav"
+		type = frigate
+	}
+
+	ship = {
+		name= "Emmanuel"
+		type = frigate
+	}
+
+	ship = {
+		name= "Borislav"
+		type = frigate
+	}
+
+	ship = {
+		name= "Legkii"
+		type = frigate
+	}
+
+	ship = {
+		name= "3. Transportnaya Flotiliya"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "4. Transportnaya Flotiliya"
+		type = clipper_transport
+	}
+
 }

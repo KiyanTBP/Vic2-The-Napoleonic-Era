@@ -104,6 +104,9 @@ NWL = "countries/New Wales.txt"
 UPP = "countries/The United Provinces of La Plata.txt"
 PTG = "countries/Patagonia.txt"
 RGR = "countries/Riograndense Republic.txt"
+UAS = "countries/Union of South American Nations.txt"
+GYA = "countries/Guyana.txt"
+NBZ = "countries/NederlandsBrazilie.txt"
 
 # uhh umm east asia
 PGN = "countries/Provisial Government of the Netherlands.txt"

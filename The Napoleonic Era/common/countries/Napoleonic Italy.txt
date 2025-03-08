@@ -1,4 +1,5 @@
-color = { 60  160  80 }
+color = { 125  205  140 }
+fascist_dictatorship = { 50 90 55}
 graphical_culture = FrenchGC
 
 party = {

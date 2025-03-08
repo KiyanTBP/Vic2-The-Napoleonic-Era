@@ -41,15 +41,25 @@ political_decisions = {
 		picture = TEXAS
 		potential = {
 			tag = TUT
-			exists = TXR
 			NOT = { has_country_flag = TUT_integrated_texas }
 		}
 		allow = {
 			war = no
-			TXR = {
-				OR = {
-					in_sphere = THIS
-					is_our_vassal = THIS
+			OR = {
+				AND = {
+					TXR = {
+						OR = {
+							in_sphere = THIS
+							is_our_vassal = THIS
+						}
+					}
+					exists = TXR
+				}
+				AND = {
+					owns = 132
+					owns = 133
+					owns = 134
+					owns = 137
 				}
 			}
 		}

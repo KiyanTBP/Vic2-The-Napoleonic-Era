@@ -5,7 +5,7 @@ religion = protestant
 government = absolute_monarchy
 plurality = 25
 nationalvalue = nv_equality
-literacy = 0.60
+literacy = 0.80
 civilized = yes
 
 # prestige

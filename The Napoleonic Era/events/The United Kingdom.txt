@@ -35,6 +35,74 @@ country_event = {
 	}
 }
 
+# British Reorginization of India
+country_event = {
+	id = 100076
+	title = "EVENTNAME100076"
+	desc = "EVENTDESC100076"
+	is_triggered_only = yes
+	picture = "India"
+	
+	option = {
+		name = "EVENTOPTA100076"
+		UKG = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100076"
+		prestige = 10
+		UKG = {
+			release_vassal = THIS
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquest }
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# British Demands of Vassalisation
+country_event = {
+	id = 100077
+	title = "EVENTNAME100077"
+	desc = "EVENTDESC100077"
+	is_triggered_only = yes
+	picture = "India"
+	
+	option = {
+		name = "EVENTOPTA100077"
+		UKG = {
+			create_vassal = THIS
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100077"
+		prestige = 20
+		UKG = {
+			add_casus_belli = {
+				target = THIS
+				type = make_puppet
+				months = 48
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
 ### FRENCH DISMANTLEMENT
 # The London Conference
 country_event = {

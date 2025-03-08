@@ -13,14 +13,14 @@ TUC = {
 
 TXR = {
 	value = 125
-	level = 3
+	level = 4
 	influence_value = 45
 }
 
 MXE = {
-	value = 75
-	level = 2
-	influence_value = 25
+	value = -50
+	level = 1
+	influence_value = -25
 }
 
 # leaders
@@ -97,4 +97,49 @@ army = {
 		type = hussar
 		home = 242
 	}
+}
+
+navy = {
+	name = "1st Squadron"
+	location = 222
+	ship = {
+		name= "Franklin"
+		type = manowar
+	}
+
+	ship = {
+		name= "Pennsylvania"
+		type = manowar
+	}
+
+	ship = {
+		name= "Washington"
+		type = manowar
+	}
+
+	ship = {
+		name= "Columbia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Constellation"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "2nd Squadron"
+	location = 248
+	ship = {
+		name= "Ohio"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hudson"
+		type = frigate
+	}
+
 }

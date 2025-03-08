@@ -4,7 +4,7 @@ religion = sunni
 government = absolute_monarchy
 plurality = 25
 nationalvalue = nv_equality
-literacy = 0.60
+literacy = 0.25
 civilized = yes
 
 # yep... prestige
@@ -55,9 +55,9 @@ oob = "OTO_oob.txt"
 ruling_party = OTO_conservative
 upper_house = {
 	fascist = 0
-	liberal = 30
-	conservative = 45
-	reactionary = 25
+	liberal = 5
+	conservative = 50
+	reactionary = 45
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

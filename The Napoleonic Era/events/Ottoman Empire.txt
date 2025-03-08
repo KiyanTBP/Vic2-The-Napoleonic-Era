@@ -1,0 +1,328 @@
+# The Oriental Crisis!
+country_event = {
+	id = 100066
+	title = "EVENTNAME100066"
+	desc = "EVENTDESC100066"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = OTO
+		year = 1840
+	}
+	
+	option = {
+		name = "EVENTOPTA100066"
+		set_country_flag = OTO_oriental_crisis
+		release_vassal = EGK
+		war = {
+			target = EGK
+			attacker_goal = { casus_belli = event_based_war }
+		}
+		894 = { add_core = OTO }
+		896 = { add_core = OTO }
+		898 = { add_core = OTO }
+		EGY_921 = { add_core = OTO }
+		EGY_915 = { add_core = OTO }
+		EGY_903 = { add_core = OTO }
+		EGY_897 = { add_core = OTO }
+		EGY_903 = { add_core = OTO }
+		EGY_910 = { add_core = OTO }
+		NEJ_1156 = { add_core = OTO }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100066"
+		prestige = -30
+		release_vassal = EGK
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Egyptian Peace Conference
+country_event = {
+	id = 100067
+	title = "EVENTNAME100067"
+	desc = "EVENTDESC100067"
+	picture = "TreatyOfEgypt"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100067"
+		prestige = 20
+		badboy = 5
+		create_vassal = EGK
+		EGK = {
+			any_owned = {
+				limit = {
+					is_core = OTO
+				}
+				secede_province = OTO
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100067"
+		prestige = 40
+		badboy = 10
+		inherit = EGK
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -25
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+# Tripoli Revolts!
+country_event = {
+	id = 100071
+	title = "EVENTNAME100071"
+	desc = "EVENTDESC100071"
+	fire_only_once = yes
+	picture = "Tripoli"
+	
+	trigger = {
+		year = 1848
+		OR = {
+			AND = {
+				tag = OTO
+				owns = 1731
+			}
+			AND = {
+				tag = EGK
+				owns = 1731
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100071"
+		THIS = {
+			release = TRI
+		}
+		OTO = {
+			war = {
+				target = TRI
+				attacker_goal = { casus_belli = annex_core_country }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100071"
+		THIS = {
+			release = TRI
+		}
+		OTO = {
+			war = {
+				target = TRI
+				attacker_goal = { casus_belli = annex_core_country }
+			}
+		}
+		change_tag_no_core_switch = TRI
+	}
+}
+
+### OTTOMAN COLLAPSE
+# Egypt breaks Free!
+country_event = {
+	id = 100074
+	title = "EVENTNAME100074"
+	desc = "EVENTDESC100074"
+	fire_only_once = yes
+	picture = "TreatyOfEgypt"
+	
+	trigger = {
+		tag = OTO
+		year = 1848
+		is_greater_power = no
+		EGK = {
+			exists = yes
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100074"
+		prestige = -20
+		release_vassal = EGK
+	}
+}
+
+# Serbia declares Independance!
+country_event = {
+	id = 100075
+	title = "EVENTNAME100075"
+	desc = "EVENTDESC100075"
+	fire_only_once = yes
+	picture = "BalkanReorganization"
+	
+	trigger = {
+		tag = OTO
+		SER_794 = { owned_by = THIS }
+		is_greater_power = no
+		SER = {
+			exists = no
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100075"
+		prestige = -5
+		SER_794 = {
+			secede_province = SER
+		}
+	}
+}
+
+# Romanian Puppets freed!
+country_event = {
+	id = 100078
+	title = "EVENTNAME100078"
+	desc = "EVENTDESC100078"
+	fire_only_once = yes
+	picture = "BalkanReorganization"
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = OTO
+				is_greater_power = no
+				WCT = { vassal_of = THIS }
+				MDT = { vassal_of = THIS }
+			}
+			AND = {
+				tag = OTO
+				year = 1855
+				exists = WCT
+				exists = MDT
+				NOT = { exists = EGK }
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "EVENTOPTA100078"
+		prestige = -15
+		release_vassal = WCT
+		release_vassal = MDT
+	}
+}
+
+# Balkan Reorganization
+country_event = {
+	id = 100068
+	title = "EVENTNAME100068"
+	desc = "EVENTDESC100068"
+	picture = "BalkanReorganization"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100068"
+		country_event = 100069
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100068"
+		country_event = 100070
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+# The New Balkans
+country_event = {
+	id = 100069
+	title = "EVENTNAME100069"
+	desc = "EVENTDESC100069"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100068"
+		prestige = 80
+		OTO = {
+			release = BUL
+			release = SER
+			release = ALB
+			release = MON
+		}
+		BUL = {
+			all_core = {
+				remove_core = OTO
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		SER = {
+			all_core = {
+				remove_core = OTO
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		ALB = {
+			all_core = {
+				remove_core = OTO
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		MON = {
+			all_core = {
+				remove_core = OTO
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+	}
+}
+
+# The Old Balkans
+country_event = {
+	id = 100070
+	title = "EVENTNAME100070"
+	desc = "EVENTDESC100070"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100070"
+		prestige = 80
+		relation = {
+			who = OTO
+			value = 100
+		}
+	}
+}

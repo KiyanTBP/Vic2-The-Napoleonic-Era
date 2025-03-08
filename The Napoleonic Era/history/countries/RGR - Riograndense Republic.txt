@@ -53,6 +53,9 @@ publishing_industry = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
+# Army
+oob = "RGR_oob.txt"
+
 ruling_party = RGR_conservative
 upper_house = {
 	fascist = 0

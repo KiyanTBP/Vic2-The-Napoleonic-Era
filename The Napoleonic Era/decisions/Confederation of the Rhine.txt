@@ -56,6 +56,7 @@ political_decisions = {
 	unite_the_confederation_of_the_rhine = {
 		picture = confederation_of_the_rhine
 		potential = {
+			NOT = { tag = KOG }
 			NOT = { exists = COR }
 			THIS = { has_country_modifier = COR_member }
 		}

@@ -1,0 +1,43 @@
+# Brazilian Slavery
+country_event = {
+	id = 100065
+	title = "EVENTNAME100065"
+	desc = "EVENTDESC100065"
+	fire_only_once = yes
+	picture = "SlaveryDebate"
+	
+	trigger = {
+		tag = EOB
+	}
+	
+	option = {
+		name = "EVENTOPTA100065"
+		set_country_flag = the_slavery_debate
+	}
+}
+
+# The End of the Rio Grande Movement
+country_event = {
+	id = 100073
+	title = "EVENTNAME100073"
+	desc = "EVENTDESC100073"
+	fire_only_once = yes
+	picture = "RioGrande"
+	
+	trigger = {
+		tag = EOB
+		RGR = {
+			exists = no
+		}
+		year = 1842
+	}
+	
+	option = {
+		name = "EVENTOPTA100073"
+		prestige = 5
+		any_owned = {
+			limit = { is_core = RGR }
+			remove_core = RGR
+		}
+	}
+}

@@ -4,7 +4,10 @@ political_decisions = {
 	KOP_declare_a_german_nation = {
 		picture = formable_germany
 		potential = {
-			tag = KOP
+			OR = {
+				tag = KOP
+				tag = COR
+			}
 			is_greater_power = yes
 			NOT = { exists = KOG }
 			NOT = { tag = KOG }

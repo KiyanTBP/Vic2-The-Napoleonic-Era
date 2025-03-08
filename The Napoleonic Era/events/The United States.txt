@@ -423,3 +423,47 @@ country_event = {
 		change_tag_no_core_switch = TCT
 	}
 }
+
+# Texas requests Help!
+country_event = {
+	id = 100072
+	title = "EVENTNAME100072"
+	desc = "EVENTDESC100072"
+	fire_only_once = yes
+	picture = "Alamo"
+	
+	trigger = {
+		tag = TUT
+		war = no
+		TXR = {
+			NOT = { military_score = 2 } 
+		}
+		MXE = {
+			war_with = TXR
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100072"
+		prestige = 5
+		relation = {
+			who = MXE
+			value = -100
+		}
+		war = {
+			target = MXE
+			attacker_goal = { casus_belli = cut_down_to_size }
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100072"
+		prestige = -5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

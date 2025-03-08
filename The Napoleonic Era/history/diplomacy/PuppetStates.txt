@@ -94,3 +94,19 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+
+# British Guyana
+vassal = {
+	first = UKG
+	second = GYA
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+# Brazilian Dutch Brazil
+vassal = {
+	first = EOB
+	second = NBZ
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

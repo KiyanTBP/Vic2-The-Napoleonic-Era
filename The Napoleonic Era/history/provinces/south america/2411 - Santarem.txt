@@ -1,3 +1,6 @@
+owner = NBZ
+controller = NBZ
 add_core = EOB
+add_core = NBZ
 trade_goods = grain
 life_rating = 25

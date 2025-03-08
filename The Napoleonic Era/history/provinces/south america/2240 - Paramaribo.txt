@@ -1,5 +1,6 @@
 owner = UKG
 controller = UKG
+add_core = GYA
 trade_goods = grain
 life_rating = 30
 colonial = 2

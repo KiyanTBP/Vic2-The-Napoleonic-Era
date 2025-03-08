@@ -1,10 +1,26 @@
+# sphere
+NBZ = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
 # leaders
 leader = {
-	name = "Pierre Labatut"
-	date = 1824.1.1
+	name = "Luis Alves"
+	date = 1835.1.1
 	type = land
-	personality = arrogant
-	background = adventurer
+	personality = daring
+	background = armchair_general
+	prestige = 0.1
+}
+
+leader = {
+	name = "Manuel Rodrigues"
+	date = 1800.1.1
+	type = land
+	personality = cautious
+	background = old_school
 	prestige = 0.1
 }
 
@@ -35,4 +51,66 @@ army = {
 		type = artillery
 		home = 2450
 	}
+}
+
+army = {
+	name = "Southern Expeditionary Force"
+	location = 2455
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 2342
+	}
+
+	regiment = {
+		name= "2. Army"
+		type = infantry
+		home = 2457
+	}
+
+	regiment = {
+		name= "3. Army"
+		type = infantry
+		home = 2447
+	}
+}
+
+navy = {
+	name = "Predo's Platoon"
+	location = 2447
+	ship = {
+		name= "1. Ship"
+		type = manowar
+	}
+
+	ship = {
+		name= "2. Ship"
+		type = manowar
+	}
+
+	ship = {
+		name= "3. Ship"
+		type = frigate
+	}
+
+	ship = {
+		name= "4. Ship"
+		type = frigate
+	}
+
+	ship = {
+		name= "5. Ship"
+		type = frigate
+	}
+
+	ship = {
+		name= "6. Ship"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "7. Ship"
+		type = clipper_transport
+	}
+
 }

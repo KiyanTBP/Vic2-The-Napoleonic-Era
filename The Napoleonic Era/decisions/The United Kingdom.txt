@@ -58,6 +58,7 @@ political_decisions = {
 		picture = ireland
 		potential = {
 			tag = UKG
+			owns = 263
 			NOT = { has_country_flag = UKG_accepted_irish_pops }
 		}
 		allow = {
@@ -72,6 +73,54 @@ political_decisions = {
 				limit = { culture = irish }
 				militancy = -3
 			}
+		}
+	}
+	# Expand Guyana
+	UKG_expand_guyana = {
+		picture = guyana
+		potential = {
+			tag = UKG
+			exists = GYA
+			NOT = { has_country_flag = UKG_expanded_guyana }
+		}
+		allow = {
+			state_n_government = 1
+			GYA = {
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			set_country_flag = UKG_expanded_guyana
+			GYA = {
+				prestige = 10
+			}
+			badboy = -2
+			any_owned = {
+				limit = {
+					is_core = GYA
+				}
+				secede_province = GYA
+			}
+		}
+	}
+	# Reorganize India
+	UKG_reorganize_india = {
+		picture = india
+		potential = {
+			tag = UKG
+			NOT = { has_country_flag = UKG_reorganized_india }
+		}
+		allow = {
+			year = 1845
+		}
+		effect = {
+			set_country_flag = UKG_reorganized_india
+			PNS = { country_event = 100076 }
+			EIC = { country_event = 100076 }
+			SIN = { country_event = 100077 }
+			KAL = { country_event = 100077 }
+			MAK = { country_event = 100077 }
+			PAN = { country_event = 100077 }
 		}
 	}
 	## UK VS FRANCE WAR

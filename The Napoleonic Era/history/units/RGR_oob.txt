@@ -1,0 +1,20 @@
+# leaders
+leader = {
+	name = "Bento Goncalves"
+	date = 1800.1.1
+	type = land
+	personality = bold
+	background = cavalry_school
+	prestige = 0.1
+}
+
+# armies and navies
+army = {
+	name = "Riograndese Front"
+	location = 2463
+	regiment = {
+		name= "1. Army"
+		type = infantry
+		home = 2463
+	}
+}

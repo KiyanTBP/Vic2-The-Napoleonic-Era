@@ -1,5 +1,7 @@
 owner = UKG
 controller = UKG
+add_core = GYA
+add_core = NBZ
 trade_goods = timber
 life_rating = 30
 colonial = 2

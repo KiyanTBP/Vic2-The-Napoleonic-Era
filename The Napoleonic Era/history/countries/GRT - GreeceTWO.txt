@@ -4,7 +4,7 @@ religion = orthodox
 government = hms_government
 plurality = 25
 nationalvalue = nv_equality
-literacy = 0.60
+literacy = 0.35
 civilized = yes
 
 # Political reforms

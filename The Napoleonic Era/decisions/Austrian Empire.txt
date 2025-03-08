@@ -118,6 +118,7 @@ political_decisions = {
 			AND = {
 				AUS_625 = { owned_by = THIS }
 				AUS_626 = { owned_by = THIS }
+				AUS_627 = { owned_by = THIS }
 			}
 		}
 		effect = {
@@ -127,6 +128,7 @@ political_decisions = {
 			add_accepted_culture = czech
 			AUS_625 = { add_core = AUE }
 			AUS_626 = { add_core = AUE }
+			AUS_627 = { add_core = AUE }
 			any_pop = {
 				limit = {
 					culture = czech

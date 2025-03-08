@@ -1,0 +1,131 @@
+political_decisions = {
+	# Integrate the Brasilies
+	EOB_integrate_the_brasilies = {
+		picture = brasilie
+		potential = {
+			tag = EOB
+			NBZ = {
+				exists = yes
+			}
+			NOT = { has_country_flag = EOB_integrated_brasilies }
+		}
+		allow = {
+			year = 1845
+			NBZ = {
+				in_sphere = EOB
+			}
+		}
+		effect = {
+			set_country_flag = EOB_integrated_brasilies
+			add_accepted_culture = brasilie
+			prestige = 20
+			inherit = NBZ
+		}
+	}
+	# Claim Guyana
+	EOB_claim_guyana = {
+		picture = guyana
+		potential = {
+			tag = EOB
+			GYA = {
+				in_sphere = UKG
+				is_independant = no
+			}
+			NOT = { has_country_flag = EOB_claimed_guyana }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = EOB_claimed_guyana
+			add_accepted_culture = afro_antillean
+			prestige = 20
+			badboy = 2
+			GYA = {
+				all_core = {
+					add_core = EOB
+				}
+			}
+		}
+	}
+	# Annex Guyana
+	EOB_annex_guyana = {
+		picture = guyana
+		potential = {
+			tag = EOB
+			GYA = {
+				is_independant = yes
+			}
+			NOT = {
+				GYA = {
+					all_core = { is_core = EOB }
+				}
+			}
+			NOT = { has_country_flag = EOB_annexed_guyana }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			GYA = {
+				OR = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+				}
+			}
+		}
+		effect = {
+			set_country_flag = EOB_
+			add_accepted_culture = afro_antillean
+			prestige = 35
+			badboy = 5
+			inherit = GYA
+			GYA = {
+				all_core = {
+					add_core = EOB
+				}
+			}
+		}
+	}
+	# Free the Slaves
+	EOB_free_the_slaves = {
+		picture = brazilian_slaves
+		potential = {
+			tag = EOB
+			NOT = { has_country_flag = EOB_freed_slaves }
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = {
+						government = absolute_monarchy
+						government = hms_government
+					}
+				}
+				AND = {
+					nationalism_n_imperialism = 1
+					average_militancy = 2.5
+					upper_house = {
+						ideology = liberal
+						value = 0.35
+					}
+				}
+				AND = {
+					year = 1890
+					citizenship_policy = full_citizenship
+				}
+			}
+		}
+		effect = {
+			set_country_flag = EOB_freed_slaves
+			clr_country_flag = the_slavery_debate
+			political_reform = no_slavery
+			add_accepted_culture = afro_brazilian
+			badboy = -1
+			any_pop = {
+				limit = {
+					culture = afro_brazilian
+				}
+				militancy = -2
+			}
+		}
+	}
+}

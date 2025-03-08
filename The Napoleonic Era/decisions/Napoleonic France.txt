@@ -160,6 +160,7 @@ political_decisions = {
 			ideological_thought = 1
 		}
 		effect = {
+			set_country_flag = NFR_integrated_luxembourg
 			prestige = 10
 			any_owned = {
 				limit = {

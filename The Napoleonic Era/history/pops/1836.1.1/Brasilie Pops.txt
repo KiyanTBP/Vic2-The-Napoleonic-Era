@@ -1,0 +1,53 @@
+2410 = {
+	artisans = {
+		culture = brasilie
+		religion = protestant
+		size = 5000
+	}
+
+	artisans = {
+		culture = brasilie
+		religion = protestant
+		size = 5000
+	}
+
+	soldiers = {
+		culture = brasilie
+		religion = protestant
+		size = 1100
+	}
+
+	farmers = {
+		culture = brasilie
+		religion = protestant
+		size = 7500
+	}
+}
+
+2414 = {
+	soldiers = {
+		culture = brasilie
+		religion = protestant
+		size = 1100
+	}
+
+	farmers = {
+		culture = brasilie
+		religion = protestant
+		size = 10000
+	}
+}
+
+2415 = {
+	farmers = {
+		culture = brasilie
+		religion = protestant
+		size = 7300
+	}
+
+	soldiers = {
+		culture = brasilie
+		religion = protestant
+		size = 1100
+	}
+}
