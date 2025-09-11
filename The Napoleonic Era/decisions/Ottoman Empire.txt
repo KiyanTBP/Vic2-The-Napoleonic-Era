@@ -213,7 +213,7 @@ political_decisions = {
 			OTO = {
 				is_greater_power = no
 			}
-			year = 1880
+			NOT = { tag = OTO }
 			NOT = { has_global_flag = OTO_balkan_reorganization }
 		}
 		allow = {

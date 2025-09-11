@@ -64,6 +64,7 @@ political_decisions = {
 					has_recently_lost_war = yes
 				}
 				AND = {
+					year = 1870
 					war = no
 					state_n_government = 1
 					citizenship_policy = residency

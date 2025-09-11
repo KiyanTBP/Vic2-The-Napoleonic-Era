@@ -1,0 +1,28 @@
+political_decisions = {
+	# Join the Republic of Venice
+	GRT_join_venice = {
+		picture = shining_light_of_venice
+		potential = {
+			tag = GRT
+			ROV = { exists = yes }
+			NOT = { has_country_flag = GRT_joined_venice }
+		}
+		allow = {
+			is_greater_power = no
+			OR = {
+				AND = {
+					GRT = { government = democracy }
+					ROV = { government = democracy }
+				}
+				AND = {
+					GRT = { in_sphere = ROV }
+					ROV = { government = democracy }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = GRT_joined_venice
+			ROV = { country_event = 100085 }
+		}
+	}
+}

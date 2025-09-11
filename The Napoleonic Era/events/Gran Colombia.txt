@@ -1,0 +1,186 @@
+# Dissolution Revolts
+country_event = {
+	id = 100086
+	title = "EVENTNAME100086"
+	desc = "EVENTDESC100086"
+	picture = "ColombianRevolts"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GCT
+		year = 1838
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			badboy = 5
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100086"
+		any_owned = {
+			limit = {
+				NOT = { is_core = CLM }
+			}
+			any_pop = {
+				militancy = 4
+				consciousness = 4
+			}
+			flashpoint_tension = 3
+		}
+	}
+}
+
+# The Colombian Revolution
+country_event = {
+	id = 100087
+	title = "EVENTNAME100087"
+	desc = "EVENTDESC100087"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GCT
+		year = 1844
+		average_militancy = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			badboy = 5
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTA100087"
+		GCT = {
+			release = VNZ
+			release = ECU
+		}
+		war = {
+			target = VNZ
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		war = {
+			target = ECU
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100087"
+		GCT = {
+			release = VNZ
+			release = ECU
+		}
+		war = {
+			target = VNZ
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		war = {
+			target = ECU
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		change_tag_no_core_switch = VNZ
+	}
+	
+	option = {
+		name = "EVENTOPTC100087"
+		GCT = {
+			release = VNZ
+			release = ECU
+		}
+		war = {
+			target = VNZ
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		war = {
+			target = ECU
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		change_tag_no_core_switch = ECU
+	}
+}
+
+# South Andes Question
+country_event = {
+	id = 100088
+	title = "EVENTNAME100088"
+	desc = "EVENTDESC100088"
+	picture = "PeruBolivia"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GCT
+		owns = 2295
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVENTOPTA100088"
+		add_accepted_culture = south_andean
+		any_pop = {
+			limit = {
+				culture = south_andean
+			}
+			militancy = -3
+			consciousness = 0.5
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100088"
+		any_pop = {
+			limit = {
+				culture = south_andean
+			}
+			militancy = 4
+		}
+	}
+}
+
+# Collapse of Gran Colombia
+country_event = {
+	id = 100094
+	title = "EVENTNAME100094"
+	desc = "EVENTDESC100094"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GCT
+		war = no
+		VNZ = {
+			exists = yes
+		}
+		ECU = {
+			exists = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVENTOPTA100094"
+		prestige = -20
+		GCT = {
+			change_tag_no_core_switch = CLM
+		}
+	}
+}

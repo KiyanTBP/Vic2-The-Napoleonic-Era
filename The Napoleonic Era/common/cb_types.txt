@@ -66,6 +66,7 @@ dismantle_forts
 humiliate
 demand_concession_casus_belli
 establish_protectorate_casus_belli
+africa_establish_colonial_state
 unification_humiliate_cb
 unification_release_puppet_cb
 unification_casus_belli
@@ -1475,6 +1476,53 @@ establish_protectorate_casus_belli = {
 				NOT = { number_of_states = 5 }
 			}
 		}
+		civilized = no
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_PROTECTORATE_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.01
+		}
+	}
+}
+
+# Establish African Colony
+africa_establish_colonial_state = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	construction_speed = 2.5
+	crisis = no
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		has_global_flag = COLON_africa_conference_called
+		THIS = {
+			civilized = yes
+		}
+		capital_scope = { continent = africa }
 		civilized = no
 	}
 	

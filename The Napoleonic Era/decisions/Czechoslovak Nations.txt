@@ -1,0 +1,40 @@
+political_decisions = {
+	### Greater Moravia
+	# Reclaim Lusatia and Silesia
+	GMR_reclaim_lusatia_and_silesia = {
+		picture = silesia
+		potential = {
+			tag = GMR
+			NOT = { has_country_flag = GMR_reclaimed_lusatia_silesia }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			set_country_flag = GMR_reclaimed_lusatia_silesia
+			prestige = 20
+			badboy = 3
+			SAX_558 = { add_core = GMR }
+			PRU_682 = { add_core = GMR }
+		}
+	}
+	# Reclaim Pannonia
+	GMR_reclaim_pannonia = {
+		picture = hungary
+		potential = {
+			tag = GMR
+			NOT = { has_country_flag = GMR_reclaimed_pannonia }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			owns = 641
+		}
+		effect = {
+			set_country_flag = GMR_reclaimed_pannonia
+			prestige = 30
+			badboy = 5
+			AUS_641 = { add_core = GMR }
+			AUS_623 = { add_core = GMR }
+		}
+	}
+}

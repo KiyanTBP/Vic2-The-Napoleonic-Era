@@ -1,5 +1,6 @@
-owner = UKG
-controller = UKG
+owner = PNS
+controller = PNS
+add_core = PNS
 add_core = MYS
 add_core = HND
 trade_goods = silk

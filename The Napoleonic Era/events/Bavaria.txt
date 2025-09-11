@@ -1,0 +1,30 @@
+# Munich University Founded
+country_event = {
+	id = 100093
+	title = "EVENTNAME100093"
+	desc = "EVENTDESC100093"
+	fire_only_once = yes
+	picture = "MunichUniversity"
+	
+	trigger = {
+		owns = 599
+		year = 1868
+	}
+	
+	mean_time_to_trigger = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVENTOPTA100093"
+		research_points = 750
+		prestige = 15
+		599 = {
+			life_rating = 5
+			add_province_modifier = {
+				name = BVR_munich_university
+				duration = -1
+			}
+		}
+	}
+}

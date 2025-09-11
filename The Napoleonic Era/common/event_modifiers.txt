@@ -70,9 +70,9 @@ ACD_conversion = {
 ##### THE MEXICAN MAFIA #####
 TUT_the_mexican_mafia = {
 	pop_militancy_modifier = 0.75
-	pop_consciousness_modifier = 0.25
-	assimilation_rate = -0.5
-	population_growth = -0.5
+	pop_consciousness_modifier = 0.75
+	assimilation_rate = -0.15
+	population_growth = -0.15
 	icon = 6
 }
 
@@ -134,6 +134,42 @@ OTO_tanzimat_reforms = {
 	global_pop_militancy_modifier = -0.01
 	research_points_modifier = 0.15
 	icon = 3
+}
+
+##### ITALIAN REPUBLIC #####
+ITL_italian_disunity = {
+	administrative_efficiency_modifier = 0.05
+	prestige = -0.001
+	icon = 2
+}
+
+ITL_venetian_unrest = {
+	pop_militancy_modifier = 0.60
+	population_growth = -0.05
+	icon = 20
+}
+
+ROV_the_shining_light = {
+	global_immigrant_attract = 15
+	global_population_growth = 0.25
+	prestige = 0.05
+	icon = 17
+}
+
+##### AFRICA #####
+AFRICA_traditional_values = {
+	global_pop_militancy_modifier = -0.25
+	global_pop_consciousness_modifier = -0.15
+	research_points_modifier = -2.5
+	research_points = -2.5
+	icon = 4
+}
+
+##### BAVARIA ######
+BVR_munich_university = {
+	population_growth = 0.2
+	immigration_attract = 0.3
+	icon = 15
 }
 
 ##### POLITICAL EVENTS ######

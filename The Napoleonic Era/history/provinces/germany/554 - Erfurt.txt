@@ -1,6 +1,7 @@
 owner = AHT
 controller = AHT
 add_core = AHT
+add_core = SXT
 add_core = KOG
 trade_goods = iron
 life_rating = 40

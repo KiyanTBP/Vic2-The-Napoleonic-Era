@@ -1,5 +1,7 @@
-owner = SKC
-controller = SKC
+owner = ARO
+controller = ARO
+add_core = ARO
 add_core = SKC
+add_core = BEN
 trade_goods = cattle
 life_rating = 35

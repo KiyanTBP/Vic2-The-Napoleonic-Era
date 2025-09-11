@@ -1,5 +1,6 @@
 owner = ITL
 controller = ITL
 add_core = ITL
+add_core = NPL
 trade_goods = wool
 life_rating = 35

@@ -8,11 +8,15 @@ REB 	= 	"countries/rebels.txt"
 
 # The Great Power of Napoleonic France
 NFR = "countries/Napoleonic France.txt"
+OCI = "countries/Occitania.txt"
 
 # Napoleonic States
 BTR = "countries/Batavian Republic.txt"
 ITL = "countries/Napoleonic Italy.txt"
 AOV = "countries/Aosta Valley.txt"
+SOR = "countries/State of Roma.txt"
+NPL = "countries/Naples.txt"
+ROV = "countries/Republic of Venice.txt"
 
 # switzerland
 SWC = "countries/The Swiss Confederation.txt"
@@ -20,6 +24,7 @@ SWC = "countries/The Swiss Confederation.txt"
 # Confederation of the Rhine
 COR = "countries/Confederation of the Rhine.txt"
 BVR = "countries/Napoleonic Bavaria.txt"
+BVB = "countries/BavariaBohemia.txt"
 BDW = "countries/BadenWurttemburg.txt"
 HSE = "countries/Hessen.txt"
 NHO = "countries/Napoleonic Hanover.txt"
@@ -29,6 +34,7 @@ KOG = "countries/Kingdom of Germany.txt"
 KOP = "countries/Kingdom of Prussia.txt"
 MML = "countries/Memel.txt"
 RHE = "countries/Rheinland.txt"
+SXT = "countries/SaxonyTwo.txt"
 
 # POLSKA!!!
 DOW = "countries/Duchy of Warsaw.txt"
@@ -43,6 +49,8 @@ DNC = "countries/Danubian Confederation.txt"
 KOS = "countries/Kingdom of Slavonia.txt"
 GLR = "countries/GaliciaLodomeria.txt"
 BAN = "countries/Banat.txt"
+STL = "countries/Sudetenland.txt"
+GMR = "countries/Greater Moravia.txt"
 
 # Iberia
 SIR = "countries/Spanish Republic.txt"
@@ -76,6 +84,30 @@ MRT = "countries/MoroccoTWO.txt"
 # Africa. This will take a while.
 ABY = "countries/Abyssinia.txt"
 SKC = "countries/Sokoto Caliphate.txt"
+WAR = "countries/Warri.txt"
+ARO = "countries/Aro.txt"
+BEN = "countries/Benin.txt"
+OYO = "countries/Oyo.txt"
+BRN = "countries/Bornu.txt"
+ASH = "countries/Ashanti.txt"
+WLF = "countries/Wolof.txt"
+SLM = "countries/Saloum.txt"
+DHY = "countries/Dahomey.txt"
+KNG = "countries/Kongo.txt"
+SGU = "countries/Segou.txt"
+KRT = "countries/Kaarta.txt"
+MSI = "countries/Mossi.txt"
+DND = "countries/Dendi.txt"
+# African Colonial States
+GLC = "countries/The Gold Coast.txt"
+NGE = "countries/Niger Empire.txt"
+TSC = "countries/Tschad.txt"
+KMR = "countries/Kamerun.txt"
+EWE = "countries/Eweland.txt"
+UWS = "countries/Union of West African States.txt"
+SRR = "countries/Sahrawi Republic.txt"
+MLI = "countries/Mali.txt"
+EQA = "countries/Equatoria.txt"
 
 # also india
 PNS = "countries/Princely States.txt"
@@ -114,8 +146,9 @@ QNG = "countries/Qing Empire.txt"
 TGS = "countries/Tokugawa Shogunate.txt"
 JPE = "countries/Japanese Empire.txt"
 
-# The Great Power Formables
+# Dumb Formables
 TCE = "countries/The Carolingian Empire.txt"
+ARB = "countries/Arab Union.txt"
 
 # TRANSFER COUNTRY
 ABC = "countries/ABC.txt"

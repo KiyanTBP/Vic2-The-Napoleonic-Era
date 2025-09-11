@@ -2,6 +2,7 @@ owner = ITL
 controller = ITL
 add_core = ITL
 add_core = KOS
+add_core = ROV
 trade_goods = grain
 life_rating = 35
 naval_base = 1

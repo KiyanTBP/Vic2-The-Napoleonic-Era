@@ -57,6 +57,24 @@ political_decisions = {
 			}
 		}
 	}
+	# Original Arab Union
+	OPTIONS_original_arab_union = {
+		picture = OPTIONS_two
+		alert = no
+		potential = {
+			has_country_flag = OPTIONS_checking
+			ARB = { exists = no }
+			NOT = {
+				year = 1837
+			}
+		}
+		allow = {}
+		effect = {
+			EGK = {
+				country_event = 200000
+			}
+		}
+	}
 	# Enable Test Decisions
 	OPTIONS_enable_test_decisions = {
 		picture = OPTIONS_two

@@ -1,5 +1,6 @@
 owner = NFR
 controller = NFR
 add_core = NFR
+add_core = OCI
 trade_goods = sulphur
 life_rating = 31

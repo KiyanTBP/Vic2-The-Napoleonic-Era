@@ -1,4 +1,328 @@
 political_decisions = {
+	### BIG THINGS
+	# Africa Conference
+	COLON_africa_conference = {
+		picture = africa_conference
+		potential = {
+			year = 1870
+			civilized = yes
+			NOT = { has_global_flag = COLON_africa_conference_called }
+		}
+		allow = {
+			invention = colonial_negotiations
+			capital_scope = {
+				OR = {
+					continent = europe
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
+		effect = {
+			set_global_flag = COLON_africa_conference_called
+			any_country = {
+				set_global_flag = COLON_africa_conference_called
+			}
+			country_event = 100089
+		}
+	}
+	### Influencing States
+	# Influence the Niger Delta
+	COLON_influence_the_niger_delta = {
+		picture = influence_niger_delta
+		potential = {
+			is_greater_power = yes
+			invention = mission_to_civilize
+			NOT = {
+				has_global_flag = COLON_influenced_the_niger_delta
+			}
+		}
+		allow = {
+			war = no
+			colonial_nation = yes
+			SKC = { part_of_sphere = no }
+		}
+		effect = {
+			set_global_flag = COLON_influenced_the_niger_delta
+			prestige = 20
+			diplomatic_influence = {
+				who = WAR
+				value = 300
+			}
+			diplomatic_influence = {
+				who = ARO
+				value = 300
+			}
+			diplomatic_influence = {
+				who = BEN
+				value = 300
+			}
+			diplomatic_influence = {
+				who = OYO
+				value = 300
+			}
+			diplomatic_influence = {
+				who = SKC
+				value = 300
+			}
+		}
+	}
+	### Establish Colonial States
+	# Establish the Golden Coast
+	COLON_establish_the_golden_coast = {
+		picture = ashanti_map
+		potential = {
+			owns = 1908
+			NOT = { capital_scope = { continent = africa } }
+			has_global_flag = COLON_africa_conference_called
+			NOT = { has_country_flag = GLC_established }
+			NOT = { GLC = { exists = yes } }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = GLC_established
+			any_country = {
+				limit = {
+					NOT = { capital_scope = { continent = africa } }
+				}
+				set_country_flag = GLC_established
+			}
+			FRA_1907 = { add_core = GLC }
+			1908 = {
+				secede_province = GLC
+			}
+			create_vassal = GLC
+			diplomatic_influence = {
+				who = GLC
+				value = 300
+			}
+			1909 = {
+				owner = {
+					country_event = 100092
+				}
+			}
+			1907 = {
+				owner = {
+					country_event = 100092
+				}
+			}
+		}
+	}
+	# Reorginaze the Niger Empire
+	COLON_reorginaze_niger_empire = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_niger_empire }
+			NOT = { 1948 = { is_core = NGE } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1948
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_niger_empire
+			prestige = 10
+			FRA_1927 = { add_core = NGE }
+			FRA_1923 = { add_core = NGE }
+			FRA_1931 = { add_core = NGE }
+			FRA_1937 = { add_core = NGE }
+			FRA_1939 = { add_core = NGE }
+			FRA_1816 = { add_core = NGE }
+			FRA_1930 = { add_core = NGE }
+			FRA_1808 = { add_core = NGE }
+			FRA_1813 = { add_core = NGE }
+		}
+	}
+	# Reorginaze Tschad
+	COLON_reorginaze_tschad = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_tschad }
+			NOT = { 1818 = { is_core = TSC } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1818
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_tschad
+			prestige = 10
+			ENG_1818 = { add_core = TSC }
+			ENG_1825 = { add_core = TSC }
+			SOK_1964 = { add_core = TSC }
+			EGY_1842 = { add_core = TSC }
+		}
+	}
+	# Reorginaze Kamerun
+	COLON_reorginaze_kamerun = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_kamerun }
+			NOT = { 1956 = { is_core = KMR } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1956
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_kamerun
+			prestige = 10
+			ENG_1956 = { add_core = KMR }
+			ENG_1960 = { add_core = KMR }
+			UKG_1959 = { add_core = KMR }
+		}
+	}
+	# Reorginaze Eweland
+	COLON_reorginaze_eweland = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_eweland }
+			NOT = { 1914 = { is_core = EWE } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1914
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_eweland
+			prestige = 10
+			FRA_1914 = { add_core = EWE }
+			FRA_1919 = { add_core = EWE }
+		}
+	}
+	# Reorginaze West Africa
+	COLON_reorginaze_west_africa = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_west_africa }
+			NOT = { 1880 = { is_core = UWS } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1880
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_west_africa
+			prestige = 10
+			FRA_1879 = { add_core = UWS }
+			FRA_1884 = { add_core = UWS }
+			FRA_1893 = { add_core = UWS }
+			FRA_1892 = { add_core = UWS }
+			1798 = { add_core = UWS }
+		}
+	}
+	# Reorginaze the Sahrawi Republic
+	COLON_reorginaze_sahrawi_republic = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_sahrawi_republic }
+			NOT = { 1775 = { is_core = SRR } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1775
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_sahrawi_republic
+			prestige = 10
+			FRA_1775 = { add_core = SRR }
+			FRA_1780 = { add_core = SRR }
+			FRA_1788 = { add_core = SRR }
+			FRA_1783 = { add_core = SRR }
+			1774 = { add_core = SRR }
+			1773 = { add_core = SRR }
+			1795 = { add_core = SRR }
+			1877 = { add_core = SRR }
+			1878 = { add_core = SRR }
+		}
+	}
+	# Reorginaze Mali
+	COLON_reorginaze_mali = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_mali }
+			NOT = { 1800 = { is_core = MLI } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1800
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_mali
+			prestige = 10
+			FRA_1801 = { add_core = MLI }
+			FRA_1798 = { add_core = MLI }
+			SLM_1795 = { add_core = MLI }
+			FRA_1803 = { add_core = MLI }
+			FRA_1901 = { add_core = MLI }
+			1781 = { add_core = MLI }
+			1780 = { add_core = MLI }
+			1808 = { add_core = MLI }
+			1809 = { add_core = MLI }
+		}
+	}
+	# Reorginaze Equatoria
+	COLON_reorginaze_equatoria = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_equatoria }
+			NOT = { 1844 = { is_core = EQA } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1844
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_equatoria
+			prestige = 10
+			ENG_1843 = { add_core = EQA }
+			FRA_1965 = { add_core = EQA }
+		}
+	}
+	# Reorginaze Algeria
+	COLON_reorginaze_algeria = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_algeria }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1700
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_algeria
+			prestige = 10
+			ALD_1714 = {
+				add_core = ALG
+				secede_province = THIS
+			}
+			ALD_1718 = {
+				add_core = ALG
+				secede_province = THIS
+			}
+		}
+	}
+	### General Colonization Stuff
 	# Take the Syrian Desert
 	COLON_take_syrian_desert = {
 		picture = COLONIZESYRIANDESERT
@@ -118,6 +442,27 @@ political_decisions = {
 			12 = { secede_province = THIS }
 			2596 = { secede_province = THIS }
 			2598 = { secede_province = THIS }
+		}
+	}
+	# Establish a Mauritanian Trade Port
+	COLON_mauritanian_trade_port = {
+		picture = mauritania
+		potential = {
+			year = 1860
+			NOT = {
+				has_global_flag = COLONIZED_MAURITANIA
+			}
+		}
+		allow = {
+			war = no
+			rank = 16
+			invention = mission_to_civilize
+		}
+		effect = {
+			set_global_flag = COLONIZED_MAURITANIA
+			prestige = 15
+			1775 = { secede_province = THIS }
+			1776 = { secede_province = THIS }
 		}
 	}
 }

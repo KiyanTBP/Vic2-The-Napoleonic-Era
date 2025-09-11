@@ -237,3 +237,108 @@
 		size = 23500
 	}
 }
+
+# Znojmo
+3253 = {
+	bureaucrats = {
+		culture = czech
+		religion = catholic
+		size = 75 
+	}
+
+	officers = {
+		culture = czech
+		religion = catholic
+		size = 75 
+	}
+
+	clergymen = {
+		culture = czech
+		religion = catholic
+		size = 1200 
+	}
+
+	artisans = {
+		culture = czech
+		religion = catholic
+		size = 3450
+	}
+
+	soldiers = {
+		culture = czech
+		religion = catholic
+		size = 1000 
+	}
+
+	farmers = {
+		culture = czech
+		religion = catholic
+		size = 84500 
+	}
+
+	aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 1000  
+	}
+
+	bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 500 
+	}
+
+	officers = {
+		culture = south_german
+		religion = catholic
+		size = 250 
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 800  
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 8000
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 1000  
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 60000 
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = jewish
+		size = 40  
+	}
+
+	artisans = {
+		culture = south_german
+		religion = jewish
+		size = 2500
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = jewish
+		size = 25  
+	}
+
+	farmers = {
+		culture = south_german
+		religion = jewish
+		size = 1500   
+	}
+}

@@ -1,0 +1,222 @@
+political_decisions = {
+	### general italian nonsense
+	# Claim Albania
+	ITALY_claim_albania = {
+		picture = albania
+		potential = {
+			OR = {
+				tag = ITL
+				tag = ROV
+				tag = NPL
+			}
+			NOT = { has_country_flag = ITALY_claimed_albania }
+		}
+		allow = {
+			war = no
+			war_policy = jingoism
+			OR = {
+				owns = 849
+				nationalism_n_imperialism = 1
+			}
+		}
+		effect = {
+			set_country_flag = ITALY_claimed_albania
+			prestige = 20
+			badboy = 2
+			ALB = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+	}
+	### Italian Republic Exclusive
+	# Unionize the Italian Nations
+	ITL_unionize_the_italian_nations = {
+		picture = italy
+		potential = {
+			tag = ITL
+			NOT = { has_country_flag = ITL_unionized_italy }
+		}
+		allow = {
+			OR = {
+				is_greater_power = yes
+				year = 1845
+			}
+			SOR = {
+				vassal_of = THIS
+			}
+			NPL = {
+				vassal_of = THIS
+			}
+		}
+		effect = {
+			set_country_flag = ITL_unionized_italy
+			prestige = 15
+			remove_country_modifier = ITL_italian_disunity
+			inherit = SOR
+			inherit = NPL
+		}
+	}
+	# Move Capital to Rome
+	ITL_move_to_rome = {
+		picture = rome
+		potential = {
+			tag = ITL
+			NOT = { has_country_flag = ITL_moved_to_rome }
+		}
+		allow = {
+			owns = 749
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = ITL_moved_to_rome
+			prestige = 5
+			capital = 749
+			749 = {
+				life_rating = 10
+			}
+		}
+	}
+	# Claim Occitania
+	ITL_claim_occitania = {
+		picture = occitania
+		potential = {
+			tag = ITL
+			NOT = { has_country_flag = ITL_claimed_occitania }
+		}
+		allow = {
+			war = no
+			war_policy = jingoism
+			OR = {
+				AND = {
+					nationalism_n_imperialism = 1
+					NOT = { average_militancy = 5 }
+				}
+				AND = {
+					owns = 470
+					owns = 451
+					owns = 463
+					owns = 458
+					owns = 455
+				}
+				AND = {
+					state_n_government = 1
+					OCI = { exists = yes }
+				}
+			}
+			NOT = {
+				OR = {
+					ruling_party_ideology = conservative
+					ruling_party_ideology = liberal
+					ruling_party_ideology = socialist
+				}
+			}
+		}
+		effect = {
+			set_country_flag = ITL_claimed_occitania
+			prestige = 25
+			badboy = 3
+			add_accepted_culture = occitan
+			OCI = {
+				all_core = {
+					add_core = ITL
+				}
+			}
+		}
+	}
+	# Claim Iberia
+	ITL_claim_iberia = {
+		picture = iberia
+		potential = {
+			tag = ITL
+			NOT = { has_country_flag = ITL_claimed_iberia }
+		}
+		allow = {
+			war = no
+			war_policy = jingoism
+			OR = {
+				AND = {
+					owns = 487
+					owns = 521
+				}
+				AND = {
+					nationalism_n_imperialism = 1
+					NOT = { average_militancy = 5 }
+				}
+			}
+			NOT = {
+				OR = {
+					ruling_party_ideology = conservative
+					ruling_party_ideology = liberal
+					ruling_party_ideology = socialist
+				}
+			}
+		}
+		effect = {
+			set_country_flag = ITL_claimed_iberia
+			prestige = 45
+			badboy = 7.5
+			SIR = {
+				all_core = {
+					add_core = ITL
+				}
+			}
+			TPR = {
+				all_core = {
+					add_core = ITL
+				}
+			}
+		}
+	}
+	### Republic of Venice Exclusive
+	# Proclaim Victory over Italy
+	ROV_proclaim_victory_over_italy = {
+		picture = shining_light_of_venice
+		potential = {
+			tag = ROV
+			NOT = { has_country_flag = ROV_victory_over_italy }
+		}
+		allow = {
+			war = no
+			owns = 749
+		}
+		effect = {
+			set_country_flag = ROV_victory_over_italy
+			prestige = 25
+			ITL = {
+				all_core = {
+					add_core = ROV
+				}
+			}
+		}
+	}
+	# Albanian Rights Act
+	ROV_albanian_rights_act = {
+		picture = albania
+		potential = {
+			tag = ROV
+			NOT = { has_country_flag = ROV_accepted_albanians }
+		}
+		allow = {
+			war = no
+			TUR_853 = { owned_by = THIS }
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+		}
+		effect = {
+			set_country_flag = ROV_accepted_albanians
+			badboy = -2
+			add_accepted_culture = albanian
+			any_pop = {
+				limit = {
+					culture = albanian
+				}
+				militancy = -2
+				consciousness = -2
+			}
+		}
+	}
+}

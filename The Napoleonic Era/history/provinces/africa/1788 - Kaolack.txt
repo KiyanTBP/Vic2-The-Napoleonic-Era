@@ -1,0 +1,6 @@
+owner = SLM
+controller = SLM
+add_core = SLM
+add_core = WLF
+trade_goods = grain
+life_rating = 15

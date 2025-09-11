@@ -1,0 +1,92 @@
+# The Africa Conference
+country_event = {
+	id = 100089
+	title = "EVENTNAME100089"
+	desc = "EVENTDESC100089"
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100089"
+		prestige = 50
+		any_country = {
+			limit = {
+				capital_scope = { continent = africa }
+				part_of_sphere = yes
+				civilized = no
+			}
+			country_event = 100090
+		}
+		any_country = {
+			limit = {
+				capital_scope = { continent = africa }
+				is_vassal = yes
+				civilized = no
+			}
+			country_event = 100091
+		}
+	}
+}
+
+# Sphere Version - African Nation gets folded
+country_event = {
+	id = 100090
+	title = "EVENTNAME100090"
+	desc = "EVENTDESC100090"
+	picture = "AfricaConference"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100090"
+		sphere_owner = {
+			inherit = THIS
+		}
+	}
+}
+
+# Vassal Version - African Nation gets folded
+country_event = {
+	id = 100091
+	title = "EVENTNAME100091"
+	desc = "EVENTDESC100091"
+	picture = "AfricaConference"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100091"
+		overlord = {
+			inherit = THIS
+		}
+	}
+}
+
+# Golden Coast Established - taking land from neighbours
+country_event = {
+	id = 100092
+	title = "EVENTNAME100092"
+	desc = "EVENTDESC100092"
+	picture = "GoldenCoast"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA100092"
+		prestige = 20
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100092"
+		any_owned = {
+			limit = {
+				is_core = GLC
+			}
+			secede_province = GLC
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}

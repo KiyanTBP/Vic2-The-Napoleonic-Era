@@ -31,6 +31,7 @@ country_event = {
 			duration = -1
 		}
 		remove_country_modifier = QNG_rejection_of_modernity
+		remove_country_modifier = AFRICA_traditional_values
 		ai_chance = {
 			factor = 0.75
 		}
@@ -42,6 +43,7 @@ country_event = {
 			duration = -1
 		}
 		remove_country_modifier = QNG_rejection_of_modernity
+		remove_country_modifier = AFRICA_traditional_values
 		ai_chance = {
 			factor = 0.25
 		}

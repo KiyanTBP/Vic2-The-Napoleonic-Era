@@ -1,2 +1,5 @@
+owner = SLM
+controller = SLM
+add_core = SLM
 trade_goods = fruit
 life_rating = 15

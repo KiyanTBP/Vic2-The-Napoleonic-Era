@@ -108,6 +108,7 @@ political_decisions = {
 		picture = india
 		potential = {
 			tag = UKG
+			NOT = { exists = HND }
 			NOT = { has_country_flag = UKG_reorganized_india }
 		}
 		allow = {

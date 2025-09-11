@@ -1,4 +1,4 @@
 add_core = UPP
 add_core = PTG
 trade_goods = grain
-life_rating = 35
+life_rating = 25

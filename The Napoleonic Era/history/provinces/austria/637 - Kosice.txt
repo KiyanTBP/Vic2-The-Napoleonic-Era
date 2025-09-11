@@ -2,5 +2,6 @@ owner = AUE
 controller = AUE
 add_core = HUN
 add_core = SLV
+add_core = GMR
 trade_goods = coal
 life_rating = 35

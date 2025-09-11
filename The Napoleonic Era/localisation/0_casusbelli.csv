@@ -23,3 +23,7 @@ punitive_expedition_setup;We will punish the Chinese by negotiating an Unequal T
 punitive_expedition_short;Punitive Expedition;x;
 NORMAL_WAR_PUNITIVE_NAME;$FIRST$ Opium War;x;
 AGRESSION_WAR_PUNITIVE_NAME;$FIRST$ Opium War;x;
+africa_establish_colonial_state;Establish African Colony;x;
+africa_establish_colonial_state_desc;After the Conference for African Colonialism, We can establish this Nation as a Colony.;x;
+africa_establish_colonial_state_setup;After the Conference for African Colonialism, We can establish this Nation as a Colony.;x;
+africa_establish_colonial_state_short;Establish African Colony;x;

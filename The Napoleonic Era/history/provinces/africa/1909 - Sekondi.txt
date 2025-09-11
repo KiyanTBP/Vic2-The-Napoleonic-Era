@@ -1,5 +1,6 @@
 owner = PGN
 controller = PGN
+add_core = ASH
 trade_goods = cattle
 life_rating = 35
 colonial = 2

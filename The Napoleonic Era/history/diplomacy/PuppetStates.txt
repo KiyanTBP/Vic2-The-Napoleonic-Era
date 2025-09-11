@@ -110,3 +110,18 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+
+# Italian States
+vassal = {
+	first = ITL
+	second = SOR
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+vassal = {
+	first = ITL
+	second = NPL
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

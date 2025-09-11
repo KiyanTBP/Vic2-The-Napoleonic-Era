@@ -1,5 +1,6 @@
-owner = ITL
-controller = ITL
+owner = NPL
+controller = NPL
+add_core = NPL
 add_core = ITL
 trade_goods = fish
 life_rating = 35

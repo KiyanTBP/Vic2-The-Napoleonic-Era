@@ -4,6 +4,7 @@ political_decisions = {
 	COR_join_the_confederation = {
 		picture = confederation_of_the_rhine
 		potential = {
+			NOT = { has_global_flag = COR_existed }
 			NOT = { exists = COR }
 			THIS = {
 				NOT = { tag = AUE }
@@ -57,6 +58,7 @@ political_decisions = {
 		picture = confederation_of_the_rhine
 		potential = {
 			NOT = { tag = KOG }
+			NOT = { has_global_flag = COR_existed }
 			NOT = { exists = COR }
 			THIS = { has_country_modifier = COR_member }
 		}
@@ -78,6 +80,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			set_global_flag = COR_existed
 			prestige = 50
 			war_exhaustion = -50
 			change_tag = COR

@@ -226,6 +226,54 @@ political_decisions = {
 			add_accepted_culture = north_andean
 		}
 	}
+	# Form Greater Moravia
+	GMR_form_greater_moravia = {
+		picture = greater_moravia
+		potential = {
+			THIS = {
+				OR = {
+					is_culture_group = czecho_slovak_culture_group
+					tag = STL
+				}
+			}
+			NOT = {
+				GMR = { exists = yes }
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			GMR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 30
+			change_tag = GMR
+			capital = 631
+			add_accepted_culture = czech
+			add_accepted_culture = slovak
+			any_country = {
+				limit = {
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					any_owned = {
+						is_core = GMR
+					}
+				}
+				country_event = 11101
+			}
+		}
+	}
 	## vanilla
 	#form_south_german_confederation = {
 	#	potential = {
@@ -429,6 +477,7 @@ political_decisions = {
 					is_culture_group = arab
 					is_culture_group = south_slavic
 					is_culture_group = turkestani
+					is_culture_group = czecho_slovak_culture_group
 					tag = ECU
 					tag = CLM
 					tag = VNZ

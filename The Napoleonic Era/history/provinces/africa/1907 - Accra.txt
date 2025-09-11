@@ -1,6 +1,6 @@
 owner = DMN
 controller = DMN
-colonial = 2
-
+add_core = ASH
 trade_goods = cattle
 life_rating = 15
+colonial = 2

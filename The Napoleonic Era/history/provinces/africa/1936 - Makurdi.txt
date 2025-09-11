@@ -1,5 +1,6 @@
-owner = SKC
-controller = SKC
+owner = ARO
+controller = ARO
+add_core = ARO
 add_core = SKC
 trade_goods = grain
 life_rating = 35

@@ -240,7 +240,7 @@ country_event = {
 		name = "EVENTOPTA100068"
 		country_event = 100069
 		ai_chance = {
-			factor = 60
+			factor = 80
 		}
 	}
 	
@@ -248,7 +248,7 @@ country_event = {
 		name = "EVENTOPTB100068"
 		country_event = 100070
 		ai_chance = {
-			factor = 40
+			factor = 20
 		}
 	}
 }

@@ -1,0 +1,6 @@
+owner = SLM
+controller = SLM
+add_core = SLM
+add_core = KRT
+trade_goods = wool
+life_rating = 15

@@ -16,6 +16,20 @@ party = {
 }
 
 party = {
+	name = "BVR_conservative_2"
+	start_date = 1835.1.1
+	end_date = 1936.1.1
+
+	ideology = conservative
+
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = jingoism
+}
+
+party = {
 	name = "BVR_reactionary"
 	start_date = 1835.1.1
 	end_date = 1936.1.1

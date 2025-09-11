@@ -637,7 +637,7 @@ czecho_slovak_culture_group = {
 		Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Skultéty-Gábris Smik
 		Sokol Stefánik Suchon Sverma Tiso Trcka Tuka Turanec Viest Zoch }
 	}
-	union = CZH
+	union = GMR
 }
 
 east_slavic = {
@@ -728,7 +728,7 @@ baltic = {
 levantine = {
 	leader = european
 	greek = {
-		color = {200 50 100}
+		color = {90 200 230}
 		first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
 		Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
 		Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
@@ -921,7 +921,7 @@ arab = {
 			radicalism = 10
 	}
 	
-	union = ARA
+	union = ARB
 }
 
 iranian_turanian = {

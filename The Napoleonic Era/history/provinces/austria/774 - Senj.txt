@@ -2,5 +2,6 @@ owner = KOS
 controller = KOS
 add_core = KOS
 add_core = HUN
+add_core = ROV
 trade_goods = iron
 life_rating = 35

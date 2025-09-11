@@ -98,7 +98,7 @@ napoleonic_republic = {
 	election = yes
 	duration = 64
 	appoint_ruling_party = yes
-	flagType = monarchy
+	flagType = napoleonic
 }
 
 democracy = {

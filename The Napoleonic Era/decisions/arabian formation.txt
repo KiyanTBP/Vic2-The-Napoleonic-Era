@@ -1,0 +1,33 @@
+political_decisions = {
+	# Form Arab Union
+	ARB_form_arabia = {
+		picture = form_arabia
+		potential = {
+			is_culture_group = arab
+			ARB = { exists = no }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			ARB = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 35
+			change_tag = ARB
+			add_accepted_culture = union
+			any_country = {
+				limit = {
+					is_culture_group = arab
+				}
+				country_event = 11101
+			}
+		}
+	}
+}

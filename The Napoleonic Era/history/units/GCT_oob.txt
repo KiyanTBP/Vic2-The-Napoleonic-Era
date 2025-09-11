@@ -1,0 +1,38 @@
+# leaders
+leader = {
+	name = "Juan Jose Flores"
+	date = 1800.1.1
+	type = land
+	personality = relentless
+	background = poet
+	prestige = 1
+}
+
+# armies and navies
+army = {
+	name = "Bolivar's Finest"
+	location = 2247
+	regiment = {
+		name= "Bolivar's Division"
+		type = infantry
+		home = 2247
+	}
+
+	regiment = {
+		name= "Caracas Division"
+		type = infantry
+		home = 2264
+	}
+
+	regiment = {
+		name= "Cavalry"
+		type = hussar
+		home = 2267
+	}
+
+	regiment = {
+		name= "More Cavalry"
+		type = hussar
+		home = 2280
+	}
+}

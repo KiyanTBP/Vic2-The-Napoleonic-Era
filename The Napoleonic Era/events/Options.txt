@@ -1,0 +1,55 @@
+# OPTION - Original Arab Union
+country_event = {
+	id = 200000
+	title = "EVENTNAME200000"
+	desc = "EVENTDESC200000"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVENTOPTA200000"
+		OTO = {
+			release_vassal = EGK
+		}
+		TUR_923 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		TUR_931 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		TUR_935 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		901 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		906 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		907 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		910 = {
+			secede_province = EGK
+			add_core = ARB
+		}
+		ARB = {
+			all_core = {
+				secede_province = EGK
+			}
+		}
+		EGK = {
+			change_tag = ARB
+			add_accepted_culture = union
+			release = TRI
+			all_core = {
+				add_core = ARB
+			}
+		}
+	}
+}
