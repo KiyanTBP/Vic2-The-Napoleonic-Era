@@ -171,6 +171,7 @@ country_event = {
 	trigger = {
 		tag = TUT
 		year = 1855
+		NOT = { has_global_flag = TUT_mexico_collapses_america }
 	}
 	
 	mean_time_to_happen = {
@@ -290,11 +291,14 @@ country_event = {
 	trigger = {
 		tag = TUT
 		year = 1890
-		government = proletarian_dictatorship
-		government = presidential_dictatorship
-		government = bourgeois_dictatorship
-		government = fascist_dictatorship
-		government = absolute_monarchy
+		OR = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+			is_greater_power = no
+		}
 	}
 	
 	option = {
@@ -321,6 +325,7 @@ country_event = {
 			has_recently_lost_war = yes
 			is_greater_power = no
 		}
+		NOT = { has_global_flag = TUT_mexico_collapses_america }
 	}
 	
 	option = {

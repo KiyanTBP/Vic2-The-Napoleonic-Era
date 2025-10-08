@@ -1,1 +1,9 @@
-# Removed
+army = {
+	name = "Uruguay's Defense"
+	location = 2344
+	regiment = {
+		name= "1. Infantería"
+		type = infantry
+		home = 2344
+	}
+}

@@ -10,7 +10,7 @@ political_decisions = {
 			year = 1839
 			upper_house = {
 				ideology = liberal
-				value = 0.25
+				value = 0.4
 			}
 		}
 		effect = {

@@ -1,5 +1,4 @@
-owner = QNG
-controller = QNG
-add_core = QNG
+owner = PGN
+controller = PGN
 trade_goods = tea
 life_rating = 32

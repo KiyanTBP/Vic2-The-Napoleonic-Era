@@ -4,9 +4,9 @@ culture = fulbe
 culture = african_minor
 religion = sunni
 government = absolute_monarchy
-plurality = 25
-nationalvalue = nv_equality
-literacy = 0.60
+plurality = 0.0
+nationalvalue = nv_order
+literacy = 0.04
 civilized = no
 
 # Political reforms

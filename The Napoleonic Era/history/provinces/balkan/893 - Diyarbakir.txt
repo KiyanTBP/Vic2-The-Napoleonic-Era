@@ -3,5 +3,6 @@ controller = OTO
 add_core = OTO
 add_core = CUS
 add_core = ARM
+add_core = KUR
 trade_goods = iron
 life_rating = 35

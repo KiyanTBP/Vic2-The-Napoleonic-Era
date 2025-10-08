@@ -167,8 +167,14 @@ AFRICA_traditional_values = {
 
 ##### BAVARIA ######
 BVR_munich_university = {
-	population_growth = 0.2
+	population_growth = 0.02
 	immigration_attract = 0.3
+	icon = 15
+}
+
+##### SPAINISH REPUBLIC ######
+SIR_caught_the_bourbons = {
+	prestige = 0.01
 	icon = 15
 }
 
@@ -836,7 +842,7 @@ the_eiffel_tower = {
 signed_the_geneva_convention = {
 	war_exhaustion = -0.05
 	pop_militancy_modifier = 0.2
-	badboy = 0.01
+	badboy = -0.01
 	icon = 7
 }
 

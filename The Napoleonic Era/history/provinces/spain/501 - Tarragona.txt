@@ -1,5 +1,7 @@
 owner = SIR
 controller = SIR
 add_core = SIR
+add_core = CAT
+add_core = IBU
 trade_goods = grain
 life_rating = 35

@@ -1,0 +1,323 @@
+### Purchase of Belize
+# Request to purchase Belize
+country_event = {
+	id = 100102
+	title = "EVENTNAME100102"
+	desc = "EVENTDESC100102"
+	is_triggered_only = yes
+	picture = "BelizePurchase"
+	
+	option = {
+		2190 = {
+			secede_province = FROM
+		}
+		FROM = { treasury = -10000 }
+		treasury = 10000
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		FROM = {
+			relation = {
+				tag = THIS
+				value = -100
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+### Mexican-American War
+# The Treaty of Monterrey
+country_event = {
+	id = 100098
+	title = "EVENTNAME100098"
+	desc = "EVENTDESC100098"
+	is_triggered_only = yes
+	picture = "TreatyGuadalupeHigaldo"
+	
+	option = {
+		name = "EVENTOPTA100098"
+		prestige = 15
+		any_owned = {
+			limit = {
+				is_core = TUT
+			}
+			remove_core = TUT
+		}
+		TEX_132 = {
+			secede_province = MXE
+			remove_core = TUT
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100098"
+		prestige = 20
+		badboy = 5
+		any_owned = {
+			limit = {
+				is_core = TUT
+			}
+			remove_core = TUT
+		}
+		TEX_132 = {
+			secede_province = MXE
+			remove_core = TUT
+		}
+		USA_81 = {
+			secede_province = MXE
+		}
+		USA_91 = {
+			secede_province = MXE
+		}
+		USA_78 = {
+			secede_province = MXE
+		}
+		USA_106 = {
+			secede_province = MXE
+		}
+		USA_126 = {
+			secede_province = MXE
+		}
+		USA_129 = {
+			secede_province = MXE
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100098"
+		prestige = 30
+		badboy = 15
+		any_owned = {
+			limit = {
+				is_core = TUT
+			}
+			remove_core = TUT
+		}
+		TEX_132 = {
+			secede_province = MXE
+			remove_core = TUT
+		}
+		USA_81 = {
+			secede_province = MXE
+		}
+		USA_91 = {
+			secede_province = MXE
+		}
+		USA_78 = {
+			secede_province = MXE
+		}
+		USA_106 = {
+			secede_province = MXE
+		}
+		USA_126 = {
+			secede_province = MXE
+		}
+		USA_129 = {
+			secede_province = MXE
+		}
+		USA_124 = {
+			secede_province = MXE
+		}
+		USA_111 = {
+			secede_province = MXE
+		}
+		USA_116 = {
+			secede_province = MXE
+		}
+		USA_121 = {
+			secede_province = MXE
+		}
+		USA_118 = {
+			secede_province = MXE
+		}
+		USA_144 = {
+			secede_province = MXE
+		}
+		USA_148 = {
+			secede_province = MXE
+		}
+		USA_151 = {
+			secede_province = MXE
+		}
+		USA_158 = {
+			secede_province = MXE
+		}
+		139 = { secede_province = MXE }
+		141 = { secede_province = MXE }
+		142 = { secede_province = MXE }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTD100098"
+		prestige = 40
+		badboy = 24.99
+		any_owned = {
+			limit = {
+				is_core = TUT
+			}
+			remove_core = TUT
+		}
+		TUT = {
+			country_event = {
+				id = 100101
+				days = 10
+			}
+		}
+		TEX_132 = {
+			secede_province = MXE
+			remove_core = TUT
+		}
+		USA_81 = {
+			secede_province = MXE
+		}
+		USA_91 = {
+			secede_province = MXE
+		}
+		USA_78 = {
+			secede_province = MXE
+		}
+		USA_106 = {
+			secede_province = MXE
+		}
+		USA_126 = {
+			secede_province = MXE
+		}
+		USA_129 = {
+			secede_province = MXE
+		}
+		USA_124 = {
+			secede_province = MXE
+		}
+		USA_111 = {
+			secede_province = MXE
+		}
+		USA_116 = {
+			secede_province = MXE
+		}
+		USA_121 = {
+			secede_province = MXE
+		}
+		USA_118 = {
+			secede_province = MXE
+		}
+		USA_144 = {
+			secede_province = MXE
+		}
+		USA_148 = {
+			secede_province = MXE
+		}
+		USA_151 = {
+			secede_province = MXE
+		}
+		USA_158 = {
+			secede_province = MXE
+		}
+		USA_139 = {
+			secede_province = MXE
+		}
+		USA_162 = {
+			secede_province = MXE
+		}
+		USA_168 = {
+			secede_province = MXE
+		}
+		USA_194 = {
+			secede_province = MXE
+		}
+		USA_196 = {
+			secede_province = MXE
+		}
+		USA_200 = {
+			secede_province = MXE
+		}
+		USA_201 = {
+			secede_province = MXE
+		}
+		177 = {
+			secede_province = MXE
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Full Collapse of America
+country_event = {
+	id = 100101
+	title = "EVENTNAME100101"
+	desc = "EVENTDESC100101"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVENTOPTA100101"
+		set_global_flag = TUT_mexico_collapses_america
+		prestige = -350
+		any_owned = {
+			limit = {
+				is_slave = yes
+				NOT = {
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+					province_id = 3249
+				}
+			}
+			add_core = VGC
+		}
+		USA_170 = {
+			add_core = VGC
+		}
+		USA_178 = {
+			add_core = VGC
+		}
+		173 = {
+			add_core = VGC
+		}
+		174 = {
+			add_core = VGC
+		}
+		175 = {
+			add_core = VGC
+		}
+		176 = {
+			add_core = VGC
+		}
+		any_owned = {
+			limit = {
+				is_core = NEN
+			}
+			add_core = FSA
+		}
+		USA_232 = {
+			add_core = FSA
+		}
+		release = VGC
+		release = FSA
+		MXE = {
+			any_owned = {
+				limit = {
+					has_pop_culture = dixie
+				}
+				add_core = VGC
+			}
+		}
+	}
+}

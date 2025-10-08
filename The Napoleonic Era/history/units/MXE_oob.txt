@@ -37,13 +37,13 @@ army = {
 
 	regiment = {
 		name= "2.Division Cos"
-		type = irregular
+		type = cavalry
 		home = 2174
 	}
 
 	regiment = {
 		name= "3.Division Cos"
-		type = irregular
+		type = cavalry
 		home = 2174
 	}
 
@@ -60,13 +60,13 @@ army = {
 
 	regiment = {
 		name= "2.Oajaca y Tlaxcala"
-		type = irregular
+		type = cavalry
 		home = 2177
 	}
 
 	regiment = {
 		name= "3.Oajaca y Tlaxcala"
-		type = irregular
+		type = cavalry
 		home = 2177
 	}
 

@@ -1,5 +1,6 @@
 owner = TPR
 controller = TPR
 add_core = TPR
+add_core = IBU
 trade_goods = grain
 life_rating = 35

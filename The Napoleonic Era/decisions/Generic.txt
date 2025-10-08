@@ -5,7 +5,7 @@ political_decisions = {
 			NOT = { has_country_flag = LEADERSHIP_BOOST_TAKEN }
 		}
 		allow = {
-			civilized = yes
+			war = no
 		}
 		effect = {
 			set_country_flag = LEADERSHIP_BOOST_TAKEN

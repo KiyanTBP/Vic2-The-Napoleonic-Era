@@ -25,6 +25,43 @@ political_decisions = {
 			}
 		}
 	}
+	# Purchase Belize
+	LATAM_purchase_belize = {
+		picture = belize
+		potential = {
+			OR = {
+				tag = TUC
+				tag = MXE
+			}
+			NOT = {
+				OR = {
+					2190 = {
+						owner = {
+							capital_scope = { continent = north_america }
+						}
+					}
+					2190 = {
+						owner = {
+							capital_scope = { continent = south_america }
+						}
+					}
+					has_country_flag = LATAM_attempted_purchase_belize
+				}
+			}
+		}
+		allow = {
+			money = 10000
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = LATAM_attempted_purchase_belize
+			2190 = {
+				owner = {
+					country_event = 100102
+				}
+			}
+		}
+	}
 	### South America: Colonizing the Amazon
 	# The Peru-Bolivian Expedition
 	PBC_amazon_expedition = {
@@ -101,7 +138,10 @@ political_decisions = {
 	GCT_amazon_expedition = {
 		picture = amazon
 		potential = {
-			tag = GCT
+			OR = {
+				tag = GCT
+				tag = CLM
+			}
 			NOT = {
 				has_country_flag = GCT_amazon_expedition_done
 			}

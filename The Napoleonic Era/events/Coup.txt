@@ -1,0 +1,203 @@
+# Fascist Coup d'Etat
+country_event = {
+	id = 100099
+	title = "EVENTNAME100099"
+	desc = "EVENTDESC100099"
+	picture = "Coup"
+	
+	trigger = {
+		NOT = { government = fascist_dictatorship }
+		OR = {
+			AND = {
+				ruling_party_ideology = fascist
+				upper_house = {
+					ideology = fascist
+					value = 0.15
+				}
+			}
+			AND = {
+				upper_house = {
+					ideology = fascist
+					value = 0.3
+				}
+			}
+		}
+	}
+	
+	mean_time_to_trigger = {
+		months = 18
+	}
+	
+	option = {
+		name = "EVENTOPTA100099"
+		government = fascist_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		upper_house = {
+			ideology = fascist
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				NOT = { pop_majority_ideology = fascist }
+			}
+			militancy = 3
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100099"
+		any_pop = {
+			limit = {
+				pop_majority_ideology = fascist
+			}
+			militancy = 7
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# Communist Coup d'Etat
+country_event = {
+	id = 100100
+	title = "EVENTNAME100100"
+	desc = "EVENTDESC100100"
+	picture = "Coup"
+	
+	trigger = {
+		NOT = { government = proletarian_dictatorship }
+		OR = {
+			AND = {
+				ruling_party_ideology = communist
+				upper_house = {
+					ideology = communist
+					value = 0.15
+				}
+			}
+			AND = {
+				upper_house = {
+					ideology = communist
+					value = 0.3
+				}
+			}
+		}
+	}
+	
+	mean_time_to_trigger = {
+		months = 18
+	}
+	
+	option = {
+		name = "EVENTOPTA100100"
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		upper_house = {
+			ideology = communist
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				NOT = { pop_majority_ideology = communist }
+			}
+			militancy = 3
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100100"
+		any_pop = {
+			limit = {
+				pop_majority_ideology = communist
+			}
+			militancy = 7
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# Anarcho-Liberal Coup d'Etat
+country_event = {
+	id = 100104
+	title = "EVENTNAME100104"
+	desc = "EVENTDESC100104"
+	picture = "Coup"
+	
+	trigger = {
+		NOT = { government = bourgeois_dictatorship }
+		OR = {
+			AND = {
+				ruling_party_ideology = anarcho_liberal
+				upper_house = {
+					ideology = anarcho_liberal
+					value = 0.15
+				}
+			}
+			AND = {
+				upper_house = {
+					ideology = anarcho_liberal
+					value = 0.3
+				}
+			}
+		}
+	}
+	
+	mean_time_to_trigger = {
+		months = 18
+	}
+	
+	option = {
+		name = "EVENTOPTA100100"
+		government = bourgeois_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		upper_house = {
+			ideology = anarcho_liberal
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				NOT = { pop_majority_ideology = anarcho_liberal }
+			}
+			militancy = 3
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100100"
+		any_pop = {
+			limit = {
+				pop_majority_ideology = anarcho_liberal
+			}
+			militancy = 7
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}

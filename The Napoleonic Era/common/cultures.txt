@@ -323,7 +323,7 @@ iberian = {
 	leader = southamerican
 	unit = SpanishGC
 	basque = {
-		color = {220 170 30}
+		color = {30 120 10}
 		first_names = { Agustín Aitor Alberto Ander Andoni Andrés Ángel Antonio Arturo Carlos
 		Ceferino Cosme Cristobal Damián Endika "Francisco Javier" Ignacio Imanol Iñaki Jesús
 		Jon "José Antonio" "José María" Joseba Josu Juan Julen Koldobika Luis Manuel
@@ -385,6 +385,7 @@ iberian = {
 		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
 		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira }
 	}
+	union = IBU
 }
 
 french = {
@@ -1859,7 +1860,7 @@ neo_european_cultures = {
 		radicalism = 10
 	}
 	australian = {
-		color = {87 113 174}
+		color = {58 169 36}
 		first_names = { John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
 		}
 		last_names = { Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie

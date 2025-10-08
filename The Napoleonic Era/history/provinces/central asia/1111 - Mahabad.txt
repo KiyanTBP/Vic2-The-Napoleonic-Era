@@ -3,5 +3,6 @@ controller = PER
 add_core = PER
 add_core = CUS
 add_core = AZB
+add_core = KUR
 trade_goods = wool
 life_rating = 35

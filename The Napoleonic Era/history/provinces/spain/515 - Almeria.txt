@@ -1,5 +1,6 @@
 owner = SIR
 controller = SIR
 add_core = SIR
+add_core = IBU
 trade_goods = iron
 life_rating = 35

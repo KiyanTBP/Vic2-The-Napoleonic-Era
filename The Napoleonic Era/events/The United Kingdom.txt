@@ -233,6 +233,9 @@ country_event = {
 		457 = {
 			add_core = ABC
 		}
+		3254 = {
+			add_core = ABC
+		}
 		country_event = {
 			id = 100030
 			days = 0
@@ -260,6 +263,9 @@ country_event = {
 			add_core = ABC
 		}
 		457 = {
+			add_core = ABC
+		}
+		3254 = {
 			add_core = ABC
 		}
 		country_event = {
@@ -291,6 +297,9 @@ country_event = {
 			add_core = ABC
 		}
 		457 = {
+			add_core = ABC
+		}
+		3254 = {
 			add_core = ABC
 		}
 		country_event = {
@@ -338,6 +347,9 @@ country_event = {
 		457 = {
 			remove_core = ABC
 		}
+		3254 = {
+			remove_core = ABC
+		}
 		465 = {
 			add_core = ABC
 		}
@@ -373,6 +385,9 @@ country_event = {
 			remove_core = ABC
 		}
 		457 = {
+			remove_core = ABC
+		}
+		3254 = {
 			remove_core = ABC
 		}
 		465 = {

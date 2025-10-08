@@ -1,4 +1,44 @@
 political_decisions = {
+	# Trail of Tears
+	TUT_trail_of_tears = {
+		picture = trail_of_tears
+		potential = {
+			tag = TUT
+			NOT = { has_country_flag = TUT_completed_trail_of_tears }
+		}
+		allow = {
+			owns = 129
+			owns = 130
+			owns = 131
+			average_consciousness = 3
+		}
+		effect = {
+			set_country_flag = TUT_completed_trail_of_tears
+			add_accepted_culture = cherokee
+			any_pop = {
+				limit = {
+					has_pop_culture = cherokee
+					NOT = {
+						location = {
+							OR = {
+								province_id = 129
+								province_id = 130
+								province_id = 131
+							}
+						}
+					}
+				}
+				reduce_pop = 0.80
+				move_pop = 131
+			}
+			129 = { add_core = CHE }
+			130 = { add_core = CHE }
+			131 = { add_core = CHE }
+			143 = { remove_core = CHE }
+			144 = { remove_core = CHE }
+			145 = { remove_core = CHE }
+		}
+	}
 	# Integrate American Canada
 	TUT_integrate_american_canada = {
 		picture = AMERICAN_CANADA
@@ -166,7 +206,6 @@ political_decisions = {
 			set_country_flag = TUT_accepted_natives
 			prestige = 20
 			add_accepted_culture = inuit
-			add_accepted_culture = cherokee
 			add_accepted_culture = metis
 			add_accepted_culture = navajo
 			add_accepted_culture = dakota
@@ -183,6 +222,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
+			MXE = { has_country_modifier = TREATY_event_war_accepted }
 		}
 		effect = {
 			country_event = 100035

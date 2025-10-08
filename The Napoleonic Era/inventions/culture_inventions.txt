@@ -1320,7 +1320,7 @@ mission_to_civilize = {
 		base = 0
 		modifier = {
 			factor = -100
-			year = 1865
+			NOT = { year = 1865 }
 		}
 		modifier = {
 			factor = 25

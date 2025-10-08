@@ -1,5 +1,5 @@
-owner = PBC
-controller = PBC
+owner = PEU
+controller = PEU
 add_core = PBC
 add_core = PEU
 trade_goods = timber

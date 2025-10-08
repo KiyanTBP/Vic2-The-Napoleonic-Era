@@ -1,5 +1,6 @@
 owner = TPR
 controller = TPR
 add_core = TPR
+add_core = IBU
 trade_goods = fruit
 life_rating = 35

@@ -342,3 +342,66 @@
 		size = 1500   
 	}
 }
+
+# Bayonne
+3254 = {
+	aristocrats = {
+		culture = occitan
+		religion = catholic
+		size = 600
+	}
+
+	clergymen = {
+		culture = occitan
+		religion = catholic
+		size = 650
+	}
+
+	artisans = {
+		culture = occitan
+		religion = catholic
+		size = 4000
+	}
+
+	soldiers = {
+		culture = occitan
+		religion = catholic
+		size = 1050
+	}
+
+	farmers = {
+		culture = occitan
+		religion = catholic
+		size = 84200
+	}
+
+	aristocrats = {
+		culture = basque
+		religion = catholic
+		size = 300
+	}
+
+	clergymen = {
+		culture = basque
+		religion = catholic
+		size = 500
+	}
+
+	artisans = {
+		culture = basque
+		religion = catholic
+		size = 3250
+	}
+
+	soldiers = {
+		culture = basque
+		religion = catholic
+		size = 450
+	}
+
+	farmers = {
+		culture = basque
+		religion = catholic
+		size = 43100
+	}
+}

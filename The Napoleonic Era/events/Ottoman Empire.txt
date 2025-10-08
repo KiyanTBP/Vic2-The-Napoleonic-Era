@@ -28,7 +28,7 @@ country_event = {
 		EGY_897 = { add_core = OTO }
 		EGY_903 = { add_core = OTO }
 		EGY_910 = { add_core = OTO }
-		NEJ_1156 = { add_core = OTO }
+		1156 = { add_core = OTO }
 		ai_chance = {
 			factor = 90
 		}
@@ -82,7 +82,7 @@ country_event = {
 			}
 			relation = {
 				who = THIS
-				value = -25
+				value = -100
 			}
 		}
 		ai_chance = {

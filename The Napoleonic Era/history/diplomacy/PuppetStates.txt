@@ -125,3 +125,11 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+
+# Peru-Bolivia
+substate = {
+	first = PBC
+	second = PEU
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}

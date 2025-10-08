@@ -1,0 +1,91 @@
+political_decisions = {
+	### PERU-BOLIVIAN COLLAPSE
+	# Declare Independance
+	PEU_declare_independance = {
+		picture = flagofperubolivia
+		potential = {
+			tag = PEU
+			NOT = { has_country_flag = PEU_independance_war }
+		}
+		allow = {
+			year = 1838
+			PBC = {
+				war = yes
+			}
+		}
+		effect = {
+			set_country_flag = PEU_declared_independance
+			set_country_flag = PEU_independance_war
+			prestige = 10
+			PBC = {
+				release_vassal = PEU
+				country_event = 100095
+			}
+		}
+	}
+	# Dissolve the Confederation
+	PEU_dissolve_the_confederation = {
+		picture = flagofperubolivia
+		potential = {
+			tag = PEU
+			has_country_flag = PEU_declared_independance
+		}
+		allow = {
+			war = no
+			PBC = { has_country_modifier = TREATY_event_war_accepted }
+		}
+		effect = {
+			clr_country_flag = PEU_declared_independance
+			PBC = {
+				remove_country_modifier = TREATY_event_war_accepted
+				clr_country_flag = PEU_declared_independance
+			}
+			country_event = 100096
+		}
+	}
+	## If the Confederation wins...
+	# Strengthen the Confederation
+	PBC_strengthen_the_confederation = {
+		picture = flagofperubolivia
+		potential = {
+			tag = PBC
+			has_country_flag = PEU_declared_independance
+		}
+		allow = {
+			war = no
+			PEU = { has_country_modifier = TREATY_event_war_accepted }
+		}
+		effect = {
+			clr_country_flag = PEU_declared_independance
+			PEU = {
+				remove_country_modifier = TREATY_event_war_accepted
+				clr_country_flag = PEU_declared_independance
+			}
+			country_event = 100097
+		}
+	}
+	### Peru only
+	# Establish a Peruvian Democracy
+	PEU_establish_peru_democracy = {
+		picture = peruvian_liberation
+		potential = {
+			tag = PEU
+			NOT = { has_country_flag = PEU_established_democracy }
+		}
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		effect = {
+			set_country_flag = PEU_established_democracy
+			government = democracy
+			political_reform = universal_voting
+			political_reform = state_equal_weight
+			political_reform = jefferson_method
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = non_socialist
+			political_reform = non_secret_ballots
+		}
+	}
+}

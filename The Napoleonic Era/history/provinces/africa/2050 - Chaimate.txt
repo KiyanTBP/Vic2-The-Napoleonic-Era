@@ -1,2 +1,4 @@
+owner = TPR
+controller = TPR
 trade_goods = grain
 life_rating = 35

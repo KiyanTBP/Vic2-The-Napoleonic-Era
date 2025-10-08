@@ -21,4 +21,51 @@ army = {
 		type = infantry
 		home = 2324
 	}
+
+	regiment = {
+		name= "4. Army"
+		type = artillery
+		home = 2349
+	}
+
+	regiment = {
+		name= "5. Army"
+		type = artillery
+		home = 2349
+	}
+
+	regiment = {
+		name= "6. Army"
+		type = artillery
+		home = 2349
+	}
+}
+
+army = {
+	name = "Chile's Defense"
+	location = 2324
+	regiment = {
+		name= "1. Brigade"
+		type = infantry
+		home = 2324
+	}
+
+	regiment = {
+		name= "2. Brigade"
+		type = infantry
+		home = 2325
+	}
+
+	regiment = {
+		name= "3. Brigade"
+		type = infantry
+		home = 2328
+	}
+
+	regiment = {
+		name= "4. Brigade"
+		type = cuirassier
+		home = 2324
+	}
+
 }

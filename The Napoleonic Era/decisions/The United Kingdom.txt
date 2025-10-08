@@ -5,6 +5,7 @@ political_decisions = {
 		picture = england
 		potential = {
 			tag = UKG
+			NOT = { ENG = { exists = yes } }
 			NOT = { has_country_flag = UKG_now_english }
 		}
 		allow = {

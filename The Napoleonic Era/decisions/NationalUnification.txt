@@ -478,6 +478,7 @@ political_decisions = {
 					is_culture_group = south_slavic
 					is_culture_group = turkestani
 					is_culture_group = czecho_slovak_culture_group
+					is_culture_group = iberian
 					tag = ECU
 					tag = CLM
 					tag = VNZ

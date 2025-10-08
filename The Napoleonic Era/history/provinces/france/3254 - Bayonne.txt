@@ -1,0 +1,7 @@
+owner = NFR
+controller = NFR
+add_core = NFR
+add_core = BSQ
+add_core = OCI
+trade_goods = grain
+life_rating = 35

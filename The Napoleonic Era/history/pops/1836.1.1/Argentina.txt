@@ -41,13 +41,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 7000
+		size = 8000
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 9825
+		size = 8825
 	}
 }
 #Junin (56000/14000 POPS)
@@ -73,7 +73,7 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 7000
+		size = 9000
 	}
 
 	farmers = {
@@ -105,7 +105,7 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 250
+		size = 1000
 	}
 
 	farmers = {
@@ -137,13 +137,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 250
+		size = 1000
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 900
+		size = 1500
 	}
 }
 #Mar del Plata (12000/3000 POPS)
@@ -169,7 +169,7 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 125
+		size = 900
 	}
 
 	farmers = {
@@ -196,13 +196,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 125
+		size = 900
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 900
+		size = 1750
 	}
 
 	aristocrats = {
@@ -1461,13 +1461,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 25
+		size = 800
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 1800
+		size = 2750
 	}
 }
 #San Luis (8000/2000 POPS)
@@ -1493,13 +1493,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 25
+		size = 800
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 1800
+		size = 2345
 	}
 }
 #Under the loose rule of Argentina 1836
@@ -1520,13 +1520,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 25
+		size = 770
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 1825
+		size = 2300
 	}
 
 	aristocrats = {
@@ -1576,13 +1576,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 25
+		size = 300
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 900
+		size = 1200
 	}
 
 	aristocrats = {
@@ -1652,13 +1652,13 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 50
+		size = 2000
 	}
 
 	farmers = {
 		culture = platinean
 		religion = catholic
-		size = 3700
+		size = 4760
 	}
 }
 #Santa Rita (8000/2000 POPS)
@@ -1684,7 +1684,7 @@
 	soldiers = {
 		culture = platinean
 		religion = catholic
-		size = 25
+		size = 500
 	}
 
 	farmers = {

@@ -260,7 +260,6 @@ country_event = {
 		name = "EVENTOPTA100010"
 		badboy = 2.5
 		prestige = 5
-		treasury = 1000
 		SPA_498 = { add_core = THIS }
 		relation = {
 			who = SIR

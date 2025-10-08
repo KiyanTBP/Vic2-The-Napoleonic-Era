@@ -2567,7 +2567,7 @@
 
 }
 
-# Sept-�les
+# Sept- les
 62 = {
     unit = {
         x = 1843.000000
@@ -2657,7 +2657,7 @@
 
 }
 
-# Trois-Rivi�res
+# Trois-Rivi res
 64 = {
     unit = {
         x = 1659.000000
@@ -14527,7 +14527,7 @@
 
 }
 
-# G�vle
+# G vle
 317 = {
     unit = {
         x = 3056.000000
@@ -14622,7 +14622,7 @@
 
 }
 
-# �stersund
+# stersund
 319 = {
     unit = {
         x = 3027.000000
@@ -14683,7 +14683,7 @@
 
 }
 
-# Ume�
+# Ume
 320 = {
     unit = {
         x = 3102.000000
@@ -14754,7 +14754,7 @@
 
 }
 
-# Lule�
+# Lule
 321 = {
     unit = {
         x = 3130.000000
@@ -14970,7 +14970,7 @@
 
 }
 
-# Norrk�ping
+# Norrk ping
 325 = {
     unit = {
         x = 3052.000000
@@ -15012,7 +15012,7 @@
 
 }
 
-# V�ster�s
+# V ster s
 326 = {
     unit = {
         x = 3062.000000
@@ -15093,7 +15093,7 @@
 
 }
 
-# �rebro
+# rebro
 327 = {
     unit = {
         x = 3040.000000
@@ -15212,7 +15212,7 @@
 
 }
 
-# G�teborg
+# G teborg
 329 = {
     unit = {
         x = 2988.000000
@@ -15269,7 +15269,7 @@
 
 }
 
-# Bor�s
+# Bor s
 330 = {
     unit = {
         x = 3011.000000
@@ -15416,7 +15416,7 @@
 
 }
 
-# V�xj�
+# V xj
 333 = {
     unit = {
         x = 3031.000000
@@ -15454,7 +15454,7 @@
 
 }
 
-# Malm�
+# Malm
 334 = {
     unit = {
         x = 3013.000000
@@ -15971,7 +15971,7 @@
 
 }
 
-# H�meenlinna
+# H meenlinna
 344 = {
     unit = {
         x = 3198.000000
@@ -16212,7 +16212,7 @@
 
 }
 
-# �land Islands
+# land Islands
 348 = {
     text_position = {
         x = 3116.000000
@@ -16344,7 +16344,7 @@
 
 }
 
-# P�rnu
+# P rnu
 351 = {
     unit = {
         x = 3200.000000
@@ -16429,7 +16429,7 @@
 
 }
 
-# �sel
+# sel
 353 = {
     unit = {
         x = 3159.000000
@@ -18235,7 +18235,7 @@
 
 }
 
-# Li�ge
+# Li ge
 395 = {
     unit = {
         x = 2890.000000
@@ -18901,7 +18901,7 @@
 
 }
 
-# �pinal
+# pinal
 414 = {
     unit = {
         x = 2910.000000
@@ -18982,7 +18982,7 @@
 
 }
 
-# �vreux
+# vreux
 416 = {
     text_position = {
         x = 2821.300049
@@ -19020,7 +19020,7 @@
 
 }
 
-# Alen�on
+# Alen on
 417 = {
     unit = {
         x = 2801.000000
@@ -19774,7 +19774,7 @@
 
 }
 
-# Besan�on
+# Besan on
 432 = {
     text_position = {
         x = 2905.000000
@@ -19985,7 +19985,7 @@
 
 }
 
-# Orl�ans
+# Orl ans
 438 = {
     text_position = {
         x = 2843.000000
@@ -20231,7 +20231,7 @@
 
 }
 
-# Angoul�me
+# Angoul me
 444 = {
     unit = {
         x = 2810.000000
@@ -20289,7 +20289,7 @@
 
 }
 
-# Ch�teauroux
+# Ch teauroux
 446 = {
     unit = {
         x = 2836.000000
@@ -20531,7 +20531,7 @@
 
 }
 
-# St �tienne
+# St  tienne
 452 = {
     unit = {
         x = 2872.000000
@@ -20812,14 +20812,19 @@
 # Pau
 460 = {
     text_position = {
-        x = 2804.000000
-        y = 1494.000000
+        x = 2805.850000
+        y = 1497.200000
     }
 
-    text_scale = 2.500000
-    building_construction = {
-        x = 2812.000000
-        y = 1498.800049
+    text_scale = 2.75
+    unit = {
+        x = 2805.650000
+        y = 1495.500000
+    }
+
+    city = {
+        x = 2804.400000
+        y = 1497.400000
     }
 
     factory = {
@@ -20827,15 +20832,20 @@
         y = 1501.800049
     }
 
+    building_construction = {
+        x = 2812.000000
+        y = 1498.800049
+    }
+
+    military_construction = {
+        x = 2808.400000
+        y = 1497.200000
+    }
+
     building_position = {
         fort = {
-            x = 2787.000000
-            y = 1498.000000
-        }
-
-        naval_base = {
-            x = 2779.899902
-            y = 1500.699951
+            x = 2801.900000
+            y = 1497.500000
         }
 
     }
@@ -21046,7 +21056,7 @@
 
 }
 
-# Chamb�ry
+# Chamb ry
 466 = {
     unit = {
         x = 2902.000000
@@ -21438,7 +21448,7 @@
 
 }
 
-# La Coru�a
+# La Coru a
 474 = {
     unit = {
         x = 2683.000000
@@ -21590,7 +21600,7 @@
 
 }
 
-# Le�n
+# Le n
 477 = {
     unit = {
         x = 2713.000000
@@ -21829,7 +21839,7 @@
 
 }
 
-# �vila
+# vila
 483 = {
     unit = {
         x = 2733.000000
@@ -21939,7 +21949,7 @@
 
 }
 
-# C�ceres
+# C ceres
 486 = {
     unit = {
         x = 2706.000000
@@ -22026,7 +22036,7 @@
 
 }
 
-# Sig�enza
+# Sig enza
 488 = {
     unit = {
         x = 2766.000000
@@ -22260,7 +22270,7 @@
 
 }
 
-# Logro�o
+# Logro o
 494 = {
     unit = {
         x = 2769.000000
@@ -22499,7 +22509,7 @@
 
 }
 
-# L�rida
+# L rida
 500 = {
     text_position = {
         x = 2823.800049
@@ -22675,7 +22685,7 @@
 
 }
 
-# Castell�n
+# Castell n
 504 = {
     unit = {
         x = 2805.000000
@@ -22930,7 +22940,7 @@
 
 }
 
-# C�rdoba
+# C rdoba
 510 = {
     unit = {
         x = 2732.000000
@@ -23017,7 +23027,7 @@
 
 }
 
-# C�diz
+# C diz
 512 = {
     unit = {
         x = 2714.000000
@@ -23117,7 +23127,7 @@
 
 }
 
-# M�laga
+# M laga
 514 = {
     unit = {
         x = 2734.000000
@@ -23164,7 +23174,7 @@
 
 }
 
-# Almer�a
+# Almer a
 515 = {
     unit = {
         x = 2768.000000
@@ -23216,7 +23226,7 @@
 
 }
 
-# Ja�n
+# Ja n
 516 = {
     unit = {
         x = 2756.000000
@@ -23426,7 +23436,7 @@
 
 }
 
-# Covilh�
+# Covilh
 520 = {
     unit = {
         x = 2689.000000
@@ -23659,7 +23669,7 @@
 
 }
 
-# �vora
+# vora
 525 = {
     unit = {
         x = 2685.000000
@@ -23919,7 +23929,7 @@
 
 }
 
-# L�beck
+# L beck
 530 = {
     unit = {
         x = 2972.000000
@@ -24019,7 +24029,7 @@
 
 }
 
-# L�neburg
+# L neburg
 532 = {
     unit = {
         x = 2968.000000
@@ -24211,7 +24221,7 @@
 
 }
 
-# G�ttingen
+# G ttingen
 537 = {
     unit = {
         x = 2967.000000
@@ -24250,7 +24260,7 @@
 
 }
 
-# Osnabr�ck
+# Osnabr ck
 538 = {
     text_position = {
         x = 2930.600098
@@ -24631,7 +24641,7 @@
 
 }
 
-# Swinem�nde
+# Swinem nde
 547 = {
     unit = {
         x = 3019.000000
@@ -25661,7 +25671,7 @@
 
 }
 
-# Saarbr�cken
+# Saarbr cken
 573 = {
     unit = {
         x = 2914.000000
@@ -25835,7 +25845,7 @@
 
 }
 
-# D�sseldorf
+# D sseldorf
 578 = {
     unit = {
         x = 2919.000000
@@ -25936,7 +25946,7 @@
 
 }
 
-# M�nster
+# M nster
 581 = {
     text_position = {
         x = 2917.899902
@@ -26344,7 +26354,7 @@
 
 }
 
-# T�bingen
+# T bingen
 591 = {
     text_position = {
         x = 2942.399902
@@ -26574,7 +26584,7 @@
 
 }
 
-# W�rzburg
+# W rzburg
 597 = {
     text_position = {
         x = 2966.100098
@@ -27028,7 +27038,7 @@
 
 }
 
-# Neuch�tel
+# Neuch tel
 608 = {
     text_position = {
         x = 2911.699951
@@ -27410,7 +27420,7 @@
 
 }
 
-# Sankt P�lten
+# Sankt P lten
 620 = {
     unit = {
         x = 3047.000000
@@ -27917,7 +27927,7 @@
 
 }
 
-# Trenc�n
+# Trenc n
 634 = {
     text_position = {
         x = 3092.300049
@@ -27980,7 +27990,7 @@
 
 }
 
-# Bansk� Bystrica
+# Bansk  Bystrica
 636 = {
     text_position = {
         x = 3112.300049
@@ -28013,7 +28023,7 @@
 
 }
 
-# Ko�ice
+# Ko ice
 637 = {
     text_position = {
         x = 3141.699951
@@ -28047,7 +28057,7 @@
 
 }
 
-# Ro�nava
+# Ro nava
 638 = {
     text_position = {
         x = 3121.800049
@@ -28132,7 +28142,7 @@
 
 }
 
-# P�cs
+# P cs
 640 = {
     text_position = {
         x = 3090.699951
@@ -28205,7 +28215,7 @@
 
 }
 
-# Sz�kesfeh�rv�r
+# Sz kesfeh rv r
 643 = {
     text_position = {
         x = 3087.600098
@@ -28226,7 +28236,7 @@
 
 }
 
-# Kaposv�r
+# Kaposv r
 644 = {
     text_position = {
         x = 3085.699951
@@ -28264,7 +28274,7 @@
 
 }
 
-# Kecskem�t
+# Kecskem t
 645 = {
     text_position = {
         x = 3110.300049
@@ -28434,7 +28444,7 @@
 
 }
 
-# B�k�scsaba
+# B k scsaba
 650 = {
     unit = {
         x = 3132.000000
@@ -28473,7 +28483,7 @@
 
 }
 
-# Szatm�r
+# Szatm r
 651 = {
     unit = {
         x = 3164.000000
@@ -28546,7 +28556,7 @@
 
 }
 
-# Resicab�nya
+# Resicab nya
 653 = {
     unit = {
         x = 3150.000000
@@ -29496,7 +29506,7 @@
 
 }
 
-# K�slin
+# K slin
 680 = {
     unit = {
         x = 3073.000000
@@ -29543,7 +29553,7 @@
 
 }
 
-# K�strin
+# K strin
 681 = {
     unit = {
         x = 3045.000000
@@ -29827,7 +29837,7 @@
 
 }
 
-# G�rlitz
+# G rlitz
 687 = {
     unit = {
         x = 3028.000000
@@ -30181,7 +30191,7 @@
 
 }
 
-# K�nigsberg
+# K nigsberg
 695 = {
     unit = {
         x = 3133.000000
@@ -33560,7 +33570,7 @@
 
 }
 
-# Vara�din
+# Vara din
 775 = {
     text_position = {
         x = 3064.100098
@@ -33632,7 +33642,7 @@
 
 }
 
-# Po�ega
+# Po ega
 777 = {
     unit = {
         x = 3083.000000
@@ -34405,7 +34415,7 @@
 
 }
 
-# U�ice
+# U ice
 797 = {
     text_position = {
         x = 3117.600098
@@ -34438,7 +34448,7 @@
 
 }
 
-# Ni�
+# Ni
 798 = {
     unit = {
         x = 3144.000000
@@ -37007,7 +37017,7 @@
 
 }
 
-# �sk�dar
+# sk dar
 861 = {
     text_position = {
         x = 3265.399902
@@ -37237,7 +37247,7 @@
 
 }
 
-# K�tahya
+# K tahya
 867 = {
     unit = {
         x = 3267.000000
@@ -67786,7 +67796,7 @@
 
 }
 
-# D�hu�
+# D hu
 1600 = {
     text_position = {
         x = 4176.000000
@@ -82915,7 +82925,7 @@
 
 }
 
-# S�o Tom�
+# S o Tom
 1954 = {
     unit = {
         x = 2909.000000
@@ -82948,7 +82958,7 @@
 
 }
 
-# Fernando P�
+# Fernando P
 1955 = {
     text_position = {
         x = 2940.500000
@@ -84953,7 +84963,7 @@
 
 }
 
-# Mo��medes
+# Mo  medes
 2004 = {
     unit = {
         x = 3004.000000
@@ -87345,7 +87355,7 @@
 
 }
 
-# Mo�ambique
+# Mo ambique
 2060 = {
     text_position = {
         x = 3435.399902
@@ -91536,7 +91546,7 @@
 
 }
 
-# Santa Mar�a del Oro
+# Santa Mar a del Oro
 2154 = {
     unit = {
         x = 1170.000000
@@ -91579,7 +91589,7 @@
 
 }
 
-# Torre�n
+# Torre n
 2155 = {
     unit = {
         x = 1211.000000
@@ -91617,7 +91627,7 @@
 
 }
 
-# Mazatl�n
+# Mazatl n
 2156 = {
     text_position = {
         x = 1144.699951
@@ -91660,7 +91670,7 @@
 
 }
 
-# Culiac�n
+# Culiac n
 2157 = {
     unit = {
         x = 1121.000000
@@ -91768,7 +91778,7 @@
 
 }
 
-# San Luis Potos�
+# San Luis Potos
 2159 = {
     unit = {
         x = 1235.000000
@@ -91982,7 +91992,7 @@
 
 }
 
-# Minatitl�n
+# Minatitl n
 2164 = {
     unit = {
         x = 1325.000000
@@ -92309,7 +92319,7 @@
 
 }
 
-# Los Alba�iles
+# Los Alba iles
 2171 = {
     unit = {
         x = 1210.000000
@@ -92403,7 +92413,7 @@
 
 }
 
-# Quer�taro
+# Quer taro
 2173 = {
     unit = {
         x = 1248.000000
@@ -92875,7 +92885,7 @@
 
 }
 
-# M�rida
+# M rida
 2183 = {
     unit = {
         x = 1417.000000
@@ -93193,7 +93203,7 @@
 
 }
 
-# Sayaxch�
+# Sayaxch
 2189 = {
     unit = {
         x = 1401.000000
@@ -93657,7 +93667,7 @@
 
 }
 
-# Le�n
+# Le n
 2199 = {
     unit = {
         x = 1459.000000
@@ -93803,7 +93813,7 @@
 
 }
 
-# San Jos�
+# San Jos
 2201 = {
     unit = {
         x = 1501.000000
@@ -93894,7 +93904,7 @@
 
 }
 
-# Lim�n
+# Lim n
 2203 = {
     unit = {
         x = 1504.000000
@@ -94067,7 +94077,7 @@
 
 }
 
-# Penonom�
+# Penonom
 2206 = {
     unit = {
         x = 1551.000000
@@ -94328,7 +94338,7 @@
 
 }
 
-# Camag�ey
+# Camag ey
 2211 = {
     unit = {
         x = 1593.000000
@@ -95774,7 +95784,7 @@
 
 }
 
-# Bogot�
+# Bogot
 2247 = {
     unit = {
         x = 1648.000000
@@ -95812,7 +95822,7 @@
 
 }
 
-# Ibagu�
+# Ibagu
 2248 = {
     text_position = {
         x = 1633.000000
@@ -95904,7 +95914,7 @@
 
 }
 
-# C�cuta
+# C cuta
 2251 = {
     unit = {
         x = 1664.000000
@@ -95942,7 +95952,7 @@
 
 }
 
-# Medell�n
+# Medell n
 2252 = {
     unit = {
         x = 1630.000000
@@ -95980,7 +95990,7 @@
 
 }
 
-# Quibd�
+# Quibd
 2253 = {
     unit = {
         x = 1608.000000
@@ -96199,7 +96209,7 @@
 
 }
 
-# Popay�n
+# Popay n
 2257 = {
     unit = {
         x = 1615.000000
@@ -96328,7 +96338,7 @@
 
 }
 
-# San Jos� del Guaviare
+# San Jos  del Guaviare
 2260 = {
     text_position = {
         x = 1665.000000
@@ -96578,7 +96588,7 @@
 
 }
 
-# Cuman�
+# Cuman
 2267 = {
     text_position = {
         x = 1796.000000
@@ -96662,7 +96672,7 @@
 
 }
 
-# G�iria
+# G iria
 2269 = {
     unit = {
         x = 1816.000000
@@ -97378,7 +97388,7 @@
 
 }
 
-# Gal�pagos
+# Gal pagos
 2285 = {
     unit = {
         x = 1395.000000
@@ -97660,7 +97670,7 @@
 
 }
 
-# Hu�nuco
+# Hu nuco
 2293 = {
     unit = {
         x = 1625.000000
@@ -98450,7 +98460,7 @@
 
 }
 
-# Potos�
+# Potos
 2314 = {
     unit = {
         x = 1763.000000
@@ -98584,7 +98594,7 @@
 
 }
 
-# Robor�
+# Robor
 2318 = {
     text_position = {
         x = 1859.000000
@@ -98692,7 +98702,7 @@
 
 }
 
-# Copiap�
+# Copiap
 2322 = {
     unit = {
         x = 1716.000000
@@ -98811,7 +98821,7 @@
 
 }
 
-# Valpara�so
+# Valpara so
 2325 = {
     text_position = {
         x = 1689.699951
@@ -98850,7 +98860,7 @@
 
 }
 
-# Vi�a del Mar
+# Vi a del Mar
 2326 = {
     unit = {
         x = 1698.000000
@@ -99109,7 +99119,7 @@
 
 }
 
-# Chill�n
+# Chill n
 2331 = {
     unit = {
         x = 1684.000000
@@ -99186,7 +99196,7 @@
 
 }
 
-# Puerto Ais�n
+# Puerto Ais n
 2333 = {
     unit = {
         x = 1669.000000
@@ -99414,7 +99424,7 @@
 
 }
 
-# Puerto Guaran�
+# Puerto Guaran
 2338 = {
     text_position = {
         x = 1867.000000
@@ -99528,7 +99538,7 @@
 
 }
 
-# Encarnaci�n
+# Encarnaci n
 2341 = {
     text_position = {
         x = 1938.099976
@@ -99586,7 +99596,7 @@
 
 }
 
-# Concepci�n
+# Concepci n
 2343 = {
     unit = {
         x = 1921.000000
@@ -99686,7 +99696,7 @@
 
 }
 
-# Paysand�
+# Paysand
 2345 = {
     unit = {
         x = 1922.000000
@@ -99741,7 +99751,7 @@
 
 }
 
-# Tacuaremb�
+# Tacuaremb
 2346 = {
     unit = {
         x = 1918.000000
@@ -99884,7 +99894,7 @@
 
 }
 
-# Jun�n
+# Jun n
 2349 = {
     text_position = {
         x = 1866.000000
@@ -100090,7 +100100,7 @@
 
 }
 
-# Bah�a Blanca
+# Bah a Blanca
 2354 = {
     unit = {
         x = 1842.000000
@@ -100244,7 +100254,7 @@
 
 }
 
-# Curuz� Cuati�
+# Curuz  Cuati
 2357 = {
     unit = {
         x = 1892.000000
@@ -100282,7 +100292,7 @@
 
 }
 
-# Santo Tom�s
+# Santo Tom s
 2358 = {
     unit = {
         x = 1919.000000
@@ -100320,7 +100330,7 @@
 
 }
 
-# Col�n
+# Col n
 2359 = {
     text_position = {
         x = 1888.199951
@@ -100353,7 +100363,7 @@
 
 }
 
-# Paran�
+# Paran
 2360 = {
     unit = {
         x = 1870.000000
@@ -100542,7 +100552,7 @@
 
 }
 
-# Villa �ngela
+# Villa  ngela
 2365 = {
     unit = {
         x = 1849.000000
@@ -100761,7 +100771,7 @@
 
 }
 
-# Tucum�n
+# Tucum n
 2373 = {
     text_position = {
         x = 1789.599976
@@ -100859,7 +100869,7 @@
 
 }
 
-# A�atuya
+# A atuya
 2377 = {
     unit = {
         x = 1829.000000
@@ -100897,7 +100907,7 @@
 
 }
 
-# Mail�n
+# Mail n
 2378 = {
     unit = {
         x = 1814.000000
@@ -100935,7 +100945,7 @@
 
 }
 
-# C�rdoba de Argentina
+# C rdoba de Argentina
 2379 = {
     unit = {
         x = 1797.000000
@@ -101007,7 +101017,7 @@
 
 }
 
-# R�o Cuarto
+# R o Cuarto
 2381 = {
     unit = {
         x = 1811.000000
@@ -101045,7 +101055,7 @@
 
 }
 
-# Renanc�
+# Renanc
 2382 = {
     unit = {
         x = 1809.000000
@@ -101361,7 +101371,7 @@
 
 }
 
-# Neuqu�n
+# Neuqu n
 2391 = {
     unit = {
         x = 1716.000000
@@ -101464,7 +101474,7 @@
 
 }
 
-# Tel�n
+# Tel n
 2393 = {
     unit = {
         x = 1797.000000
@@ -101591,7 +101601,7 @@
 
 }
 
-# Curac�
+# Curac
 2395 = {
     unit = {
         x = 1763.000000
@@ -101771,7 +101781,7 @@
 
 }
 
-# R�o Gallegos
+# R o Gallegos
 2399 = {
     unit = {
         x = 1699.000000
@@ -101818,7 +101828,7 @@
 
 }
 
-# R�o Grande
+# R o Grande
 2400 = {
     unit = {
         x = 1750.000000
@@ -102194,7 +102204,7 @@
 
 }
 
-# Bel�m
+# Bel m
 2410 = {
     unit = {
         x = 2054.000000
@@ -102241,7 +102251,7 @@
 
 }
 
-# Santar�m
+# Santar m
 2411 = {
     unit = {
         x = 1956.000000
@@ -102284,7 +102294,7 @@
 
 }
 
-# �bidos
+# bidos
 2412 = {
     text_position = {
         x = 1946.000000
@@ -102317,7 +102327,7 @@
 
 }
 
-# Marab�
+# Marab
 2413 = {
     unit = {
         x = 2003.000000
@@ -102355,7 +102365,7 @@
 
 }
 
-# Amap�
+# Amap
 2414 = {
     unit = {
         x = 1994.000000
@@ -102402,7 +102412,7 @@
 
 }
 
-# Macap�
+# Macap
 2415 = {
     unit = {
         x = 1993.000000
@@ -102520,7 +102530,7 @@
 
 }
 
-# Cuiab�
+# Cuiab
 2418 = {
     text_position = {
         x = 1974.000000
@@ -102540,7 +102550,7 @@
 
 }
 
-# Corumb�
+# Corumb
 2419 = {
     text_position = {
         x = 1955.000000
@@ -102707,7 +102717,7 @@
 
 }
 
-# S�o Lu�s
+# S o Lu s
 2424 = {
     unit = {
         x = 2112.000000
@@ -102864,7 +102874,7 @@
 
 }
 
-# Para�ba
+# Para ba
 2428 = {
     unit = {
         x = 2240.000000
@@ -103166,7 +103176,7 @@
 
 }
 
-# Macei�
+# Macei
 2434 = {
     unit = {
         x = 2235.000000
@@ -103475,7 +103485,7 @@
 
 }
 
-# Vit�ria da Conquista
+# Vit ria da Conquista
 2440 = {
     unit = {
         x = 2161.000000
@@ -103569,7 +103579,7 @@
 
 }
 
-# Sabar�
+# Sabar
 2442 = {
     text_position = {
         x = 2115.000000
@@ -103602,7 +103612,7 @@
 
 }
 
-# Janu�ria
+# Janu ria
 2443 = {
     text_position = {
         x = 2143.000000
@@ -103716,7 +103726,7 @@
 
 }
 
-# S�o Jo�o del Rey
+# S o Jo o del Rey
 2446 = {
     unit = {
         x = 2093.000000
@@ -103861,7 +103871,7 @@
 
 }
 
-# Vit�ria
+# Vit ria
 2449 = {
     unit = {
         x = 2174.000000
@@ -103921,7 +103931,7 @@
 
 }
 
-# S�o Paulo
+# S o Paulo
 2450 = {
     unit = {
         x = 2072.000000
@@ -104433,7 +104443,7 @@
 
 }
 
-# S�o Miguel
+# S o Miguel
 2462 = {
     unit = {
         x = 1983.000000
@@ -107685,7 +107695,7 @@
 
 }
 
-# Forte S�o Joaquim
+# Forte S o Joaquim
 2532 = {
     unit = {
         x = 1843.000000
@@ -108384,7 +108394,7 @@
 
 }
 
-# Tarauac�
+# Tarauac
 2549 = {
     unit = {
         x = 1719.000000
@@ -108442,7 +108452,7 @@
 
 }
 
-# Forte do Pr�ncipe
+# Forte do Pr ncipe
 2550 = {
     unit = {
         x = 1825.000000
@@ -114745,7 +114755,7 @@
 
 }
 
-# V�nern
+# V nern
 2703 = {
     unit = {
         x = 3016.000000
@@ -114761,7 +114771,7 @@
     text_scale = 2.200000
 }
 
-# V�ttern
+# V ttern
 2704 = {
     text_position = {
         x = 3031.899902
@@ -114788,7 +114798,7 @@
     text_scale = 3.099999
 }
 
-# �lands Hav
+# lands Hav
 2706 = {
     unit = {
         x = 3115.000000
@@ -114865,7 +114875,7 @@
     text_scale = 3.099999
 }
 
-# �resund
+# resund
 2711 = {
     unit = {
         x = 2987.000000
@@ -114897,7 +114907,7 @@
     text_scale = 3.099999
 }
 
-# Peipsi J�rv
+# Peipsi J rv
 2713 = {
     unit = {
         x = 3233.000000
@@ -115502,7 +115512,7 @@
     text_scale = 2.400000
 }
 
-# Gulf of Almer�a
+# Gulf of Almer a
 2747 = {
     unit = {
         x = 2778.000000
@@ -119064,7 +119074,7 @@
 
 }
 
-# Coast of Amap�
+# Coast of Amap
 2981 = {
     unit = {
         x = 2021.000000
@@ -119159,7 +119169,7 @@
     text_scale = 7.199996
 }
 
-# Baia Paranagu�
+# Baia Paranagu
 2988 = {
     unit = {
         x = 2040.000000
@@ -122784,6 +122794,60 @@
         railroad = {
             x = 3057.100000
             y = 1607.200000
+        }
+
+    }
+
+}
+
+# Bayonne
+3254 = {
+    text_position = {
+        x = 2787.700000
+        y = 1498.050000
+    }
+
+    text_rotation = 6.132062
+    text_scale = 1.75
+    unit = {
+        x = 2788.400000
+        y = 1499.250000
+    }
+
+    city = {
+        x = 2787.400000
+        y = 1497.950000
+    }
+
+    factory = {
+        x = 2783.400000
+        y = 1499.800000
+    }
+
+    building_construction = {
+        x = 2785.450000
+        y = 1500.650000
+    }
+
+    military_construction = {
+        x = 2789.050000
+        y = 1498.600000
+    }
+
+    building_position = {
+        fort = {
+            x = 2785.350000
+            y = 1495.650000
+        }
+
+        railroad = {
+            x = 2790.750000
+            y = 1497.550000
+        }
+
+        naval_base = {
+            x = 2782.000000
+            y = 1500.950000
         }
 
     }

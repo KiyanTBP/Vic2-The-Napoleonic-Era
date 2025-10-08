@@ -2,5 +2,6 @@ owner = NFR
 controller = NFR
 add_core = NFR
 add_core = OCI
+add_core = CAT
 trade_goods = grain
 life_rating = 31

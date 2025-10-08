@@ -1,0 +1,42 @@
+political_decisions = {
+	# Reclaim Central America
+	MXE_reclaim_central_america = {
+		picture = central_america
+		potential = {
+			tag = MXE
+			NOT = { has_country_flag = MXE_reclaimed_central_murica }
+		}
+		allow = {
+			is_greater_power = yes
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = MXE_reclaimed_central_murica
+			prestige = 20
+			badboy = 5
+			TUC = {
+				all_core = {
+					add_core = MXE
+				}
+			}
+		}
+	}
+	### Mexican-American War
+	# Mexican Victory
+	MXE_working_on_the_treaty_of_monterrey = {
+		picture = wartreaty
+		potential = {
+			tag = MXE
+			has_country_flag = MXETUT_MEXICAN_AMERICAN_WAR
+		}
+		allow = {
+			war = no
+			TUT = { has_country_modifier = TREATY_event_war_accepted }
+		}
+		effect = {
+			country_event = 100098
+			clr_country_flag = MXETUT_MEXICAN_AMERICAN_WAR
+			TUT = { clr_country_flag = MXETUT_MEXICAN_AMERICAN_WAR }
+		}
+	}
+}

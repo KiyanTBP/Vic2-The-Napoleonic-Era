@@ -1,5 +1,6 @@
 owner = OTO
 controller = OTO
 add_core = OTO
+add_core = KUR
 trade_goods = sulphur
 life_rating = 35

@@ -4,7 +4,7 @@ political_decisions = {
 	COLON_africa_conference = {
 		picture = africa_conference
 		potential = {
-			year = 1870
+			year = 1880
 			civilized = yes
 			NOT = { has_global_flag = COLON_africa_conference_called }
 		}
@@ -142,7 +142,7 @@ political_decisions = {
 		potential = {
 			NOT = { has_country_flag = COLON_reorganized_tschad }
 			NOT = { 1818 = { is_core = TSC } }
-			has_global_flag = COLON_africa_conference_called
+			# has_global_flag = COLON_africa_conference_called
 			owns = 1818
 			civilized = yes
 			NOT = { capital_scope = { continent = africa } }
@@ -312,6 +312,12 @@ political_decisions = {
 		effect = {
 			set_country_flag = COLON_reorganized_algeria
 			prestige = 10
+			1711 = {
+				secede_province = THIS
+			}
+			1712 = {
+				secede_province = THIS
+			}
 			ALD_1714 = {
 				add_core = ALG
 				secede_province = THIS
@@ -320,6 +326,147 @@ political_decisions = {
 				add_core = ALG
 				secede_province = THIS
 			}
+		}
+	}
+	# Reorginaze Greater Somalia
+	COLON_reorginaze_greatsomalia = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_greatsomalia }
+			NOT = { 1868 = { is_core = GSL } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1868
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_greatsomalia
+			prestige = 10
+			ENG_1868 = { add_core = GSL }
+			ETH_1867 = { add_core = GSL }
+			ETH_1864 = { add_core = GSL }
+			ETH_1854 = { add_core = GSL }
+			ENG_1848 = { add_core = GSL }
+			2031 = { add_core = GSL }
+		}
+	}
+	# Reorginaze East Africa
+	COLON_reorginaze_east_africa = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_east_africa }
+			NOT = { 2048 = { is_core = FRE } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 2048
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_east_africa
+			prestige = 10
+			ENG_2029 = { add_core = FRE }
+			ENG_2039 = { add_core = FRE }
+			ENG_2034 = { add_core = FRE }
+			ENG_2019 = { add_core = FRE }
+			ENG_2026 = { add_core = FRE }
+			ENG_2024 = { add_core = FRE }
+			1870 = { add_core = FRE }
+		}
+	}
+	# Reorginaze Gabon
+	COLON_reorginaze_gabon = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_gabon }
+			NOT = { 1972 = { is_core = GBN } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1972
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_gabon
+			prestige = 10
+			FRA_1972 = { add_core = GBN }
+			FRA_1978 = { add_core = GBN }
+		}
+	}
+	# Reorginaze the Congo
+	COLON_reorginaze_the_congo = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_congo }
+			NOT = { 1982 = { is_core = CNG } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 1982
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_congo
+			prestige = 10
+			BEL_1977 = { add_core = CNG }
+			BEL_1984 = { add_core = CNG }
+			BEL_1990 = { add_core = CNG }
+			BEL_1992 = { add_core = CNG }
+			2034 = { add_core = CNG }
+			2035 = { add_core = CNG }
+		}
+	}
+	# Reorginaze Rhodesia
+	COLON_reorginaze_rhodesia = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_rhodesia }
+			NOT = { 2068 = { is_core = RHD } }
+			has_global_flag = COLON_africa_conference_called
+			owns = 2068
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_rhodesia
+			prestige = 10
+			ENG_2068 = { add_core = RHD }
+			ENG_2014 = { add_core = RHD }
+			ENG_2016 = { add_core = RHD }
+			BEL_1987 = { add_core = RHD }
+			2055 = { add_core = RHD }
+			2054 = { add_core = RHD }
+			2056 = { add_core = RHD }
+			2010 = { add_core = RHD }
+			2011 = { add_core = RHD }
+		}
+	}
+	# Reorginaze South Africa
+	COLON_reorginaze_south_africa = {
+		potential = {
+			NOT = { has_country_flag = COLON_reorganized_south_africa }
+			NOT = { 2083 = { is_core = SAF } }
+			# has_global_flag = COLON_africa_conference_called
+			owns = 2083
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = COLON_reorganized_south_africa
+			prestige = 10
+			ENG_2083 = { add_core = SAF }
+			ENG_2078 = { add_core = SAF }
+			ENG_2074 = { add_core = SAF }
 		}
 	}
 	### General Colonization Stuff

@@ -35,3 +35,215 @@ country_event = {
 		}
 	}
 }
+
+# Italian rights act
+country_event = {
+	id = 100103
+	title = "EVENTNAME100103"
+	desc = "EVENTDESC100103"
+	fire_only_once = yes
+	picture = "Italy"
+	
+	trigger = {
+		OR = {
+			tag = SIR
+			tag = IBU
+		}
+		owns = 754
+	}
+	
+	option = {
+		name = "EVENTOPTA100103"
+		prestige = 10
+		badboy = 1
+		any_pop = {
+			limit = {
+				culture = north_italian
+				culture = south_italian
+			}
+			militancy = 7
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				citizenship_policy = residency
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100103"
+		add_accepted_culture = south_italian
+		any_pop = {
+			limit = {
+				culture = north_italian
+			}
+			militancy = 4
+		}
+		any_pop = {
+			limit = {
+				culture = south_italian
+			}
+			militancy = -4
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				citizenship_policy = limited_citizenship
+			}
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTC100103"
+		prestige = -10
+		add_accepted_culture = south_italian
+		add_accepted_culture = north_italian
+		any_pop = {
+			limit = {
+				culture = north_italian
+				culture = south_italian
+			}
+			militancy = -5
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				citizenship_policy = full_citizenship
+			}
+		}
+	}
+}
+
+# Bourbons found!
+country_event = {
+	id = 100105
+	title = "EVENTNAME100105"
+	desc = "EVENTDESC100105"
+	fire_only_once = yes
+	picture = "SpanishBourbons"
+	
+	trigger = {
+		tag = SIR
+		year = 1838
+	}
+	
+	option = {
+		name = "EVENTOPTA100105"
+		set_country_flag = SIR_bourbons_arrested
+		prestige = 10
+		add_country_modifier = {
+			name = SIR_caught_the_bourbons
+			duration = 1080
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "EVENTOPTB100105"
+		set_country_flag = SIR_let_bourbons_go
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+### BOURBON COUP PATH
+# Bourbons take control of the Government!
+country_event = {
+	id = 100106
+	title = "EVENTNAME100106"
+	desc = "EVENTDESC100106"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = SIR
+		has_country_flag = SIR_let_bourbons_go
+		year = 1848
+	}
+	
+	option = {
+		name = "EVENTOPTA100106"
+		set_country_flag = SIR_bourbon_government
+		government = absolute_monarchy
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		upper_house = {
+			ideology = reactionary
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				NOT = { pop_majority_ideology = reactionary }
+			}
+			militancy = 8
+		}
+		any_country = {
+			limit = {
+				government = napoleonic_republic
+			}
+			relation = {
+				who = THIS
+				value = -200
+			}
+		}
+		any_country = {
+			limit = {
+				government = absolute_monarchy
+				government = hms_government
+			}
+			relation = {
+				who = THIS
+				value = 200
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Basque and Catalan Independance
+country_event = {
+	id = 100107
+	title = "EVENTNAME100107"
+	desc = "EVENTDESC100107"
+	fire_only_once = yes
+	picture = "SpanishSeperatism"
+	
+	trigger = {
+		tag = SIR
+		has_country_flag = SIR_bourbon_government
+	}
+	
+	option = {
+		name = "EVENTOPTA100107"
+		prestige = -10
+		release = BSQ
+		release = CAT
+		BSQ = {
+			government = napoleonic_republic
+			relation = {
+				tag = THIS
+				value = -200
+			}
+		}
+		CAT = {
+			government = napoleonic_republic
+			relation = {
+				tag = THIS
+				value = -200
+			}
+		}
+	}
+}

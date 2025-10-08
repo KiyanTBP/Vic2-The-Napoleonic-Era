@@ -70,7 +70,7 @@ country_event = {
 		treasury = -150000
 		country_event = {
 			id = 100049
-			days = 365
+			days = 500
 		}
 	}
 	
@@ -79,7 +79,7 @@ country_event = {
 		treasury = -100000
 		country_event = {
 			id = 100049
-			days = 500
+			days = 750
 		}
 	}
 	
@@ -88,7 +88,7 @@ country_event = {
 		treasury = -50000
 		country_event = {
 			id = 100049
-			days = 720
+			days = 1000
 		}
 	}
 }
@@ -129,7 +129,7 @@ country_event = {
 		treasury = -150000
 		country_event = {
 			id = 100050
-			days = 365
+			days = 800
 		}
 	}
 	
@@ -138,7 +138,7 @@ country_event = {
 		treasury = -100000
 		country_event = {
 			id = 100050
-			days = 500
+			days = 1250
 		}
 	}
 	
@@ -147,7 +147,7 @@ country_event = {
 		treasury = -50000
 		country_event = {
 			id = 100050
-			days = 720
+			days = 1800
 		}
 	}
 }

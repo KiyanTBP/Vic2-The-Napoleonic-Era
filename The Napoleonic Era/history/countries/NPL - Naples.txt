@@ -65,7 +65,7 @@ mechanical_production = 1
 
 # Army
 
-ruling_party = NAP_conservative
+ruling_party = NPL_conservative
 upper_house = {
 	fascist = 0
 	liberal = 30

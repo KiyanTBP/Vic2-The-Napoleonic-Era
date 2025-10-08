@@ -1,0 +1,71 @@
+### PERU-BOLIVIAN COLLAPSE
+# Peru declares Independance!
+country_event = {
+	id = 100095
+	title = "EVENTNAME100095"
+	desc = "EVENTDESC100095"
+	is_triggered_only = yes
+	picture = "PeruBolivia"
+	
+	option = {
+		name = "EVENTOPTA100095"
+		set_country_flag = PEU_declared_independance
+		leadership = 40
+		PEU = {
+			leadership = 40
+		}
+		war = {
+			target = PEU
+			attacker_goal = { casus_belli = event_based_war }
+			defender_goal = { casus_belli = event_based_war }
+		}
+	}
+}
+
+# Fall of the Confederation
+country_event = {
+	id = 100096
+	title = "EVENTNAME100096"
+	desc = "EVENTDESC100096"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVENTOPTA100096"
+		PEU = {
+			all_core = {
+				limit = {
+					owned_by = PBC
+				}
+				secede_province = PEU
+			}
+		}
+		PBC = {
+			all_core = {
+				remove_core = PBC
+			}
+			change_tag = BOL
+		}
+	}
+}
+
+## if the confederation wins
+# The Confederation Stands!
+country_event = {
+	id = 100097
+	title = "EVENTNAME100097"
+	desc = "EVENTDESC100097"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVENTOPTA100097"
+		prestige = 40
+		inherit = PEU
+		PBC = {
+			all_core = {
+				remove_core = BOL
+			}
+		}
+	}
+}
